@@ -1,0 +1,10 @@
+/* 
+  Localized.strings
+  Desafio-PicPay-Android-iOS
+
+  Created by Avanade on 17/05/19.
+  Copyright © 2019 ThiagoCenturion. All rights reserved.
+*/
+
+"ContactListTitle" = "Contatos";
+"ContactListSeachPlaceholder" = "A quem você deseja pagar?";
