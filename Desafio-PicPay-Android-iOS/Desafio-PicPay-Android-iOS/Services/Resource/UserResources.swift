@@ -7,7 +7,9 @@
 //
 
 import Foundation
+import Alamofire
 
 struct UserResources: ApiResourceProtocol {
     var methodPath = "users"
+    var method = HTTPMethod.get
 }

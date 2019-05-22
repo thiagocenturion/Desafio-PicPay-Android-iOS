@@ -17,7 +17,7 @@ class ImageRequest {
 }
 
 extension ImageRequest: NetworkRequestProtocol {
-    func request<T>(with completion: @escaping (T?, _ error: APIError?) -> Void) {
-        request(url: self.url, with: completion)
+    func request<T: Decodable>(with completion: @escaping (T?, _ error: APIError?) -> Void) {
+//        request(url: self.url, with: completion)
     }
 }

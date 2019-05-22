@@ -9,6 +9,7 @@
 "noNetwork" = "Sem Internet. Favor, verifique sua conexão e tente novamente mais tarde.";
 "serverOverload" = "Não foi possível conectar com o servidor. Favor, tente novamente mais tarde.";
 "permissionDenied" = "Você não possui permissão.";
+"internalError" = "Ops! Houve um problema. Favor, tente novamente mais tarde. Se o erro persistir, entre em contato com o Suporte.";
 "AlertTitle" = "Atenção";
 "ContactListTitle" = "Contatos";
 "ContactListSeachPlaceholder" = "A quem você deseja pagar?";

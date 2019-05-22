@@ -7,9 +7,11 @@
 //
 
 import Foundation
+import Alamofire
 
 protocol ApiResourceProtocol {
     var methodPath: String { get }
+    var method: HTTPMethod { get }
 }
 
 extension ApiResourceProtocol {

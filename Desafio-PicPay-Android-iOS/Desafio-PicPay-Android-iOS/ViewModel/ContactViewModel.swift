@@ -28,9 +28,5 @@ class ContactViewModel {
             completion(nil, nil)
             return
         }
-        
-        let request = ImageRequest(url: imgUrl)
-        networkRequest = request
-        request.request(with: completion)
     }
 }
