@@ -10,6 +10,8 @@ import UIKit
 
 class DarkSearchController: UISearchController {
     
+    // MARK: - Properties
+    
     var textField: UITextField?
     var fieldHeight: CGFloat = 0.0
     
@@ -25,6 +27,8 @@ class DarkSearchController: UISearchController {
         }
     }
     
+    // MARK: - Construtors
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
@@ -38,6 +42,8 @@ class DarkSearchController: UISearchController {
         self.fieldHeight = fieldHeight
         setup()
     }
+    
+    // MARK: - Methods
     
     func setup() {
         searchBar.barStyle = .black
@@ -53,6 +59,7 @@ class DarkSearchController: UISearchController {
         var searchFieldBackImage = UIImage.image(with: Color.fourth, size: CGSize(width: searchBar.bounds.width, height: fieldHeight))
         searchFieldBackImage = UIImage.rounded(image: searchFieldBackImage, cornerRadius: fieldHeight / 2.0)
         searchBar.setSearchFieldBackgroundImage(searchFieldBackImage, for: .normal)
+        searchBar.searchTextPositionAdjustment = UIOffset(horizontal: 8.0, vertical: 0.0)
     }
 
 }

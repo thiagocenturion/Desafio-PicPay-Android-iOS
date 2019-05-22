@@ -20,8 +20,9 @@ class ApplicationCoordinator: CoordinatorProtocol {
         rootViewController = UINavigationController()
         rootViewController.navigationBar.prefersLargeTitles = true
         rootViewController.navigationBar.barStyle = .black
-        rootViewController.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        rootViewController.navigationBar.barTintColor = Color.clear
+        rootViewController.navigationBar.isTranslucent = false
+        rootViewController.navigationBar.setBackgroundImage(UIImage(), for: .compact)
+        rootViewController.navigationBar.barTintColor = Color.primaryBackground
         contactListCoordinator = ContactListCoordinator(presenter: rootViewController)
     }
     

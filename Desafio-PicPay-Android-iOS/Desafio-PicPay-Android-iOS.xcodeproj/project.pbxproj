@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2352766A2294A0C900073925 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235276692294A0C900073925 /* ContactViewModel.swift */; };
+		2352766D2294C73100073925 /* ApiResourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2352766C2294C73100073925 /* ApiResourceProtocol.swift */; };
+		235276702294C9D600073925 /* UserResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2352766F2294C9D600073925 /* UserResources.swift */; };
+		235276732294CA8F00073925 /* NetworkRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235276722294CA8F00073925 /* NetworkRequestProtocol.swift */; };
+		235276752294CBD400073925 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235276742294CBD400073925 /* ApiRequest.swift */; };
+		235276772294CD5000073925 /* ImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235276762294CD5000073925 /* ImageRequest.swift */; };
+		235276792294E33200073925 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235276782294E33200073925 /* Dynamic.swift */; };
 		23AF4599228C8D5C00E1FAA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF4598228C8D5C00E1FAA8 /* AppDelegate.swift */; };
 		23AF459E228C8D5C00E1FAA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23AF459C228C8D5C00E1FAA8 /* Main.storyboard */; };
 		23AF45A0228C8D5E00E1FAA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23AF459F228C8D5E00E1FAA8 /* Assets.xcassets */; };
@@ -46,6 +53,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		235276692294A0C900073925 /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
+		2352766C2294C73100073925 /* ApiResourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResourceProtocol.swift; sourceTree = "<group>"; };
+		2352766F2294C9D600073925 /* UserResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResources.swift; sourceTree = "<group>"; };
+		235276722294CA8F00073925 /* NetworkRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestProtocol.swift; sourceTree = "<group>"; };
+		235276742294CBD400073925 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		235276762294CD5000073925 /* ImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequest.swift; sourceTree = "<group>"; };
+		235276782294E33200073925 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		23AF4595228C8D5C00E1FAA8 /* Desafio-PicPay-Android-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio-PicPay-Android-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23AF4598228C8D5C00E1FAA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23AF459D228C8D5C00E1FAA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -98,6 +112,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2352766B2294C33200073925 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2352766E2294C9A100073925 /* Resource */,
+				235276712294CA6800073925 /* Request */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2352766E2294C9A100073925 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2352766C2294C73100073925 /* ApiResourceProtocol.swift */,
+				2352766F2294C9D600073925 /* UserResources.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		235276712294CA6800073925 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				235276722294CA8F00073925 /* NetworkRequestProtocol.swift */,
+				235276742294CBD400073925 /* ApiRequest.swift */,
+				235276762294CD5000073925 /* ImageRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		23AF458C228C8D5C00E1FAA8 = {
 			isa = PBXGroup;
 			children = (
@@ -121,17 +163,18 @@
 		23AF4597228C8D5C00E1FAA8 /* Desafio-PicPay-Android-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				23AF4598228C8D5C00E1FAA8 /* AppDelegate.swift */,
+				23AF459C228C8D5C00E1FAA8 /* Main.storyboard */,
+				23AF459F228C8D5E00E1FAA8 /* Assets.xcassets */,
+				23AF45A1228C8D5E00E1FAA8 /* LaunchScreen.storyboard */,
+				23AF45A4228C8D5E00E1FAA8 /* Info.plist */,
 				23FAD396228F26EE0094CD15 /* Coordinator */,
 				23FAD392228F23E00094CD15 /* Model */,
 				23FAD393228F23E80094CD15 /* ViewModel */,
 				23FAD394228F23F10094CD15 /* View */,
 				23FAD395228F25D90094CD15 /* Controller */,
 				23FAD3AB228F37E80094CD15 /* Util */,
-				23AF4598228C8D5C00E1FAA8 /* AppDelegate.swift */,
-				23AF459C228C8D5C00E1FAA8 /* Main.storyboard */,
-				23AF459F228C8D5E00E1FAA8 /* Assets.xcassets */,
-				23AF45A1228C8D5E00E1FAA8 /* LaunchScreen.storyboard */,
-				23AF45A4228C8D5E00E1FAA8 /* Info.plist */,
+				2352766B2294C33200073925 /* Services */,
 			);
 			path = "Desafio-PicPay-Android-iOS";
 			sourceTree = "<group>";
@@ -166,6 +209,8 @@
 			isa = PBXGroup;
 			children = (
 				23FAD3A3228F37410094CD15 /* ContactListViewModel.swift */,
+				235276692294A0C900073925 /* ContactViewModel.swift */,
+				235276782294E33200073925 /* Dynamic.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -173,8 +218,8 @@
 		23FAD394228F23F10094CD15 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				23FAD3B7228F59F70094CD15 /* ContactList */,
 				23FAD3B8228F5AB90094CD15 /* DarkSearchController.swift */,
+				23FAD3B7228F59F70094CD15 /* ContactList */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -360,15 +405,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				23FAD3B1228F420E0094CD15 /* CoordinatorProtocol.swift in Sources */,
+				2352766A2294A0C900073925 /* ContactViewModel.swift in Sources */,
+				235276702294C9D600073925 /* UserResources.swift in Sources */,
+				235276792294E33200073925 /* Dynamic.swift in Sources */,
 				23FAD3B9228F5AB90094CD15 /* DarkSearchController.swift in Sources */,
+				235276732294CA8F00073925 /* NetworkRequestProtocol.swift in Sources */,
 				23FAD3AA228F37770094CD15 /* Contact.swift in Sources */,
 				23FAD3A4228F37410094CD15 /* ContactListViewModel.swift in Sources */,
 				23FAD3B5228F43B40094CD15 /* ContactListCoordinator.swift in Sources */,
 				23DF5EC322944F310070345C /* ContactListViewController.swift in Sources */,
+				2352766D2294C73100073925 /* ApiResourceProtocol.swift in Sources */,
 				23FAD3BB228F5D3A0094CD15 /* Color.swift in Sources */,
 				23FAD3AF228F40C60094CD15 /* Extension.swift in Sources */,
 				23FAD3A7228F375A0094CD15 /* ContactListCell.swift in Sources */,
 				23FAD3B3228F42550094CD15 /* ApplicationCoordinator.swift in Sources */,
+				235276772294CD5000073925 /* ImageRequest.swift in Sources */,
+				235276752294CBD400073925 /* ApiRequest.swift in Sources */,
 				23AF4599228C8D5C00E1FAA8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

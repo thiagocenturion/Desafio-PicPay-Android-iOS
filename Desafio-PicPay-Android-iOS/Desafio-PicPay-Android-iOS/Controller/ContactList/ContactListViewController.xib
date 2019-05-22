@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactListViewController" customModule="Desafio_PicPay_Android_iOS" customModuleProvider="target">
             <connections>
+                <outlet property="activity" destination="Odj-gx-Qk7" id="IvZ-Wh-4Cv"/>
                 <outlet property="searchDisplayController" destination="qCE-JW-Px3" id="tQy-np-PUz"/>
                 <outlet property="tableView" destination="LeT-AL-TGz" id="czj-H4-gRc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -22,27 +23,22 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <navigationBar contentMode="top" barStyle="black" translucent="NO" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Tn-5v-Hlf">
-                    <rect key="frame" x="0.0" y="44" width="414" height="96"/>
-                    <color key="barTintColor" red="0.11013049632310867" green="0.12156320363283157" blue="0.12970292568206787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <items>
-                        <navigationItem title="Contatos" leftItemsSupplementBackButton="YES" id="WsD-1y-vz8"/>
-                    </items>
-                </navigationBar>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" canCancelContentTouches="NO" keyboardDismissMode="onDrag" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LeT-AL-TGz">
-                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LeT-AL-TGz">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Odj-gx-Qk7">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="9Tn-5v-Hlf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="511-mH-Igl"/>
+                <constraint firstItem="Odj-gx-Qk7" firstAttribute="centerY" secondItem="LeT-AL-TGz" secondAttribute="centerY" id="ACK-x5-vD3"/>
                 <constraint firstAttribute="bottom" secondItem="LeT-AL-TGz" secondAttribute="bottom" id="Saf-gc-o78"/>
                 <constraint firstItem="LeT-AL-TGz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UFL-Ed-kgh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LeT-AL-TGz" secondAttribute="trailing" id="a66-lf-tP1"/>
-                <constraint firstItem="9Tn-5v-Hlf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="aDO-ty-iaI"/>
-                <constraint firstItem="9Tn-5v-Hlf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="dw1-gr-cdm"/>
-                <constraint firstItem="LeT-AL-TGz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="etO-hB-e3X"/>
+                <constraint firstItem="LeT-AL-TGz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="etO-hB-e3X"/>
+                <constraint firstItem="Odj-gx-Qk7" firstAttribute="centerX" secondItem="LeT-AL-TGz" secondAttribute="centerX" id="sCN-Le-tNc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>

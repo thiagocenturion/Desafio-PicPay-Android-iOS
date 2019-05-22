@@ -14,12 +14,13 @@ class ContactListCell: UITableViewCell {
     @IBOutlet weak var imgPerfil: UIImageView!
     @IBOutlet weak var lblUsername: UILabel!
     @IBOutlet weak var lblName: UILabel!
-    
-    // MARK: - Methods
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    var contactViewModel : ContactViewModel? {
+        didSet {
+            lblUsername.text = contactViewModel?.contact.username
+            lblName.text = contactViewModel?.contact.name
+            
+            // TODO: Realizar o download da imagem e inserir no UI
+        }
     }
     
 }
