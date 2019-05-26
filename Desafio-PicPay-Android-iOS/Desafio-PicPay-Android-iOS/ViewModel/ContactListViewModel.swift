@@ -58,11 +58,8 @@ class ContactListViewModel: NSObject {
             arrFilteredContactViewModels = arrAllContactViewModels.map({ return $0 })
         } else {
             // Realiza o filtro com a utilizacao de predicate
-            let searchPredicate = NSPredicate(format: "SELF CONTAINS[c] %@", textName)
-            let arrFiltered = (arrAllContactViewModels as NSArray?)?.filtered(using: searchPredicate)
-            if let arrFilteredContacts = arrFiltered as? [Contact] {
-                arrFilteredContactViewModels = createCellViewModels(contacts: arrFilteredContacts)
-            }
+            let arrFiltered = arrAllContactViewModels.filter { $0.name?.localizedCaseInsensitiveContains(textName) ?? false || $0.username?.localizedCaseInsensitiveContains(textName) ?? false }
+            arrFilteredContactViewModels = arrFiltered
         }
     }
     

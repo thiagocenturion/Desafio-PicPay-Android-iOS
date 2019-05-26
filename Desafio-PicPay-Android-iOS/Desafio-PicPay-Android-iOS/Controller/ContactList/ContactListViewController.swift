@@ -41,11 +41,6 @@ class ContactListViewController: UIViewController {
             searchBar.placeholder = "ContactListSeachPlaceholder".localizable
             return searchBar
         })()
-        
-        // Remove o navigation nesta tela
-        navigationItem.largeTitleDisplayMode = .never
-        navigationController?.navigationBar.prefersLargeTitles = false
-        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     func setupTableView() {
@@ -60,7 +55,7 @@ class ContactListViewController: UIViewController {
     }
     
     func setupViewModel() {
-        // Data binding
+        // Data binding para recarregar a table view
         viewModel.bindReloadDataSource = { [weak self] in
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
@@ -75,12 +70,17 @@ class ContactListViewController: UIViewController {
             }
         }
         
+        // Caso retorne algum erro da view model, exibe um alerta com a mensagem correta ao usuario
         viewModel.alertMessage.bind { [weak self] (alertMessage) in
             self?.showAlert(alertMessage)
         }
         
         // Inicia o carregamento dos dados
         viewModel.fetchContacts()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
 }
 
@@ -112,12 +112,14 @@ extension ContactListViewController: UITableViewDataSource {
 }
 
 extension ContactListViewController: UITableViewDelegate {
-    // TODO: Chamar coordinator
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        searchBar?.endEditing(true)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
 
 extension ContactListViewController: UISearchBarDelegate {
-    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        // TODO: Realização do filtro. Inclui quando o botão "limpar" é clicado, que devemos dar reloadData com a lista inteira.
+        self.viewModel.filtered(with: searchText)
     }
 }

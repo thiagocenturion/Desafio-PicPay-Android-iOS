@@ -17,20 +17,22 @@ class ApplicationCoordinator: CoordinatorProtocol {
         self.window = window
         
         // Cria a navigation controller que sera responsavel pelo fluxo do sistema
-        rootViewController = UINavigationController()
-        rootViewController.navigationBar.prefersLargeTitles = true
-        rootViewController.navigationBar.barStyle = .black
-        rootViewController.navigationBar.isTranslucent = false
-        rootViewController.navigationBar.setBackgroundImage(UIImage(), for: .compact)
-        rootViewController.navigationBar.barTintColor = Color.primaryBackground
+        rootViewController = ({
+            let navController = UINavigationController()
+            navController.navigationBar.prefersLargeTitles = true
+            navController.navigationBar.barStyle = .black
+            navController.navigationBar.isTranslucent = false
+            navController.navigationBar.barTintColor = Color.primaryBackground
+            navController.navigationBar.shadowImage = UIImage() // Remove linha 1px abaixo da navigation
+            return navController
+        })()
+        
         contactListCoordinator = ContactListCoordinator(presenter: rootViewController)
     }
     
     func start() {
         window.rootViewController = rootViewController
-        
         contactListCoordinator.start()
-        
         window.makeKeyAndVisible()
     }
 }

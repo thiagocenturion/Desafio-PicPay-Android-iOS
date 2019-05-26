@@ -149,4 +149,28 @@ extension DarkSearchBar: UISearchBarDelegate {
         endEditing(true)
         controllerDelegate?.searchBarSearchButtonClicked?(searchBar)
     }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        controllerDelegate?.searchBarTextDidEndEditing?(searchBar)
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        controllerDelegate?.searchBarCancelButtonClicked?(searchBar)
+    }
+    
+    func searchBarBookmarkButtonClicked(_ searchBar: UISearchBar) {
+        controllerDelegate?.searchBarBookmarkButtonClicked?(searchBar)
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        controllerDelegate?.searchBarTextDidBeginEditing?(searchBar)
+    }
+    
+    func searchBarResultsListButtonClicked(_ searchBar: UISearchBar) {
+        controllerDelegate?.searchBarResultsListButtonClicked?(searchBar)
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        controllerDelegate?.searchBar?(searchBar, textDidChange: searchText)
+    }
 }

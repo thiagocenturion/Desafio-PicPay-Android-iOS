@@ -36,5 +36,10 @@ class ContactListCell: UITableViewCell {
         // Arredondamento da imagem
         imgPerfil.clipsToBounds = true
         imgPerfil.layer.cornerRadius = imgPerfil.bounds.height / 2
+        
+        // Selecao
+        let backgroundSelectedColorView = UIView()
+        backgroundSelectedColorView.backgroundColor = Color.primary.withAlphaComponent(0.1)
+        selectedBackgroundView = backgroundSelectedColorView
     }
 }
