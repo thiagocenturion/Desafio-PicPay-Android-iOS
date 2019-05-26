@@ -13,7 +13,6 @@
 		235276702294C9D600073925 /* UserResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2352766F2294C9D600073925 /* UserResources.swift */; };
 		235276732294CA8F00073925 /* NetworkRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235276722294CA8F00073925 /* NetworkRequestProtocol.swift */; };
 		235276752294CBD400073925 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235276742294CBD400073925 /* ApiRequest.swift */; };
-		235276772294CD5000073925 /* ImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235276762294CD5000073925 /* ImageRequest.swift */; };
 		235276792294E33200073925 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235276782294E33200073925 /* Dynamic.swift */; };
 		23AF4599228C8D5C00E1FAA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF4598228C8D5C00E1FAA8 /* AppDelegate.swift */; };
 		23AF459E228C8D5C00E1FAA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23AF459C228C8D5C00E1FAA8 /* Main.storyboard */; };
@@ -32,7 +31,7 @@
 		23FAD3B1228F420E0094CD15 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FAD3B0228F420E0094CD15 /* CoordinatorProtocol.swift */; };
 		23FAD3B3228F42550094CD15 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FAD3B2228F42550094CD15 /* ApplicationCoordinator.swift */; };
 		23FAD3B5228F43B40094CD15 /* ContactListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FAD3B4228F43B40094CD15 /* ContactListCoordinator.swift */; };
-		23FAD3B9228F5AB90094CD15 /* DarkSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FAD3B8228F5AB90094CD15 /* DarkSearchController.swift */; };
+		23FAD3B9228F5AB90094CD15 /* DarkSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FAD3B8228F5AB90094CD15 /* DarkSearchBar.swift */; };
 		23FAD3BB228F5D3A0094CD15 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FAD3BA228F5D3A0094CD15 /* Color.swift */; };
 		B0A34B8ADA1C9B13EBD56367 /* Pods_Desafio_PicPay_Android_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D406E871C6EBBB0AEEC060 /* Pods_Desafio_PicPay_Android_iOSTests.framework */; };
 		C8CCC88CEE15DEEE4EB6D29A /* Pods_Desafio_PicPay_Android_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC32FE3D591EB7C4FCF1E68 /* Pods_Desafio_PicPay_Android_iOSUITests.framework */; };
@@ -62,7 +61,6 @@
 		2352766F2294C9D600073925 /* UserResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResources.swift; sourceTree = "<group>"; };
 		235276722294CA8F00073925 /* NetworkRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestProtocol.swift; sourceTree = "<group>"; };
 		235276742294CBD400073925 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
-		235276762294CD5000073925 /* ImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequest.swift; sourceTree = "<group>"; };
 		235276782294E33200073925 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		23AF4595228C8D5C00E1FAA8 /* Desafio-PicPay-Android-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio-PicPay-Android-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23AF4598228C8D5C00E1FAA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,7 +85,7 @@
 		23FAD3B0228F420E0094CD15 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		23FAD3B2228F42550094CD15 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		23FAD3B4228F43B40094CD15 /* ContactListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListCoordinator.swift; sourceTree = "<group>"; };
-		23FAD3B8228F5AB90094CD15 /* DarkSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSearchController.swift; sourceTree = "<group>"; };
+		23FAD3B8228F5AB90094CD15 /* DarkSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSearchBar.swift; sourceTree = "<group>"; };
 		23FAD3BA228F5D3A0094CD15 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		27DC3FA34A53AA896C9AFCE4 /* Pods-Desafio-PicPay-Android-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio-PicPay-Android-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Desafio-PicPay-Android-iOSTests/Pods-Desafio-PicPay-Android-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		3BC32FE3D591EB7C4FCF1E68 /* Pods_Desafio_PicPay_Android_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Desafio_PicPay_Android_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,7 +148,6 @@
 			children = (
 				235276722294CA8F00073925 /* NetworkRequestProtocol.swift */,
 				235276742294CBD400073925 /* ApiRequest.swift */,
-				235276762294CD5000073925 /* ImageRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -190,8 +187,8 @@
 				23FAD393228F23E80094CD15 /* ViewModel */,
 				23FAD394228F23F10094CD15 /* View */,
 				23FAD395228F25D90094CD15 /* Controller */,
-				23FAD3AB228F37E80094CD15 /* Util */,
 				2352766B2294C33200073925 /* Services */,
+				23FAD3AB228F37E80094CD15 /* Util */,
 			);
 			path = "Desafio-PicPay-Android-iOS";
 			sourceTree = "<group>";
@@ -235,7 +232,7 @@
 		23FAD394228F23F10094CD15 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				23FAD3B8228F5AB90094CD15 /* DarkSearchController.swift */,
+				23FAD3B8228F5AB90094CD15 /* DarkSearchBar.swift */,
 				23FAD3B7228F59F70094CD15 /* ContactList */,
 			);
 			path = View;
@@ -297,7 +294,6 @@
 				803283694C15D7A1FA567C4D /* Pods-Desafio-PicPay-Android-iOSUITests.debug.xcconfig */,
 				9221F54D6F12358E3076B5C9 /* Pods-Desafio-PicPay-Android-iOSUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -546,7 +542,7 @@
 				2352766A2294A0C900073925 /* ContactViewModel.swift in Sources */,
 				235276702294C9D600073925 /* UserResources.swift in Sources */,
 				235276792294E33200073925 /* Dynamic.swift in Sources */,
-				23FAD3B9228F5AB90094CD15 /* DarkSearchController.swift in Sources */,
+				23FAD3B9228F5AB90094CD15 /* DarkSearchBar.swift in Sources */,
 				235276732294CA8F00073925 /* NetworkRequestProtocol.swift in Sources */,
 				23FAD3AA228F37770094CD15 /* Contact.swift in Sources */,
 				23FAD3A4228F37410094CD15 /* ContactListViewModel.swift in Sources */,
@@ -557,7 +553,6 @@
 				23FAD3AF228F40C60094CD15 /* Extension.swift in Sources */,
 				23FAD3A7228F375A0094CD15 /* ContactListCell.swift in Sources */,
 				23FAD3B3228F42550094CD15 /* ApplicationCoordinator.swift in Sources */,
-				235276772294CD5000073925 /* ImageRequest.swift in Sources */,
 				235276752294CBD400073925 /* ApiRequest.swift in Sources */,
 				23AF4599228C8D5C00E1FAA8 /* AppDelegate.swift in Sources */,
 			);
@@ -665,7 +660,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -720,7 +715,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -738,6 +733,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TTSKDZ455K;
 				INFOPLIST_FILE = "Desafio-PicPay-Android-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -757,6 +753,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TTSKDZ455K;
 				INFOPLIST_FILE = "Desafio-PicPay-Android-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

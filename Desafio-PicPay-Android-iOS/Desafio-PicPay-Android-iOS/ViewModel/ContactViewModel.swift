@@ -9,24 +9,18 @@
 import UIKit
 
 class ContactViewModel {
-    
-    // MARK: - Properties
-    
-    var contact: Contact
-    private var networkRequest: NetworkRequestProtocol?
-    
-    // MARK: - Construtors
+    var id: Int?
+    var name: String?
+    var imgUrl: URL?
+    var username: String?
     
     init(with contact: Contact) {
-        self.contact = contact
-    }
-    
-    // MARK: - Methods
-    
-    func downloadImage(completion: @escaping (_ image: UIImage?, _ error: APIError?) -> Void) {
-        guard let imgUrl = contact.imgUrl else {
-            completion(nil, nil)
-            return
+        self.id = contact.id
+        self.name = contact.name
+        self.username = contact.username
+        
+        if let imgUrlString = contact.img {
+            self.imgUrl = URL(string: imgUrlString)
         }
     }
 }

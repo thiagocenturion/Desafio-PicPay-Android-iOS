@@ -17,7 +17,7 @@ class ContactListViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
     private let reuseIdentifier = ContactListCell.nameOfClass
     private let searchFieldHeight: CGFloat = 40.0
-    private var searchController: DarkSearchController?
+    private var searchBar: DarkSearchBar?
     lazy var viewModel: ContactListViewModel = {
         return ContactListViewModel()
     }()
@@ -35,12 +35,11 @@ class ContactListViewController: UIViewController {
     func setupLayout() {
         view.backgroundColor = Color.primaryBackground
         
-        searchController = ({
-            let controller = DarkSearchController(searchResultsController: nil, with: searchFieldHeight)
-            controller.searchResultsUpdater = self
-            controller.searchBar.placeholder = "ContactListSeachPlaceholder".localizable
-            controller.searchBar.sizeToFit()
-            return controller
+        searchBar = ({
+            let searchBar = DarkSearchBar(frame: .zero, searchFieldHeight: searchFieldHeight, tintColor: Color.primary, barBackgroundColor: Color.primaryBackground, searchFieldBackgroundColor: Color.fourth)
+            searchBar.delegate = self
+            searchBar.placeholder = "ContactListSeachPlaceholder".localizable
+            return searchBar
         })()
         
         // Remove o navigation nesta tela
@@ -83,7 +82,6 @@ class ContactListViewController: UIViewController {
         // Inicia o carregamento dos dados
         viewModel.fetchContacts()
     }
-    
 }
 
 extension ContactListViewController: UITableViewDataSource {
@@ -92,7 +90,7 @@ extension ContactListViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return searchController?.searchBar
+        return searchBar
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -117,8 +115,9 @@ extension ContactListViewController: UITableViewDelegate {
     // TODO: Chamar coordinator
 }
 
-extension ContactListViewController: UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
-        // TODO: Realizar a busca para a viewModel
+extension ContactListViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        // TODO: Realização do filtro. Inclui quando o botão "limpar" é clicado, que devemos dar reloadData com a lista inteira.
     }
 }

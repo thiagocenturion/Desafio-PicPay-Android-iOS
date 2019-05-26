@@ -29,18 +29,34 @@ extension UIImage {
         UIRectFill(rect)
         image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
+        
         return image
     }
     
-    class func rounded(image: UIImage?, cornerRadius: CGFloat) -> UIImage? {
-        let rect = CGRect(origin:CGPoint(x: 0, y: 0), size: image?.size ?? CGSize.zero)
-        UIGraphicsBeginImageContextWithOptions(image?.size ?? CGSize.zero, false, 1)
-        UIBezierPath(
-            roundedRect: rect,
-            cornerRadius: cornerRadius
-            ).addClip()
+    class func rounded(image: UIImage?, cornerRadius: CGFloat, borderColor: UIColor? = nil, borderWidth: CGFloat? = nil) -> UIImage? {
+        let newImage: UIImage?
+        let rect = CGRect(origin:CGPoint(x: 0, y: 0), size: image?.size ?? .zero)
+        
+        UIGraphicsBeginImageContextWithOptions(rect.size, false, 1)
+
+        // Corner Radius
+        UIBezierPath(roundedRect: rect, cornerRadius: cornerRadius).addClip()
         image?.draw(in: rect)
-        return UIGraphicsGetImageFromCurrentImageContext()
+        
+        // Stroke
+        if let borderColor = borderColor, let borderWidth = borderWidth {
+            let path = UIBezierPath(roundedRect: rect, cornerRadius: cornerRadius)
+            
+            borderColor.setStroke()
+            path.lineWidth = borderWidth
+            
+            path.stroke()
+        }
+        
+        newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage
     }
 }
 
