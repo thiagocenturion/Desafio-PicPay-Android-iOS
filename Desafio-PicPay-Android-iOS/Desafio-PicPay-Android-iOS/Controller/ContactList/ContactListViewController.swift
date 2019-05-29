@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol ContactListViewControllerProtocol {
+    func contactListViewController(didSelect contactViewModel: ContactViewModel)
+}
+
 class ContactListViewController: UIViewController {
     
     // MARK: - Properties
@@ -20,6 +24,7 @@ class ContactListViewController: UIViewController {
     lazy var viewModel: ContactListViewModel = {
         return ContactListViewModel()
     }()
+    var delegate: ContactListViewControllerProtocol?
     
     // MARK: - Methods
     
@@ -113,6 +118,9 @@ extension ContactListViewController: UITableViewDataSource {
 
 extension ContactListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedContactViewModel = viewModel.getCellViewModel(at: indexPath)
+        delegate?.contactListViewController(didSelect: selectedContactViewModel)
+        
         searchBar?.endEditing(true)
         tableView.deselectRow(at: indexPath, animated: true)
     }

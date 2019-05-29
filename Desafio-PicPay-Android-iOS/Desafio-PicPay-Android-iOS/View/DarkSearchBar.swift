@@ -121,8 +121,6 @@ class DarkSearchBar: UISearchBar {
             let textWidth = (currentText as NSString?)?.size(withAttributes: [NSAttributedString.Key.font:font]).width ?? 0
             let searchWidth = image(for: .search, state: .normal)?.size.width ?? 0
             let textPaddingWidth = searchTextPositionAdjustment.horizontal * 2
-            
-            // TODO: Enconrtar uma maneira de capturar a margin entre o searchBar e o searchField
             let searchBackgroundWidth = textPaddingWidth * 2
             let width = frame.width - (textWidth + textPaddingWidth + searchWidth + searchBackgroundWidth)
             adjustmentOffset = UIOffset(horizontal: width / 2, vertical: 0)

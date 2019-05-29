@@ -20,8 +20,15 @@ class ContactListCoordinator: CoordinatorProtocol {
         // Instancia a viewController principal do coordinator e realiza o push no navigation controller para apresentar na tela
         let contactListViewController = ContactListViewController(nibName: nil, bundle: nil)
         contactListViewController.title = "ContactListTitle".localizable
+        contactListViewController.delegate = self
         presenter.pushViewController(contactListViewController, animated: true)
         
         self.contactListViewController = contactListViewController
+    }
+}
+
+extension ContactListCoordinator: ContactListViewControllerProtocol {
+    func contactListViewController(didSelect contactViewModel: ContactViewModel) {
+        // TODO: Instanciar o coordinator novo e inicia-lo
     }
 }
