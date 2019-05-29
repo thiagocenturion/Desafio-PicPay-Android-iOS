@@ -67,3 +67,42 @@ extension UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
 }
+
+extension UILabel {
+    class func label(text: String?, font: UIFont? = UIFont.systemFont(ofSize: 17), textColor: UIColor? = Color.black) -> UILabel {
+        let label = UILabel(frame: .zero)
+        label.text = text
+        label.font = font
+        label.textColor = textColor
+        label.numberOfLines = 0
+        label.textAlignment = .center
+        return label
+    }
+}
+
+extension UIView {
+    func showActivity() {
+        let activity = UIActivityIndicatorView(style: .whiteLarge)
+        activity.hidesWhenStopped = true
+        
+        activity.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(activity)
+        
+        let horizontalConstraint = activity.centerXAnchor.constraint(equalTo: centerXAnchor)
+        let verticalConstraint = activity.centerYAnchor.constraint(equalTo: centerYAnchor)
+        NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint])
+        
+        activity.startAnimating()
+    }
+    
+    public func removeActivity() {
+        for subview in subviews.reversed() {
+            if let activity = subview as? UIActivityIndicatorView {
+                DispatchQueue.main.async { [weak activity] in
+                    activity?.stopAnimating()
+                    activity?.removeFromSuperview()
+                }
+            }
+        }
+    }
+}

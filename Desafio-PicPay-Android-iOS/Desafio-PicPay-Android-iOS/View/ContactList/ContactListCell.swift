@@ -23,7 +23,9 @@ class ContactListCell: UITableViewCell {
             
             // Realiza o download da imagem, armazenando em cache. Atribui uma imagem de placeholder opaca
             if let imgUrl = contactViewModel?.imgUrl {
-                imgPerfil.af_setImage(withURL: imgUrl, placeholderImage: UIImage.image(with: Color.fourth, size: imgPerfil.bounds.size))
+                imgPerfil.af_setImage(withURL: imgUrl, placeholderImage: contactViewModel?.placeholderImage(size: imgPerfil.bounds.size))
+            } else {
+                imgPerfil.image = contactViewModel?.placeholderImage(size: imgPerfil.bounds.size)
             }
         }
     }

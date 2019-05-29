@@ -23,4 +23,8 @@ class ContactViewModel {
             self.imgUrl = URL(string: imgUrlString)
         }
     }
+    
+    func placeholderImage(size: CGSize) -> UIImage? {
+        return UIImage.image(with: Color.fourth, size: size)
+    }
 }

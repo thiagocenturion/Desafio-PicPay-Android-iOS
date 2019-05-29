@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import Desafio_PicPay_Android_iOS
 
 class Desafio_PicPay_Android_iOSUITests: XCTestCase {
 

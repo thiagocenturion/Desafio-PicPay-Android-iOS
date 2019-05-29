@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06A5C4280D31577C514CE134 /* Pods_Desafio_PicPay_Android_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0496B91D1540F0EC36F30E2 /* Pods_Desafio_PicPay_Android_iOS.framework */; };
 		2352766A2294A0C900073925 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235276692294A0C900073925 /* ContactViewModel.swift */; };
 		2352766D2294C73100073925 /* ApiResourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2352766C2294C73100073925 /* ApiResourceProtocol.swift */; };
 		235276702294C9D600073925 /* UserResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2352766F2294C9D600073925 /* UserResources.swift */; };
 		235276732294CA8F00073925 /* NetworkRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235276722294CA8F00073925 /* NetworkRequestProtocol.swift */; };
 		235276752294CBD400073925 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235276742294CBD400073925 /* ApiRequest.swift */; };
 		235276792294E33200073925 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235276782294E33200073925 /* Dynamic.swift */; };
+		23A0CFB0229B3927006CC0AB /* ContactListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A0CFAF229B3927006CC0AB /* ContactListViewModelTest.swift */; };
+		23A0CFB2229B9A7B006CC0AB /* UserApiRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A0CFB1229B9A7B006CC0AB /* UserApiRequestTest.swift */; };
 		23AF4599228C8D5C00E1FAA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF4598228C8D5C00E1FAA8 /* AppDelegate.swift */; };
 		23AF459E228C8D5C00E1FAA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23AF459C228C8D5C00E1FAA8 /* Main.storyboard */; };
 		23AF45A0228C8D5E00E1FAA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23AF459F228C8D5E00E1FAA8 /* Assets.xcassets */; };
 		23AF45A3228C8D5E00E1FAA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23AF45A1228C8D5E00E1FAA8 /* LaunchScreen.storyboard */; };
-		23AF45AE228C8D5E00E1FAA8 /* Desafio_PicPay_Android_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF45AD228C8D5E00E1FAA8 /* Desafio_PicPay_Android_iOSTests.swift */; };
 		23AF45B9228C8D5E00E1FAA8 /* Desafio_PicPay_Android_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF45B8228C8D5E00E1FAA8 /* Desafio_PicPay_Android_iOSUITests.swift */; };
 		23DF5EC322944F310070345C /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DF5EC122944F310070345C /* ContactListViewController.swift */; };
 		23DF5EC422944F310070345C /* ContactListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23DF5EC222944F310070345C /* ContactListViewController.xib */; };
@@ -33,8 +33,9 @@
 		23FAD3B5228F43B40094CD15 /* ContactListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FAD3B4228F43B40094CD15 /* ContactListCoordinator.swift */; };
 		23FAD3B9228F5AB90094CD15 /* DarkSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FAD3B8228F5AB90094CD15 /* DarkSearchBar.swift */; };
 		23FAD3BB228F5D3A0094CD15 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FAD3BA228F5D3A0094CD15 /* Color.swift */; };
-		B0A34B8ADA1C9B13EBD56367 /* Pods_Desafio_PicPay_Android_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D406E871C6EBBB0AEEC060 /* Pods_Desafio_PicPay_Android_iOSTests.framework */; };
-		C8CCC88CEE15DEEE4EB6D29A /* Pods_Desafio_PicPay_Android_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC32FE3D591EB7C4FCF1E68 /* Pods_Desafio_PicPay_Android_iOSUITests.framework */; };
+		34F13660B34793DDAFC949A1 /* libPods-Desafio-PicPay-Android-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A8A9F7776B0AE0DF138995 /* libPods-Desafio-PicPay-Android-iOS.a */; };
+		3BF31AF8D7DFE52E82209887 /* libPods-Desafio-PicPay-Android-iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A2AA3598AFEE6F88D08487 /* libPods-Desafio-PicPay-Android-iOSTests.a */; };
+		4AA1760867D9EE8EE225C799 /* libPods-Desafio-PicPay-Android-iOSUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6792BA55207B60DEDB1FB929 /* libPods-Desafio-PicPay-Android-iOSUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,13 +56,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		225A3E77E21B39F0C15018BA /* Pods-Desafio-PicPay-Android-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio-PicPay-Android-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Desafio-PicPay-Android-iOS/Pods-Desafio-PicPay-Android-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		1751E55AD61BB253A6226A62 /* Pods-Desafio-PicPay-Android-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio-PicPay-Android-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Desafio-PicPay-Android-iOSTests/Pods-Desafio-PicPay-Android-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		235276692294A0C900073925 /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
 		2352766C2294C73100073925 /* ApiResourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResourceProtocol.swift; sourceTree = "<group>"; };
 		2352766F2294C9D600073925 /* UserResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResources.swift; sourceTree = "<group>"; };
 		235276722294CA8F00073925 /* NetworkRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestProtocol.swift; sourceTree = "<group>"; };
 		235276742294CBD400073925 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		235276782294E33200073925 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		23A0CFAF229B3927006CC0AB /* ContactListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModelTest.swift; sourceTree = "<group>"; };
+		23A0CFB1229B9A7B006CC0AB /* UserApiRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiRequestTest.swift; sourceTree = "<group>"; };
 		23AF4595228C8D5C00E1FAA8 /* Desafio-PicPay-Android-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio-PicPay-Android-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23AF4598228C8D5C00E1FAA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23AF459D228C8D5C00E1FAA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,7 +72,6 @@
 		23AF45A2228C8D5E00E1FAA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23AF45A4228C8D5E00E1FAA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23AF45A9228C8D5E00E1FAA8 /* Desafio-PicPay-Android-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Desafio-PicPay-Android-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		23AF45AD228C8D5E00E1FAA8 /* Desafio_PicPay_Android_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desafio_PicPay_Android_iOSTests.swift; sourceTree = "<group>"; };
 		23AF45AF228C8D5E00E1FAA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23AF45B4228C8D5E00E1FAA8 /* Desafio-PicPay-Android-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Desafio-PicPay-Android-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23AF45B8228C8D5E00E1FAA8 /* Desafio_PicPay_Android_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desafio_PicPay_Android_iOSUITests.swift; sourceTree = "<group>"; };
@@ -87,14 +89,14 @@
 		23FAD3B4228F43B40094CD15 /* ContactListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListCoordinator.swift; sourceTree = "<group>"; };
 		23FAD3B8228F5AB90094CD15 /* DarkSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSearchBar.swift; sourceTree = "<group>"; };
 		23FAD3BA228F5D3A0094CD15 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		27DC3FA34A53AA896C9AFCE4 /* Pods-Desafio-PicPay-Android-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio-PicPay-Android-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Desafio-PicPay-Android-iOSTests/Pods-Desafio-PicPay-Android-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		3BC32FE3D591EB7C4FCF1E68 /* Pods_Desafio_PicPay_Android_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Desafio_PicPay_Android_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		803283694C15D7A1FA567C4D /* Pods-Desafio-PicPay-Android-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio-PicPay-Android-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Desafio-PicPay-Android-iOSUITests/Pods-Desafio-PicPay-Android-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		9221F54D6F12358E3076B5C9 /* Pods-Desafio-PicPay-Android-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio-PicPay-Android-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-Desafio-PicPay-Android-iOSUITests/Pods-Desafio-PicPay-Android-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
-		A9CC3A8B11FA3EED7198D7AD /* Pods-Desafio-PicPay-Android-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio-PicPay-Android-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Desafio-PicPay-Android-iOSTests/Pods-Desafio-PicPay-Android-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C0496B91D1540F0EC36F30E2 /* Pods_Desafio_PicPay_Android_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Desafio_PicPay_Android_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D55B4802F2BA0D22EA414260 /* Pods-Desafio-PicPay-Android-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio-PicPay-Android-iOS.release.xcconfig"; path = "Target Support Files/Pods-Desafio-PicPay-Android-iOS/Pods-Desafio-PicPay-Android-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		D8D406E871C6EBBB0AEEC060 /* Pods_Desafio_PicPay_Android_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Desafio_PicPay_Android_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		467237970D958002AE1E6FEF /* Pods-Desafio-PicPay-Android-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio-PicPay-Android-iOS.release.xcconfig"; path = "Target Support Files/Pods-Desafio-PicPay-Android-iOS/Pods-Desafio-PicPay-Android-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		62A2AA3598AFEE6F88D08487 /* libPods-Desafio-PicPay-Android-iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Desafio-PicPay-Android-iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6792BA55207B60DEDB1FB929 /* libPods-Desafio-PicPay-Android-iOSUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Desafio-PicPay-Android-iOSUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F092035243707D536152523 /* Pods-Desafio-PicPay-Android-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio-PicPay-Android-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Desafio-PicPay-Android-iOSUITests/Pods-Desafio-PicPay-Android-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ADAE36B98E9D5D2A99F37EA1 /* Pods-Desafio-PicPay-Android-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio-PicPay-Android-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-Desafio-PicPay-Android-iOSUITests/Pods-Desafio-PicPay-Android-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C6A8A9F7776B0AE0DF138995 /* libPods-Desafio-PicPay-Android-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Desafio-PicPay-Android-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9FC88A31A8E1C8044C2B949 /* Pods-Desafio-PicPay-Android-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio-PicPay-Android-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Desafio-PicPay-Android-iOS/Pods-Desafio-PicPay-Android-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F895309EA2A0891169AC34DF /* Pods-Desafio-PicPay-Android-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio-PicPay-Android-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Desafio-PicPay-Android-iOSTests/Pods-Desafio-PicPay-Android-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06A5C4280D31577C514CE134 /* Pods_Desafio_PicPay_Android_iOS.framework in Frameworks */,
+				34F13660B34793DDAFC949A1 /* libPods-Desafio-PicPay-Android-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0A34B8ADA1C9B13EBD56367 /* Pods_Desafio_PicPay_Android_iOSTests.framework in Frameworks */,
+				3BF31AF8D7DFE52E82209887 /* libPods-Desafio-PicPay-Android-iOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8CCC88CEE15DEEE4EB6D29A /* Pods_Desafio_PicPay_Android_iOSUITests.framework in Frameworks */,
+				4AA1760867D9EE8EE225C799 /* libPods-Desafio-PicPay-Android-iOSUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +162,7 @@
 				23AF45B7228C8D5E00E1FAA8 /* Desafio-PicPay-Android-iOSUITests */,
 				23AF4596228C8D5C00E1FAA8 /* Products */,
 				6D296CBB66501AE563C7AF66 /* Pods */,
-				A61181CAC82D824C26B8FA6B /* Frameworks */,
+				6E2E1501EAC44755A8B985FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -196,8 +198,9 @@
 		23AF45AC228C8D5E00E1FAA8 /* Desafio-PicPay-Android-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				23AF45AD228C8D5E00E1FAA8 /* Desafio_PicPay_Android_iOSTests.swift */,
 				23AF45AF228C8D5E00E1FAA8 /* Info.plist */,
+				23A0CFAF229B3927006CC0AB /* ContactListViewModelTest.swift */,
+				23A0CFB1229B9A7B006CC0AB /* UserApiRequestTest.swift */,
 			);
 			path = "Desafio-PicPay-Android-iOSTests";
 			sourceTree = "<group>";
@@ -287,22 +290,22 @@
 		6D296CBB66501AE563C7AF66 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				225A3E77E21B39F0C15018BA /* Pods-Desafio-PicPay-Android-iOS.debug.xcconfig */,
-				D55B4802F2BA0D22EA414260 /* Pods-Desafio-PicPay-Android-iOS.release.xcconfig */,
-				A9CC3A8B11FA3EED7198D7AD /* Pods-Desafio-PicPay-Android-iOSTests.debug.xcconfig */,
-				27DC3FA34A53AA896C9AFCE4 /* Pods-Desafio-PicPay-Android-iOSTests.release.xcconfig */,
-				803283694C15D7A1FA567C4D /* Pods-Desafio-PicPay-Android-iOSUITests.debug.xcconfig */,
-				9221F54D6F12358E3076B5C9 /* Pods-Desafio-PicPay-Android-iOSUITests.release.xcconfig */,
+				C9FC88A31A8E1C8044C2B949 /* Pods-Desafio-PicPay-Android-iOS.debug.xcconfig */,
+				467237970D958002AE1E6FEF /* Pods-Desafio-PicPay-Android-iOS.release.xcconfig */,
+				1751E55AD61BB253A6226A62 /* Pods-Desafio-PicPay-Android-iOSTests.debug.xcconfig */,
+				F895309EA2A0891169AC34DF /* Pods-Desafio-PicPay-Android-iOSTests.release.xcconfig */,
+				8F092035243707D536152523 /* Pods-Desafio-PicPay-Android-iOSUITests.debug.xcconfig */,
+				ADAE36B98E9D5D2A99F37EA1 /* Pods-Desafio-PicPay-Android-iOSUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		A61181CAC82D824C26B8FA6B /* Frameworks */ = {
+		6E2E1501EAC44755A8B985FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0496B91D1540F0EC36F30E2 /* Pods_Desafio_PicPay_Android_iOS.framework */,
-				D8D406E871C6EBBB0AEEC060 /* Pods_Desafio_PicPay_Android_iOSTests.framework */,
-				3BC32FE3D591EB7C4FCF1E68 /* Pods_Desafio_PicPay_Android_iOSUITests.framework */,
+				C6A8A9F7776B0AE0DF138995 /* libPods-Desafio-PicPay-Android-iOS.a */,
+				62A2AA3598AFEE6F88D08487 /* libPods-Desafio-PicPay-Android-iOSTests.a */,
+				6792BA55207B60DEDB1FB929 /* libPods-Desafio-PicPay-Android-iOSUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -314,11 +317,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23AF45BD228C8D5E00E1FAA8 /* Build configuration list for PBXNativeTarget "Desafio-PicPay-Android-iOS" */;
 			buildPhases = (
-				2E5DA6A01E2AC37ACFB962A6 /* [CP] Check Pods Manifest.lock */,
+				88C23A0705F1E2B26976ADAE /* [CP] Check Pods Manifest.lock */,
 				23AF4591228C8D5C00E1FAA8 /* Sources */,
 				23AF4592228C8D5C00E1FAA8 /* Frameworks */,
 				23AF4593228C8D5C00E1FAA8 /* Resources */,
-				5845CD4627E216D8D0004A78 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -333,7 +335,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23AF45C0228C8D5E00E1FAA8 /* Build configuration list for PBXNativeTarget "Desafio-PicPay-Android-iOSTests" */;
 			buildPhases = (
-				930473361ADA1DE87D1E6941 /* [CP] Check Pods Manifest.lock */,
+				64C4AE8CDA0A1B277CA4EDC3 /* [CP] Check Pods Manifest.lock */,
 				23AF45A5228C8D5E00E1FAA8 /* Sources */,
 				23AF45A6228C8D5E00E1FAA8 /* Frameworks */,
 				23AF45A7228C8D5E00E1FAA8 /* Resources */,
@@ -352,7 +354,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23AF45C3228C8D5E00E1FAA8 /* Build configuration list for PBXNativeTarget "Desafio-PicPay-Android-iOSUITests" */;
 			buildPhases = (
-				E7789510A05F2E79707C8AC7 /* [CP] Check Pods Manifest.lock */,
+				E0D0B8FCED3983A6068326C3 /* [CP] Check Pods Manifest.lock */,
 				23AF45B0228C8D5E00E1FAA8 /* Sources */,
 				23AF45B1228C8D5E00E1FAA8 /* Frameworks */,
 				23AF45B2228C8D5E00E1FAA8 /* Resources */,
@@ -441,53 +443,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2E5DA6A01E2AC37ACFB962A6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Desafio-PicPay-Android-iOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5845CD4627E216D8D0004A78 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Desafio-PicPay-Android-iOS/Pods-Desafio-PicPay-Android-iOS-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Desafio-PicPay-Android-iOS/Pods-Desafio-PicPay-Android-iOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		930473361ADA1DE87D1E6941 /* [CP] Check Pods Manifest.lock */ = {
+		64C4AE8CDA0A1B277CA4EDC3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -509,7 +465,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E7789510A05F2E79707C8AC7 /* [CP] Check Pods Manifest.lock */ = {
+		88C23A0705F1E2B26976ADAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Desafio-PicPay-Android-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0D0B8FCED3983A6068326C3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -562,7 +540,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23AF45AE228C8D5E00E1FAA8 /* Desafio_PicPay_Android_iOSTests.swift in Sources */,
+				23A0CFB0229B3927006CC0AB /* ContactListViewModelTest.swift in Sources */,
+				23A0CFB2229B9A7B006CC0AB /* UserApiRequestTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,7 +706,7 @@
 		};
 		23AF45BE228C8D5E00E1FAA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 225A3E77E21B39F0C15018BA /* Pods-Desafio-PicPay-Android-iOS.debug.xcconfig */;
+			baseConfigurationReference = C9FC88A31A8E1C8044C2B949 /* Pods-Desafio-PicPay-Android-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -747,7 +726,7 @@
 		};
 		23AF45BF228C8D5E00E1FAA8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D55B4802F2BA0D22EA414260 /* Pods-Desafio-PicPay-Android-iOS.release.xcconfig */;
+			baseConfigurationReference = 467237970D958002AE1E6FEF /* Pods-Desafio-PicPay-Android-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -767,7 +746,7 @@
 		};
 		23AF45C1228C8D5E00E1FAA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9CC3A8B11FA3EED7198D7AD /* Pods-Desafio-PicPay-Android-iOSTests.debug.xcconfig */;
+			baseConfigurationReference = 1751E55AD61BB253A6226A62 /* Pods-Desafio-PicPay-Android-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -789,7 +768,7 @@
 		};
 		23AF45C2228C8D5E00E1FAA8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27DC3FA34A53AA896C9AFCE4 /* Pods-Desafio-PicPay-Android-iOSTests.release.xcconfig */;
+			baseConfigurationReference = F895309EA2A0891169AC34DF /* Pods-Desafio-PicPay-Android-iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -811,7 +790,7 @@
 		};
 		23AF45C4228C8D5E00E1FAA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 803283694C15D7A1FA567C4D /* Pods-Desafio-PicPay-Android-iOSUITests.debug.xcconfig */;
+			baseConfigurationReference = 8F092035243707D536152523 /* Pods-Desafio-PicPay-Android-iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -832,7 +811,7 @@
 		};
 		23AF45C5228C8D5E00E1FAA8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9221F54D6F12358E3076B5C9 /* Pods-Desafio-PicPay-Android-iOSUITests.release.xcconfig */;
+			baseConfigurationReference = ADAE36B98E9D5D2A99F37EA1 /* Pods-Desafio-PicPay-Android-iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

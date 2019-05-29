@@ -6,7 +6,7 @@
 //  Copyright © 2019 ThiagoCenturion. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class ContactListViewModel: NSObject {
     
@@ -15,17 +15,23 @@ class ContactListViewModel: NSObject {
     var isLoading: Dynamic<Bool> = Dynamic(false)
     var alertMessage: Dynamic<String> = Dynamic("")
     var bindReloadDataSource: (() -> Void)?
-    var arrAllContactViewModels: [ContactViewModel] = [ContactViewModel]() {
+    private(set) var arrAllContactViewModels: [ContactViewModel] = [ContactViewModel]() {
         didSet {
             arrFilteredContactViewModels.removeAll()
             arrFilteredContactViewModels = arrAllContactViewModels.map({ return $0 })
         }
     }
-    var arrFilteredContactViewModels: [ContactViewModel] = [ContactViewModel]() { didSet { bindReloadDataSource?() } }
+    private(set) var arrFilteredContactViewModels: [ContactViewModel] = [ContactViewModel]() {
+        didSet {
+            bindReloadDataSource?()
+        }
+    }
     var numberOfCells: Int {
         return arrFilteredContactViewModels.count
     }
-    private var cachedContacts: [Contact] = [Contact]()
+    var emptyDataSourceView: UIView? {
+        return numberOfCells == 0 ? UILabel.label(text: "emptyDataSource".localizable, textColor: Color.primary) : nil
+    }
     private var networkRequest: NetworkRequestProtocol?
     
     // MARK: Constructors
@@ -38,13 +44,15 @@ class ContactListViewModel: NSObject {
     // MARK: - Methods
     
     func fetchContacts() {
-        isLoading = Dynamic(true)
+        isLoading.value = true
         networkRequest?.request(with: { [weak self] (contacts: [Contact]?, error: APIError?) in
-            self?.isLoading = Dynamic(false)
+            self?.isLoading.value = false
             if let error = error {
-                self?.alertMessage = Dynamic(error.localizedDescription.localizable)
+                self?.alertMessage.value = error.rawValue.localizable
+            } else if let contacts = contacts {
+                self?.arrAllContactViewModels = self?.createCellViewModels(contacts: contacts) ?? [ContactViewModel]()
             } else {
-                self?.processFetched(contacts: contacts)
+                self?.alertMessage.value = APIError.internalError.rawValue.localizable
             }
         })
     }
@@ -61,14 +69,6 @@ class ContactListViewModel: NSObject {
             let arrFiltered = arrAllContactViewModels.filter { $0.name?.localizedCaseInsensitiveContains(textName) ?? false || $0.username?.localizedCaseInsensitiveContains(textName) ?? false }
             arrFilteredContactViewModels = arrFiltered
         }
-    }
-    
-    private func processFetched(contacts: [Contact]?) {
-        guard let arrContacts = contacts else { return }
-        
-        self.cachedContacts = arrContacts // Cache
-        
-        self.arrAllContactViewModels = createCellViewModels(contacts: arrContacts)
     }
     
     private func createCellViewModels(contacts: [Contact]) -> [ContactViewModel] {

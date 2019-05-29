@@ -13,7 +13,6 @@ class ContactListViewController: UIViewController {
     // MARK: - Properties
 
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var activity: UIActivityIndicatorView!
     override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
     private let reuseIdentifier = ContactListCell.nameOfClass
     private let searchFieldHeight: CGFloat = 40.0
@@ -59,14 +58,15 @@ class ContactListViewController: UIViewController {
         viewModel.bindReloadDataSource = { [weak self] in
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
+                self?.tableView.backgroundView = self?.viewModel.emptyDataSourceView
             }
         }
         
         viewModel.isLoading.bind { [weak self] isLoading in
             if isLoading {
-                self?.activity?.startAnimating()
+                self?.tableView.showActivity()
             } else {
-                self?.activity?.stopAnimating()
+                self?.tableView.removeActivity()
             }
         }
         

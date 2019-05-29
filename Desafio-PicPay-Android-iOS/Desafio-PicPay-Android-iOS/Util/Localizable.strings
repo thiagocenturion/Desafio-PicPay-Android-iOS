@@ -13,3 +13,4 @@
 "AlertTitle" = "Atenção";
 "ContactListTitle" = "Contatos";
 "ContactListSeachPlaceholder" = "A quem você deseja pagar?";
+"emptyDataSource" = "Não há nenhum usuário\npara possamos realizar algum pagamento.";

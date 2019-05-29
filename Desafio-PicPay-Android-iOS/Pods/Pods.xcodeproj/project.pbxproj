@@ -7,460 +7,467 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		059D92B7BBFBEC53E9A3B6E11C5C3B3A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BEE46880BB32AB3D57E5640F7B98B0 /* Response.swift */; };
-		0A39AF55285A3A4F7CBABB6D822FA4A3 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC96955443EA38F409A499177228ECE /* Alamofire.swift */; };
-		1D29D2ACADF961F69D32B06FA6A09E28 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD89CF68E30F783D6E1E6D503D967E /* Notifications.swift */; };
-		2CE545CDBF38D84D362B6D50ED865F1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024449F6B155602955E6FAB93F9FD437 /* Foundation.framework */; };
-		355C18EEC82624A06A6CC93965258E33 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2AD0BDBCC66A5C738D4A494096FF16 /* Request.swift */; };
-		38DDED2026D7CCE463BD6AA84D5B57F3 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD5B4E559306AB51847FC8EDED3F587 /* ImageCache.swift */; };
-		3AC31661CECD14792855AFC94025667B /* UIImage+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF99DECAB123FD139A547D27187AAB6 /* UIImage+AlamofireImage.swift */; };
-		3E0749AF6C51BCF0E4A41CF1D6A76FED /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FDFABB05F29E5CB214D1C0B49EA0CD /* DispatchQueue+Alamofire.swift */; };
-		5E37431509EAC62091AA9F42C338E6F3 /* AlamofireImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A876117474CF435DF2D2B5E68CCAA772 /* AlamofireImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		60B6C2A003864AAD3A426448152F67BE /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE94D56276E5C542FCE3F9D0D3DEA45 /* Timeline.swift */; };
-		62AD79939E0BC843CD4BE574025D8138 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024449F6B155602955E6FAB93F9FD437 /* Foundation.framework */; };
-		6347B1BA6D146FE1BF6D4C140D5CDA04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024449F6B155602955E6FAB93F9FD437 /* Foundation.framework */; };
-		6EFD003458AE7F689DEA720A2030C261 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265324F8BD9638EB8CFC259F0918366C /* ResponseSerialization.swift */; };
-		700D3D95AF9520CB227846DFD943A2DA /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FAF1BEA6B547993B2E30671010EC05 /* ParameterEncoding.swift */; };
-		73AB05789A4982944AF68DBD013E3EB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA616EC751C65BEAB9D46E78EE39D4 /* NetworkReachabilityManager.swift */; };
-		7516F5DFED72A74CC3FA7D3822B14087 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448F1808234E54D95EA8DBEBD06B882 /* ImageDownloader.swift */; };
-		772911DA6E33D1CBBC30131B7C8BDBB3 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BBC0B36D9377669311E22D2027C7E1 /* Alamofire-dummy.m */; };
-		77E8F0EB9FFBE2E3EB0C77095C644606 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982D59A523E5EAE1BD4B0A338F97C39D /* TaskDelegate.swift */; };
-		7E3538A6992A38276764936A9733493D /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D51DA233330F5E92C4EC83A131B991 /* AFError.swift */; };
-		8D2A6A90A6DDAF75EA52D471258545CC /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A03FF5EDFF22821FB612824EF121860 /* ServerTrustPolicy.swift */; };
-		A1EC41966B261DCE460BCDE5124A1DBE /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B67632C26FE2E2F884AED5D71B6E6A /* SessionDelegate.swift */; };
-		A82E1EDBE341FDAF71ACDCB17F3A8558 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024449F6B155602955E6FAB93F9FD437 /* Foundation.framework */; };
-		AA56769D8733D3F3E7976742D5ABA998 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE269E821AD48EC2D281CA41C7F00E0F /* Validation.swift */; };
-		AE641D185AF8EAEA4A897659D0631124 /* Pods-Desafio-PicPay-Android-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C5A3C4DA7651861DD27CA22BC2260D6 /* Pods-Desafio-PicPay-Android-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AEA829AB1A8AF2AD077A808AED6B178A /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB455674D1A61C599677C2903B2A22B1 /* MultipartFormData.swift */; };
-		B32CB47DE31DC018BB85E55F57F8D29D /* ImageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FB454412E779395F8F70A4EDC73C2 /* ImageFilter.swift */; };
-		B6F6E4CC26451E91B59FAE0F6841DC1F /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5AB5B7791F0AB6DBC1C54488C5B6E13 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C0E911AB75C85290D79584703F8A33C4 /* Pods-Desafio-PicPay-Android-iOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70A5BAEDF3CC1171824BD66E7899736A /* Pods-Desafio-PicPay-Android-iOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C39E172BE35D0A5BD8492203E2E74B34 /* AlamofireImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C15E8E10325D6839A8538B096B54179 /* AlamofireImage-dummy.m */; };
-		C522E5CCC21ED4B4E4DAFE0EF5976534 /* AFIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4176E5B1F4122C8D27CB8068077D29D /* AFIError.swift */; };
-		D0064D5F76F5CC041EC856F78E55655C /* Pods-Desafio-PicPay-Android-iOSUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0B2E649AA98FF6493EB99DCFBD2B4C /* Pods-Desafio-PicPay-Android-iOSUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3FA0AA634AAEA99AB3FABC36BB4958C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5A1EA5DF76B6270A30A51B04B19CE /* SessionManager.swift */; };
-		D6A9D52C542D403FDC11A3EFA45F8C85 /* Pods-Desafio-PicPay-Android-iOSUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3160A007550DDF4771AD5334018452E9 /* Pods-Desafio-PicPay-Android-iOSUITests-dummy.m */; };
-		E032846FF699727EA201CC12D101B809 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024449F6B155602955E6FAB93F9FD437 /* Foundation.framework */; };
-		E503A260A5BA111149E952289AB42A1C /* Pods-Desafio-PicPay-Android-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB384AB442A24B4F5A73F06454FE871B /* Pods-Desafio-PicPay-Android-iOS-dummy.m */; };
-		E5E518708B710642CFCDC382913582FF /* Request+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A280D9F5D700FAEF3EF7EE04DED1204 /* Request+AlamofireImage.swift */; };
-		EB0DD8CEA1A69867A30267439C970440 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A3AB9565EB74663A495F4ABF89195 /* Result.swift */; };
-		F043D9AC4BA20943367923DEEACAB6C2 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A72CFAB96B6D1D3C4DC0C76F398210D /* Image.swift */; };
-		F098E5612199E74AC5E15612A67984A2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD03ACAF8CC392DA908F3ACB71558AF5 /* Alamofire.framework */; };
-		F23C9962D1258941F258786218EF6828 /* Pods-Desafio-PicPay-Android-iOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB84395D79A7A5299DA3277C2503AB01 /* Pods-Desafio-PicPay-Android-iOSTests-dummy.m */; };
-		F853F6FCDDFB099744F56099ACA123DC /* UIButton+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63D8727A1F401FF288F200928AF1EE2 /* UIButton+AlamofireImage.swift */; };
-		FFF18720349BC8631EF1A8881BB5CA40 /* UIImageView+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EA7BF1655B11572E852653C587AA09 /* UIImageView+AlamofireImage.swift */; };
+		01D7C4F64D7CFAD0D3449FD0E9148CA2 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209A61E3485401DA6F5CF3842A854C9 /* MultipartFormData.swift */; };
+		089E0855D492AA75EDE128ECAB2D8DE8 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D92A4B91297210D15A01763ABD597B /* ParameterEncoding.swift */; };
+		0A0288B6FEC4BF171ECCC0F17B1F2D0D /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BFEE090CD756C67E152C23930ED405 /* Image.swift */; };
+		21535E376CAD961344298CD427676664 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D598215B05FE397F9F26D4283684A971 /* ImageCache.swift */; };
+		23AD94A037D5B6F2BD18C9C44E602320 /* Pods-Desafio-PicPay-Android-iOSUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC304CE98D2896B9AC967EB7D4220DDF /* Pods-Desafio-PicPay-Android-iOSUITests-dummy.m */; };
+		28A69A8EB6BF8C4D2CFDF332CC028C28 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCE8691A2369814C187DD79FCEA85C9 /* TaskDelegate.swift */; };
+		3241B1831A03C647A724F2235F3748FA /* Pods-Desafio-PicPay-Android-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2C3C023898A0610A265EDA7D3960BC /* Pods-Desafio-PicPay-Android-iOS-dummy.m */; };
+		3CF594EACD8E9BFC65FC9E8BE9263419 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBBDF49F20A1D496692562DB0B30953 /* SessionDelegate.swift */; };
+		3E2ABC1F9F4045E704AC7317954DEDA4 /* AlamofireImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E22BDD666F386C412D2FC43A18C716 /* AlamofireImage-dummy.m */; };
+		44E5669195C1AB51DA4B42D132345086 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41BD4C8180DB71146556FD02BC365F7B /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		494B7815F79A77E3C50E5111A6F6F51B /* Request+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27417761F85D4E2FC73A073A6DBD27DE /* Request+AlamofireImage.swift */; };
+		4C98CA0597F576A1B63ED6699DF9F9A1 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF26979B7E8F3DD8014D1403378B6AA8 /* SessionManager.swift */; };
+		545B4AAC41E4E9B75C6B32A815D72D11 /* UIImage+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EB1AE73A596762DEE7CAC320D8083F /* UIImage+AlamofireImage.swift */; };
+		5B7D03764E70EDF352E925E944621267 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE510AC64D8F059618FCC5140CCC26F /* Request.swift */; };
+		5BB972084B353D9B128F0F611599E5BB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B8BE7A6EA63020A34516A7C0D0F6A1 /* Result.swift */; };
+		6AC71AA4A92DD490BE5867045C86013F /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC30802687BAD30875872EB1BA7B87D /* ImageDownloader.swift */; };
+		7685CC8D5440BF2C4541FA7D67B8C71F /* AlamofireImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F81F298381743A01E315C416A18FFEB9 /* AlamofireImage-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		86A769DC9F05E9EEE3AC7C68186E4D46 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA1B244167557D652D24ABC584470AB /* Validation.swift */; };
+		A2C5600C37504535771CFDC78C7E8522 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D9BFBF6AF521EBCB81496166F79ECE /* Alamofire.swift */; };
+		A8D4EB2BC77E03F7CD9667FD097590DF /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2920102B9E9F9FBBF921598C64928615 /* DispatchQueue+Alamofire.swift */; };
+		A938CE13F0474CDBEA4B257892C71D01 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69AE3DBB19776E58D3E4578FCC273EF /* ResponseSerialization.swift */; };
+		AA649AF46FD40EB5A0B8D18C2B270D2A /* Pods-Desafio-PicPay-Android-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE0FF130D29F4343686DCFBFA8068E8 /* Pods-Desafio-PicPay-Android-iOS-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AC64B0F7E0C0A01AF03984E6ED9CE529 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AD987E41DFADE6A224CECBD05CFC09 /* Alamofire-dummy.m */; };
+		AD3078722FBB3C9437FEE8766EB7931D /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA297F933CB4AACBE12C0AFAD99E283 /* NetworkReachabilityManager.swift */; };
+		B1828624B7D1908635EE541D7C8531DC /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ADEB80AE2777440EF42EF48EFD157E /* ServerTrustPolicy.swift */; };
+		B71EC48A38F42ED064257641191106E6 /* ImageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B245E6C618EF70535315BBA201ED01E /* ImageFilter.swift */; };
+		CA41F044CC8E0521DC395FC8750F461A /* UIImageView+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2990D7BF5F59B27ABF2EF85FB6E9EE7F /* UIImageView+AlamofireImage.swift */; };
+		D3D0BAC2F595E90AAD24FD34AEAC6E16 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165A418A4D7466A4E5FD9012CED789C5 /* Timeline.swift */; };
+		D7DBF20C1AD8F9D2B1DC175498F48B70 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE8C7BC190301ABB5E80D15ECF61B6 /* Notifications.swift */; };
+		DB9DE6E30C9E8A70F85BC991A49A40E4 /* UIButton+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB7698BE6F0586F5C155E932A082D9B /* UIButton+AlamofireImage.swift */; };
+		E847B0E8FCDC02AB44434D1C3F60D821 /* AFIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5357BBB8A251321121BA8EC6ECF8E4 /* AFIError.swift */; };
+		EE76476D17A252B8CF5CC36247B76B65 /* Pods-Desafio-PicPay-Android-iOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFACAE10530C1F5FF107A8BA87B99A9 /* Pods-Desafio-PicPay-Android-iOSTests-dummy.m */; };
+		F100F738A340780B4C86C6D10AF7F0EE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8028B947605335B664DA585F21E1974 /* AFError.swift */; };
+		F198A805C56CE26BF4540420171FA682 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80420C76BAAF9EEFF2B2B11CDC4711 /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3C3CD2B2B8D25369CA92CDFFFCF99CCD /* PBXContainerItemProxy */ = {
+		1A9E004E88C0FD518CF22F9830B00626 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 410146DB42F82B4CD5483C7B5D450222;
-			remoteInfo = "Pods-Desafio-PicPay-Android-iOS";
-		};
-		7B639CC513C6A85DC4703B47F7AE9340 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3383968E74B5371B20BB519B170DC7FD;
-			remoteInfo = Alamofire;
-		};
-		849A31ABDD8E704E79E46D32499F345F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 410146DB42F82B4CD5483C7B5D450222;
-			remoteInfo = "Pods-Desafio-PicPay-Android-iOS";
-		};
-		9D49C22B432DBEEE5FB07DF35E75FD69 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AF0370AAF034BBD44060B90AAA8FD1CE;
+			remoteGlobalIDString = DBC6E10BFC33DF4DE0D76FD0EE06C3C6;
 			remoteInfo = AlamofireImage;
 		};
-		FFE51CE02B94DD6DDBF407A0621222CE /* PBXContainerItemProxy */ = {
+		3F79A541F0F3FBC953635FBB93330DA1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3383968E74B5371B20BB519B170DC7FD;
+			remoteGlobalIDString = ABE725F60CAB24F321E94E09C18BAEE3;
+			remoteInfo = "Pods-Desafio-PicPay-Android-iOS";
+		};
+		4C2E1A251F701734A21B1C5757B2D384 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4D8460531B09D9A74533900AD241700;
 			remoteInfo = Alamofire;
+		};
+		6BC0C4009DB988A52DAE376B50436720 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4D8460531B09D9A74533900AD241700;
+			remoteInfo = Alamofire;
+		};
+		A3879C9256E16E0F58AC848EFEB7BBE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABE725F60CAB24F321E94E09C18BAEE3;
+			remoteInfo = "Pods-Desafio-PicPay-Android-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0181613448736CBA71A6E60ADAC4A80F /* Pods-Desafio-PicPay-Android-iOSUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desafio-PicPay-Android-iOSUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		024449F6B155602955E6FAB93F9FD437 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		038A5378F65C43C9CFC5F5E9BBAC031F /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		0A03FF5EDFF22821FB612824EF121860 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		135E76BB12702E43920DDBFE26256724 /* Pods-Desafio-PicPay-Android-iOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desafio-PicPay-Android-iOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1404E71D7F98E4515BD43455B2A81078 /* Pods-Desafio-PicPay-Android-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio-PicPay-Android-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1448F1808234E54D95EA8DBEBD06B882 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Source/ImageDownloader.swift; sourceTree = "<group>"; };
-		19950C3B3AB44B48FE4D805333D685E0 /* Pods_Desafio_PicPay_Android_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Desafio_PicPay_Android_iOSTests.framework; path = "Pods-Desafio-PicPay-Android-iOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A280D9F5D700FAEF3EF7EE04DED1204 /* Request+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Request+AlamofireImage.swift"; path = "Source/Request+AlamofireImage.swift"; sourceTree = "<group>"; };
-		1C15E8E10325D6839A8538B096B54179 /* AlamofireImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlamofireImage-dummy.m"; sourceTree = "<group>"; };
-		265324F8BD9638EB8CFC259F0918366C /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		2A72CFAB96B6D1D3C4DC0C76F398210D /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Source/Image.swift; sourceTree = "<group>"; };
-		2C5A3C4DA7651861DD27CA22BC2260D6 /* Pods-Desafio-PicPay-Android-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Desafio-PicPay-Android-iOS-umbrella.h"; sourceTree = "<group>"; };
-		2FC96955443EA38F409A499177228ECE /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		3160A007550DDF4771AD5334018452E9 /* Pods-Desafio-PicPay-Android-iOSUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Desafio-PicPay-Android-iOSUITests-dummy.m"; sourceTree = "<group>"; };
-		34BD89CF68E30F783D6E1E6D503D967E /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		423CC8981B8080176A4A92D3C2D7C53D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D0B2E649AA98FF6493EB99DCFBD2B4C /* Pods-Desafio-PicPay-Android-iOSUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Desafio-PicPay-Android-iOSUITests-umbrella.h"; sourceTree = "<group>"; };
-		5EB331099BFBFDF4F39152D295B1790C /* AlamofireImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireImage.xcconfig; sourceTree = "<group>"; };
-		66B67632C26FE2E2F884AED5D71B6E6A /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		6BB4DDB7F9515935CD0470482005DFFD /* Pods-Desafio-PicPay-Android-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Desafio-PicPay-Android-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6D77AD1252C40A557DD8FA094794AA6E /* Pods-Desafio-PicPay-Android-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desafio-PicPay-Android-iOS-Info.plist"; sourceTree = "<group>"; };
-		70A5BAEDF3CC1171824BD66E7899736A /* Pods-Desafio-PicPay-Android-iOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Desafio-PicPay-Android-iOSTests-umbrella.h"; sourceTree = "<group>"; };
-		729CD155AFA36BCEA95E9115472986AF /* Pods-Desafio-PicPay-Android-iOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Desafio-PicPay-Android-iOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		72DE70FAE798C4D6022AE1CFFA460D0B /* Pods-Desafio-PicPay-Android-iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Desafio-PicPay-Android-iOS-frameworks.sh"; sourceTree = "<group>"; };
-		74A3F0BD43EE2147A4E72F67ABD38F33 /* Pods_Desafio_PicPay_Android_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Desafio_PicPay_Android_iOS.framework; path = "Pods-Desafio-PicPay-Android-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		74BBC0B36D9377669311E22D2027C7E1 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		7E903A2120F038970ABD78A1238C69B7 /* Pods-Desafio-PicPay-Android-iOSUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Desafio-PicPay-Android-iOSUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7F8A4BCE96A157D312AC7D64A13C5A02 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AlamofireImage.framework; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FB12E0D0FE3644F6EACE149EA1C029D /* Pods-Desafio-PicPay-Android-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio-PicPay-Android-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		81BEE46880BB32AB3D57E5640F7B98B0 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		8304B2C12F57AE954652F901AE82F177 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
-		83B963E32B413C6D715CE96024B0295D /* Pods_Desafio_PicPay_Android_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Desafio_PicPay_Android_iOSUITests.framework; path = "Pods-Desafio-PicPay-Android-iOSUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		840FC598FB9CFA1756A56E40987B9262 /* AlamofireImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AlamofireImage.modulemap; sourceTree = "<group>"; };
-		857544076002D0FF159675EC608DB1C2 /* Pods-Desafio-PicPay-Android-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio-PicPay-Android-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
-		867BCFF324F3DF22022FF9B91EE9C4BE /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		982D59A523E5EAE1BD4B0A338F97C39D /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		98B11A1A836560866FD22FFACF42D498 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		9CD5B4E559306AB51847FC8EDED3F587 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Source/ImageCache.swift; sourceTree = "<group>"; };
+		03ADEB80AE2777440EF42EF48EFD157E /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		067898D4000317A22EB55E9B5DDE1FAC /* libPods-Desafio-PicPay-Android-iOSUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Desafio-PicPay-Android-iOSUITests.a"; path = "libPods-Desafio-PicPay-Android-iOSUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06B8BE7A6EA63020A34516A7C0D0F6A1 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		165A418A4D7466A4E5FD9012CED789C5 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		16AD987E41DFADE6A224CECBD05CFC09 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		23E7DB4F390E16E3282FAFCB90F8C0C6 /* Pods-Desafio-PicPay-Android-iOSUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desafio-PicPay-Android-iOSUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		27417761F85D4E2FC73A073A6DBD27DE /* Request+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Request+AlamofireImage.swift"; path = "Source/Request+AlamofireImage.swift"; sourceTree = "<group>"; };
+		28E22BDD666F386C412D2FC43A18C716 /* AlamofireImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlamofireImage-dummy.m"; sourceTree = "<group>"; };
+		29048852754CC60D6F0999502AA11ADA /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		2920102B9E9F9FBBF921598C64928615 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		2990D7BF5F59B27ABF2EF85FB6E9EE7F /* UIImageView+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+AlamofireImage.swift"; path = "Source/UIImageView+AlamofireImage.swift"; sourceTree = "<group>"; };
+		29EBD3AAF4A9857F51D8075C391114A6 /* Pods-Desafio-PicPay-Android-iOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desafio-PicPay-Android-iOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2AE510AC64D8F059618FCC5140CCC26F /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		2DBBDF49F20A1D496692562DB0B30953 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		3A5DA9F10479F588186B9A07C810B71B /* Pods-Desafio-PicPay-Android-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio-PicPay-Android-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		411C1294D9EECC2713D367F4A042187B /* Pods-Desafio-PicPay-Android-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio-PicPay-Android-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		41BD4C8180DB71146556FD02BC365F7B /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		43D92A4B91297210D15A01763ABD597B /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		46DED337DF5D3E0DE9406D45037BB529 /* Pods-Desafio-PicPay-Android-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desafio-PicPay-Android-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		484F69019558319F7D0B40169895A112 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		4C5357BBB8A251321121BA8EC6ECF8E4 /* AFIError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFIError.swift; path = Source/AFIError.swift; sourceTree = "<group>"; };
+		4D2ED87B4B50B4BBC3ECB9EA946791CD /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		5A7BF1A81131DB77EE7FA0F1F394F96B /* Pods-Desafio-PicPay-Android-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Desafio-PicPay-Android-iOS.modulemap"; sourceTree = "<group>"; };
+		5C3BD1D61DABC3751DB8046FD82791CA /* Pods-Desafio-PicPay-Android-iOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Desafio-PicPay-Android-iOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5EDE8C7BC190301ABB5E80D15ECF61B6 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		5FCE8691A2369814C187DD79FCEA85C9 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		63EB1AE73A596762DEE7CAC320D8083F /* UIImage+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AlamofireImage.swift"; path = "Source/UIImage+AlamofireImage.swift"; sourceTree = "<group>"; };
+		644B29D259CADD840F066359BD111C5E /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAlamofire.a; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		79BFEE090CD756C67E152C23930ED405 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Source/Image.swift; sourceTree = "<group>"; };
+		7DB7698BE6F0586F5C155E932A082D9B /* UIButton+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+AlamofireImage.swift"; path = "Source/UIButton+AlamofireImage.swift"; sourceTree = "<group>"; };
+		8209A61E3485401DA6F5CF3842A854C9 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		8AA1B244167557D652D24ABC584470AB /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		8B245E6C618EF70535315BBA201ED01E /* ImageFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFilter.swift; path = Source/ImageFilter.swift; sourceTree = "<group>"; };
+		8DA297F933CB4AACBE12C0AFAD99E283 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		93C3FA956B3E2DE7DC5FD0952A8774DD /* libPods-Desafio-PicPay-Android-iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Desafio-PicPay-Android-iOSTests.a"; path = "libPods-Desafio-PicPay-Android-iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97818E96545D76A80015F1E8AF31CABD /* AlamofireImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireImage.xcconfig; sourceTree = "<group>"; };
+		9858BB836467636B0D1D1A6F768BE94C /* Pods-Desafio-PicPay-Android-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio-PicPay-Android-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A876117474CF435DF2D2B5E68CCAA772 /* AlamofireImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-umbrella.h"; sourceTree = "<group>"; };
-		A9D65C5B2C47F7A763E501FC1AC86577 /* AlamofireImage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AlamofireImage-Info.plist"; sourceTree = "<group>"; };
-		AEB5A1EA5DF76B6270A30A51B04B19CE /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		B0980A761A667B348B2A3FDE643CC61E /* Pods-Desafio-PicPay-Android-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio-PicPay-Android-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		B0BD598BE94F9B614046CB386FBE621D /* Pods-Desafio-PicPay-Android-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Desafio-PicPay-Android-iOS.modulemap"; sourceTree = "<group>"; };
-		B37C2EEC178B54F88F6099A78042B9E0 /* Pods-Desafio-PicPay-Android-iOSUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desafio-PicPay-Android-iOSUITests-Info.plist"; sourceTree = "<group>"; };
-		B9D51DA233330F5E92C4EC83A131B991 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		BBF99DECAB123FD139A547D27187AAB6 /* UIImage+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AlamofireImage.swift"; path = "Source/UIImage+AlamofireImage.swift"; sourceTree = "<group>"; };
-		BF8FB454412E779395F8F70A4EDC73C2 /* ImageFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFilter.swift; path = Source/ImageFilter.swift; sourceTree = "<group>"; };
-		C17112279001E9715BC52CFA9C5227B3 /* Pods-Desafio-PicPay-Android-iOSTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desafio-PicPay-Android-iOSTests-Info.plist"; sourceTree = "<group>"; };
-		C4176E5B1F4122C8D27CB8068077D29D /* AFIError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFIError.swift; path = Source/AFIError.swift; sourceTree = "<group>"; };
-		C5AB5B7791F0AB6DBC1C54488C5B6E13 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		C63D8727A1F401FF288F200928AF1EE2 /* UIButton+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+AlamofireImage.swift"; path = "Source/UIButton+AlamofireImage.swift"; sourceTree = "<group>"; };
-		C97490223FFEB32F3FA79B8422D5A87F /* Pods-Desafio-PicPay-Android-iOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Desafio-PicPay-Android-iOSTests.modulemap"; sourceTree = "<group>"; };
-		CB455674D1A61C599677C2903B2A22B1 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		CD03ACAF8CC392DA908F3ACB71558AF5 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6EA7BF1655B11572E852653C587AA09 /* UIImageView+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+AlamofireImage.swift"; path = "Source/UIImageView+AlamofireImage.swift"; sourceTree = "<group>"; };
-		D92933D3E167C8D3E5C9D9AAC60970AC /* Pods-Desafio-PicPay-Android-iOSUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Desafio-PicPay-Android-iOSUITests.modulemap"; sourceTree = "<group>"; };
-		DBFA616EC751C65BEAB9D46E78EE39D4 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		DD30406FD0F7DB77D1589946FBFEF469 /* AlamofireImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-prefix.pch"; sourceTree = "<group>"; };
-		DE2AD0BDBCC66A5C738D4A494096FF16 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		E2FAF1BEA6B547993B2E30671010EC05 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		E2FDFABB05F29E5CB214D1C0B49EA0CD /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		E59A3AB9565EB74663A495F4ABF89195 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		EB384AB442A24B4F5A73F06454FE871B /* Pods-Desafio-PicPay-Android-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Desafio-PicPay-Android-iOS-dummy.m"; sourceTree = "<group>"; };
-		EB84395D79A7A5299DA3277C2503AB01 /* Pods-Desafio-PicPay-Android-iOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Desafio-PicPay-Android-iOSTests-dummy.m"; sourceTree = "<group>"; };
-		EBE94D56276E5C542FCE3F9D0D3DEA45 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		EE269E821AD48EC2D281CA41C7F00E0F /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		F12BE0435603A668AFE29E8ADF820481 /* Pods-Desafio-PicPay-Android-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio-PicPay-Android-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		F4B65F32C2EB4EB5CA3903D28D3E7835 /* Pods-Desafio-PicPay-Android-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio-PicPay-Android-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		F4E75567E0208EF40F61DAE7F04D8196 /* Pods-Desafio-PicPay-Android-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desafio-PicPay-Android-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		A40C1421C4FF4F2B324C74760AFC9D05 /* Pods-Desafio-PicPay-Android-iOSUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Desafio-PicPay-Android-iOSUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ADC30802687BAD30875872EB1BA7B87D /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Source/ImageDownloader.swift; sourceTree = "<group>"; };
+		B2561F347BF67023C919E80904F29634 /* libPods-Desafio-PicPay-Android-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Desafio-PicPay-Android-iOS.a"; path = "libPods-Desafio-PicPay-Android-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5D9BFBF6AF521EBCB81496166F79ECE /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		B75751CF749796D3BDA92A8DAB405F14 /* Pods-Desafio-PicPay-Android-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio-PicPay-Android-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B8028B947605335B664DA585F21E1974 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		C2109C0E6BC242008648A01C798A1AC0 /* AlamofireImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-prefix.pch"; sourceTree = "<group>"; };
+		CC304CE98D2896B9AC967EB7D4220DDF /* Pods-Desafio-PicPay-Android-iOSUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Desafio-PicPay-Android-iOSUITests-dummy.m"; sourceTree = "<group>"; };
+		D0839B5514AFDCA698A544737EB1CB65 /* Pods-Desafio-PicPay-Android-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio-PicPay-Android-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D20DD7052E4BED4C13FB01A10730E5F8 /* Pods-Desafio-PicPay-Android-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desafio-PicPay-Android-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		D598215B05FE397F9F26D4283684A971 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Source/ImageCache.swift; sourceTree = "<group>"; };
+		D69AE3DBB19776E58D3E4578FCC273EF /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		DAE0FF130D29F4343686DCFBFA8068E8 /* Pods-Desafio-PicPay-Android-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Desafio-PicPay-Android-iOS-umbrella.h"; sourceTree = "<group>"; };
+		E15D494F493C6566EE03FF19051A69F6 /* AlamofireImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AlamofireImage.modulemap; sourceTree = "<group>"; };
+		EB80420C76BAAF9EEFF2B2B11CDC4711 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		EDA1FCE7AF708599FB0BB19ECE4CBD87 /* Pods-Desafio-PicPay-Android-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Desafio-PicPay-Android-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F81F298381743A01E315C416A18FFEB9 /* AlamofireImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-umbrella.h"; sourceTree = "<group>"; };
+		FC2C3C023898A0610A265EDA7D3960BC /* Pods-Desafio-PicPay-Android-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Desafio-PicPay-Android-iOS-dummy.m"; sourceTree = "<group>"; };
+		FED6F17BA3DF32325501AD1715E14CBE /* libAlamofireImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAlamofireImage.a; path = libAlamofireImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF26979B7E8F3DD8014D1403378B6AA8 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		FFFACAE10530C1F5FF107A8BA87B99A9 /* Pods-Desafio-PicPay-Android-iOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Desafio-PicPay-Android-iOSTests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		13075BB1851FA3DC9FB90C94F4EA0CBB /* Frameworks */ = {
+		08FD11A910FC26B243E78FD0B437DA32 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F098E5612199E74AC5E15612A67984A2 /* Alamofire.framework in Frameworks */,
-				E032846FF699727EA201CC12D101B809 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		263581E63B55B3294248FB1EA932C033 /* Frameworks */ = {
+		399896BDC84C2C2AEBB784FBF3409270 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CE545CDBF38D84D362B6D50ED865F1D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		534F087C977E210A3AAA38F8A04FAB17 /* Frameworks */ = {
+		757B49DF9D838F9E1823E63C708FB219 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A82E1EDBE341FDAF71ACDCB17F3A8558 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7E5E607E799478C39A222A63458BF7F /* Frameworks */ = {
+		92B95E87A2681FB8D38FE6CAE1DA0009 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62AD79939E0BC843CD4BE574025D8138 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1626ADC3A7EC435D2722B3173355D36 /* Frameworks */ = {
+		963CF4549CAA2AD445196F7761B59821 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6347B1BA6D146FE1BF6D4C140D5CDA04 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		178ED6B335FEA579F0AFCE0FAB6CCCB7 /* Products */ = {
+		25630C512B6CEF967D4BB063FDB17C48 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				423CC8981B8080176A4A92D3C2D7C53D /* Alamofire.framework */,
-				7F8A4BCE96A157D312AC7D64A13C5A02 /* AlamofireImage.framework */,
-				74A3F0BD43EE2147A4E72F67ABD38F33 /* Pods_Desafio_PicPay_Android_iOS.framework */,
-				19950C3B3AB44B48FE4D805333D685E0 /* Pods_Desafio_PicPay_Android_iOSTests.framework */,
-				83B963E32B413C6D715CE96024B0295D /* Pods_Desafio_PicPay_Android_iOSUITests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		1CAD46C826FDB622D5C3BD35D4123DF7 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EBD50155DD2D5225BB0A5A09E2099DE9 /* Pods-Desafio-PicPay-Android-iOS */,
-				91798DDE653349DDC80E0E089B619635 /* Pods-Desafio-PicPay-Android-iOSTests */,
-				7082F641368258B9C6A252C11B3748A7 /* Pods-Desafio-PicPay-Android-iOSUITests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		4C9DE0C4AE0F2B2170FCAB7317773B25 /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				B9D51DA233330F5E92C4EC83A131B991 /* AFError.swift */,
-				2FC96955443EA38F409A499177228ECE /* Alamofire.swift */,
-				E2FDFABB05F29E5CB214D1C0B49EA0CD /* DispatchQueue+Alamofire.swift */,
-				CB455674D1A61C599677C2903B2A22B1 /* MultipartFormData.swift */,
-				DBFA616EC751C65BEAB9D46E78EE39D4 /* NetworkReachabilityManager.swift */,
-				34BD89CF68E30F783D6E1E6D503D967E /* Notifications.swift */,
-				E2FAF1BEA6B547993B2E30671010EC05 /* ParameterEncoding.swift */,
-				DE2AD0BDBCC66A5C738D4A494096FF16 /* Request.swift */,
-				81BEE46880BB32AB3D57E5640F7B98B0 /* Response.swift */,
-				265324F8BD9638EB8CFC259F0918366C /* ResponseSerialization.swift */,
-				E59A3AB9565EB74663A495F4ABF89195 /* Result.swift */,
-				0A03FF5EDFF22821FB612824EF121860 /* ServerTrustPolicy.swift */,
-				66B67632C26FE2E2F884AED5D71B6E6A /* SessionDelegate.swift */,
-				AEB5A1EA5DF76B6270A30A51B04B19CE /* SessionManager.swift */,
-				982D59A523E5EAE1BD4B0A338F97C39D /* TaskDelegate.swift */,
-				EBE94D56276E5C542FCE3F9D0D3DEA45 /* Timeline.swift */,
-				EE269E821AD48EC2D281CA41C7F00E0F /* Validation.swift */,
-				5D02C3BF895B972D9E62D459B08475DC /* Support Files */,
-			);
-			name = Alamofire;
-			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		4EFCF33C3A7591280EDD315956A1A62A /* AlamofireImage */ = {
-			isa = PBXGroup;
-			children = (
-				C4176E5B1F4122C8D27CB8068077D29D /* AFIError.swift */,
-				2A72CFAB96B6D1D3C4DC0C76F398210D /* Image.swift */,
-				9CD5B4E559306AB51847FC8EDED3F587 /* ImageCache.swift */,
-				1448F1808234E54D95EA8DBEBD06B882 /* ImageDownloader.swift */,
-				BF8FB454412E779395F8F70A4EDC73C2 /* ImageFilter.swift */,
-				1A280D9F5D700FAEF3EF7EE04DED1204 /* Request+AlamofireImage.swift */,
-				C63D8727A1F401FF288F200928AF1EE2 /* UIButton+AlamofireImage.swift */,
-				BBF99DECAB123FD139A547D27187AAB6 /* UIImage+AlamofireImage.swift */,
-				D6EA7BF1655B11572E852653C587AA09 /* UIImageView+AlamofireImage.swift */,
-				C4C5783DA2D0CB9B346A8C3B5DE01724 /* Support Files */,
-			);
-			name = AlamofireImage;
-			path = AlamofireImage;
-			sourceTree = "<group>";
-		};
-		5D02C3BF895B972D9E62D459B08475DC /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				867BCFF324F3DF22022FF9B91EE9C4BE /* Alamofire.modulemap */,
-				038A5378F65C43C9CFC5F5E9BBAC031F /* Alamofire.xcconfig */,
-				74BBC0B36D9377669311E22D2027C7E1 /* Alamofire-dummy.m */,
-				8304B2C12F57AE954652F901AE82F177 /* Alamofire-Info.plist */,
-				98B11A1A836560866FD22FFACF42D498 /* Alamofire-prefix.pch */,
-				C5AB5B7791F0AB6DBC1C54488C5B6E13 /* Alamofire-umbrella.h */,
+				E15D494F493C6566EE03FF19051A69F6 /* AlamofireImage.modulemap */,
+				97818E96545D76A80015F1E8AF31CABD /* AlamofireImage.xcconfig */,
+				28E22BDD666F386C412D2FC43A18C716 /* AlamofireImage-dummy.m */,
+				C2109C0E6BC242008648A01C798A1AC0 /* AlamofireImage-prefix.pch */,
+				F81F298381743A01E315C416A18FFEB9 /* AlamofireImage-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
+			path = "../Target Support Files/AlamofireImage";
 			sourceTree = "<group>";
 		};
-		7082F641368258B9C6A252C11B3748A7 /* Pods-Desafio-PicPay-Android-iOSUITests */ = {
+		3722C9E155D6A8E6FAB880AA4A140D9F /* Pods-Desafio-PicPay-Android-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				D92933D3E167C8D3E5C9D9AAC60970AC /* Pods-Desafio-PicPay-Android-iOSUITests.modulemap */,
-				7E903A2120F038970ABD78A1238C69B7 /* Pods-Desafio-PicPay-Android-iOSUITests-acknowledgements.markdown */,
-				0181613448736CBA71A6E60ADAC4A80F /* Pods-Desafio-PicPay-Android-iOSUITests-acknowledgements.plist */,
-				3160A007550DDF4771AD5334018452E9 /* Pods-Desafio-PicPay-Android-iOSUITests-dummy.m */,
-				B37C2EEC178B54F88F6099A78042B9E0 /* Pods-Desafio-PicPay-Android-iOSUITests-Info.plist */,
-				5D0B2E649AA98FF6493EB99DCFBD2B4C /* Pods-Desafio-PicPay-Android-iOSUITests-umbrella.h */,
-				7FB12E0D0FE3644F6EACE149EA1C029D /* Pods-Desafio-PicPay-Android-iOSUITests.debug.xcconfig */,
-				857544076002D0FF159675EC608DB1C2 /* Pods-Desafio-PicPay-Android-iOSUITests.release.xcconfig */,
-			);
-			name = "Pods-Desafio-PicPay-Android-iOSUITests";
-			path = "Target Support Files/Pods-Desafio-PicPay-Android-iOSUITests";
-			sourceTree = "<group>";
-		};
-		91798DDE653349DDC80E0E089B619635 /* Pods-Desafio-PicPay-Android-iOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				C97490223FFEB32F3FA79B8422D5A87F /* Pods-Desafio-PicPay-Android-iOSTests.modulemap */,
-				729CD155AFA36BCEA95E9115472986AF /* Pods-Desafio-PicPay-Android-iOSTests-acknowledgements.markdown */,
-				135E76BB12702E43920DDBFE26256724 /* Pods-Desafio-PicPay-Android-iOSTests-acknowledgements.plist */,
-				EB84395D79A7A5299DA3277C2503AB01 /* Pods-Desafio-PicPay-Android-iOSTests-dummy.m */,
-				C17112279001E9715BC52CFA9C5227B3 /* Pods-Desafio-PicPay-Android-iOSTests-Info.plist */,
-				70A5BAEDF3CC1171824BD66E7899736A /* Pods-Desafio-PicPay-Android-iOSTests-umbrella.h */,
-				1404E71D7F98E4515BD43455B2A81078 /* Pods-Desafio-PicPay-Android-iOSTests.debug.xcconfig */,
-				F4B65F32C2EB4EB5CA3903D28D3E7835 /* Pods-Desafio-PicPay-Android-iOSTests.release.xcconfig */,
+				5C3BD1D61DABC3751DB8046FD82791CA /* Pods-Desafio-PicPay-Android-iOSTests-acknowledgements.markdown */,
+				29EBD3AAF4A9857F51D8075C391114A6 /* Pods-Desafio-PicPay-Android-iOSTests-acknowledgements.plist */,
+				FFFACAE10530C1F5FF107A8BA87B99A9 /* Pods-Desafio-PicPay-Android-iOSTests-dummy.m */,
+				D0839B5514AFDCA698A544737EB1CB65 /* Pods-Desafio-PicPay-Android-iOSTests.debug.xcconfig */,
+				D20DD7052E4BED4C13FB01A10730E5F8 /* Pods-Desafio-PicPay-Android-iOSTests.release.xcconfig */,
 			);
 			name = "Pods-Desafio-PicPay-Android-iOSTests";
 			path = "Target Support Files/Pods-Desafio-PicPay-Android-iOSTests";
 			sourceTree = "<group>";
 		};
+		684420551CCC2A5B67479F354D92C7E7 /* AlamofireImage */ = {
+			isa = PBXGroup;
+			children = (
+				4C5357BBB8A251321121BA8EC6ECF8E4 /* AFIError.swift */,
+				79BFEE090CD756C67E152C23930ED405 /* Image.swift */,
+				D598215B05FE397F9F26D4283684A971 /* ImageCache.swift */,
+				ADC30802687BAD30875872EB1BA7B87D /* ImageDownloader.swift */,
+				8B245E6C618EF70535315BBA201ED01E /* ImageFilter.swift */,
+				27417761F85D4E2FC73A073A6DBD27DE /* Request+AlamofireImage.swift */,
+				7DB7698BE6F0586F5C155E932A082D9B /* UIButton+AlamofireImage.swift */,
+				63EB1AE73A596762DEE7CAC320D8083F /* UIImage+AlamofireImage.swift */,
+				2990D7BF5F59B27ABF2EF85FB6E9EE7F /* UIImageView+AlamofireImage.swift */,
+				25630C512B6CEF967D4BB063FDB17C48 /* Support Files */,
+			);
+			name = AlamofireImage;
+			path = AlamofireImage;
+			sourceTree = "<group>";
+		};
+		6A1319E8BC7F7B5153D83B6F85743A7D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBB314CAE6A8B5B37972EA583D3FA277 /* Pods-Desafio-PicPay-Android-iOS */,
+				3722C9E155D6A8E6FAB880AA4A140D9F /* Pods-Desafio-PicPay-Android-iOSTests */,
+				CE292B7B1B3362261CD7D62F1CB4C4C7 /* Pods-Desafio-PicPay-Android-iOSUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 		BCE988A47AA8D87E6A51113DA5D257CA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4C9DE0C4AE0F2B2170FCAB7317773B25 /* Alamofire */,
-				4EFCF33C3A7591280EDD315956A1A62A /* AlamofireImage */,
+				CD67F292E901124AA5D1BB7D602614AC /* Alamofire */,
+				684420551CCC2A5B67479F354D92C7E7 /* AlamofireImage */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C4C5783DA2D0CB9B346A8C3B5DE01724 /* Support Files */ = {
+		C3384B20CBDF8C50F7A2F25279480B11 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				840FC598FB9CFA1756A56E40987B9262 /* AlamofireImage.modulemap */,
-				5EB331099BFBFDF4F39152D295B1790C /* AlamofireImage.xcconfig */,
-				1C15E8E10325D6839A8538B096B54179 /* AlamofireImage-dummy.m */,
-				A9D65C5B2C47F7A763E501FC1AC86577 /* AlamofireImage-Info.plist */,
-				DD30406FD0F7DB77D1589946FBFEF469 /* AlamofireImage-prefix.pch */,
-				A876117474CF435DF2D2B5E68CCAA772 /* AlamofireImage-umbrella.h */,
+				4D2ED87B4B50B4BBC3ECB9EA946791CD /* Alamofire.modulemap */,
+				484F69019558319F7D0B40169895A112 /* Alamofire.xcconfig */,
+				16AD987E41DFADE6A224CECBD05CFC09 /* Alamofire-dummy.m */,
+				29048852754CC60D6F0999502AA11ADA /* Alamofire-prefix.pch */,
+				41BD4C8180DB71146556FD02BC365F7B /* Alamofire-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/AlamofireImage";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		CD67F292E901124AA5D1BB7D602614AC /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				B8028B947605335B664DA585F21E1974 /* AFError.swift */,
+				B5D9BFBF6AF521EBCB81496166F79ECE /* Alamofire.swift */,
+				2920102B9E9F9FBBF921598C64928615 /* DispatchQueue+Alamofire.swift */,
+				8209A61E3485401DA6F5CF3842A854C9 /* MultipartFormData.swift */,
+				8DA297F933CB4AACBE12C0AFAD99E283 /* NetworkReachabilityManager.swift */,
+				5EDE8C7BC190301ABB5E80D15ECF61B6 /* Notifications.swift */,
+				43D92A4B91297210D15A01763ABD597B /* ParameterEncoding.swift */,
+				2AE510AC64D8F059618FCC5140CCC26F /* Request.swift */,
+				EB80420C76BAAF9EEFF2B2B11CDC4711 /* Response.swift */,
+				D69AE3DBB19776E58D3E4578FCC273EF /* ResponseSerialization.swift */,
+				06B8BE7A6EA63020A34516A7C0D0F6A1 /* Result.swift */,
+				03ADEB80AE2777440EF42EF48EFD157E /* ServerTrustPolicy.swift */,
+				2DBBDF49F20A1D496692562DB0B30953 /* SessionDelegate.swift */,
+				FF26979B7E8F3DD8014D1403378B6AA8 /* SessionManager.swift */,
+				5FCE8691A2369814C187DD79FCEA85C9 /* TaskDelegate.swift */,
+				165A418A4D7466A4E5FD9012CED789C5 /* Timeline.swift */,
+				8AA1B244167557D652D24ABC584470AB /* Validation.swift */,
+				C3384B20CBDF8C50F7A2F25279480B11 /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		CE292B7B1B3362261CD7D62F1CB4C4C7 /* Pods-Desafio-PicPay-Android-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A40C1421C4FF4F2B324C74760AFC9D05 /* Pods-Desafio-PicPay-Android-iOSUITests-acknowledgements.markdown */,
+				23E7DB4F390E16E3282FAFCB90F8C0C6 /* Pods-Desafio-PicPay-Android-iOSUITests-acknowledgements.plist */,
+				CC304CE98D2896B9AC967EB7D4220DDF /* Pods-Desafio-PicPay-Android-iOSUITests-dummy.m */,
+				411C1294D9EECC2713D367F4A042187B /* Pods-Desafio-PicPay-Android-iOSUITests.debug.xcconfig */,
+				9858BB836467636B0D1D1A6F768BE94C /* Pods-Desafio-PicPay-Android-iOSUITests.release.xcconfig */,
+			);
+			name = "Pods-Desafio-PicPay-Android-iOSUITests";
+			path = "Target Support Files/Pods-Desafio-PicPay-Android-iOSUITests";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				EFA834D50E48CF4E37AC7A12D391AC85 /* Frameworks */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				BCE988A47AA8D87E6A51113DA5D257CA /* Pods */,
-				178ED6B335FEA579F0AFCE0FAB6CCCB7 /* Products */,
-				1CAD46C826FDB622D5C3BD35D4123DF7 /* Targets Support Files */,
+				EACF41D2D08CD54C3E00F0896B4C82A9 /* Products */,
+				6A1319E8BC7F7B5153D83B6F85743A7D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		EBD50155DD2D5225BB0A5A09E2099DE9 /* Pods-Desafio-PicPay-Android-iOS */ = {
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B0BD598BE94F9B614046CB386FBE621D /* Pods-Desafio-PicPay-Android-iOS.modulemap */,
-				6BB4DDB7F9515935CD0470482005DFFD /* Pods-Desafio-PicPay-Android-iOS-acknowledgements.markdown */,
-				F4E75567E0208EF40F61DAE7F04D8196 /* Pods-Desafio-PicPay-Android-iOS-acknowledgements.plist */,
-				EB384AB442A24B4F5A73F06454FE871B /* Pods-Desafio-PicPay-Android-iOS-dummy.m */,
-				72DE70FAE798C4D6022AE1CFFA460D0B /* Pods-Desafio-PicPay-Android-iOS-frameworks.sh */,
-				6D77AD1252C40A557DD8FA094794AA6E /* Pods-Desafio-PicPay-Android-iOS-Info.plist */,
-				2C5A3C4DA7651861DD27CA22BC2260D6 /* Pods-Desafio-PicPay-Android-iOS-umbrella.h */,
-				F12BE0435603A668AFE29E8ADF820481 /* Pods-Desafio-PicPay-Android-iOS.debug.xcconfig */,
-				B0980A761A667B348B2A3FDE643CC61E /* Pods-Desafio-PicPay-Android-iOS.release.xcconfig */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EACF41D2D08CD54C3E00F0896B4C82A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				644B29D259CADD840F066359BD111C5E /* libAlamofire.a */,
+				FED6F17BA3DF32325501AD1715E14CBE /* libAlamofireImage.a */,
+				B2561F347BF67023C919E80904F29634 /* libPods-Desafio-PicPay-Android-iOS.a */,
+				93C3FA956B3E2DE7DC5FD0952A8774DD /* libPods-Desafio-PicPay-Android-iOSTests.a */,
+				067898D4000317A22EB55E9B5DDE1FAC /* libPods-Desafio-PicPay-Android-iOSUITests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBB314CAE6A8B5B37972EA583D3FA277 /* Pods-Desafio-PicPay-Android-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A7BF1A81131DB77EE7FA0F1F394F96B /* Pods-Desafio-PicPay-Android-iOS.modulemap */,
+				EDA1FCE7AF708599FB0BB19ECE4CBD87 /* Pods-Desafio-PicPay-Android-iOS-acknowledgements.markdown */,
+				46DED337DF5D3E0DE9406D45037BB529 /* Pods-Desafio-PicPay-Android-iOS-acknowledgements.plist */,
+				FC2C3C023898A0610A265EDA7D3960BC /* Pods-Desafio-PicPay-Android-iOS-dummy.m */,
+				DAE0FF130D29F4343686DCFBFA8068E8 /* Pods-Desafio-PicPay-Android-iOS-umbrella.h */,
+				B75751CF749796D3BDA92A8DAB405F14 /* Pods-Desafio-PicPay-Android-iOS.debug.xcconfig */,
+				3A5DA9F10479F588186B9A07C810B71B /* Pods-Desafio-PicPay-Android-iOS.release.xcconfig */,
 			);
 			name = "Pods-Desafio-PicPay-Android-iOS";
 			path = "Target Support Files/Pods-Desafio-PicPay-Android-iOS";
 			sourceTree = "<group>";
 		};
-		EFA834D50E48CF4E37AC7A12D391AC85 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CD03ACAF8CC392DA908F3ACB71558AF5 /* Alamofire.framework */,
-				FE46856A67E76B30AD9117BDC4274C9C /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FE46856A67E76B30AD9117BDC4274C9C /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				024449F6B155602955E6FAB93F9FD437 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		23D70D9651451F43E7E8CC1A87B4B7E9 /* Headers */ = {
+		5198D2BADBDD930E65B67B4BF2C4A860 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6F6E4CC26451E91B59FAE0F6841DC1F /* Alamofire-umbrella.h in Headers */,
+				7685CC8D5440BF2C4541FA7D67B8C71F /* AlamofireImage-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		69636551407155C2967E0A4795BED02B /* Headers */ = {
+		6EE897F63E9832B7859DF700D1DACABB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0E911AB75C85290D79584703F8A33C4 /* Pods-Desafio-PicPay-Android-iOSTests-umbrella.h in Headers */,
+				44E5669195C1AB51DA4B42D132345086 /* Alamofire-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		756693EBF5AB5FCDAB4F2E042A18CCD0 /* Headers */ = {
+		82269BE747DBE83AD62F049076C2D25B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E37431509EAC62091AA9F42C338E6F3 /* AlamofireImage-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92B8AE0823CEE19B970F12CA34BE2DBB /* Headers */ = {
+		D914C00866ED16D8EDF2604F413B5119 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0064D5F76F5CC041EC856F78E55655C /* Pods-Desafio-PicPay-Android-iOSUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E35C33F0C39CCB170DB2DD28ED15C530 /* Headers */ = {
+		FAA4EBF17F78304D675E387B5296166B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE641D185AF8EAEA4A897659D0631124 /* Pods-Desafio-PicPay-Android-iOS-umbrella.h in Headers */,
+				AA649AF46FD40EB5A0B8D18C2B270D2A /* Pods-Desafio-PicPay-Android-iOS-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		23214C03132571402C4477F37838E999 /* Pods-Desafio-PicPay-Android-iOSTests */ = {
+		6E6FE1C39388E528A6B640B838A0CF45 /* Pods-Desafio-PicPay-Android-iOSUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ECC8EEC036B941AA24CBDC7AC4A895EF /* Build configuration list for PBXNativeTarget "Pods-Desafio-PicPay-Android-iOSTests" */;
+			buildConfigurationList = 2827AECAC239890D7330EC269F1403D6 /* Build configuration list for PBXNativeTarget "Pods-Desafio-PicPay-Android-iOSUITests" */;
 			buildPhases = (
-				69636551407155C2967E0A4795BED02B /* Headers */,
-				A5C8402AD0B708D7F016A674E054D017 /* Sources */,
-				C7E5E607E799478C39A222A63458BF7F /* Frameworks */,
-				29E5A452E75F46ECA7DF2678420A6D4D /* Resources */,
+				82269BE747DBE83AD62F049076C2D25B /* Headers */,
+				3CFE93D1DC7E56BEBFF45ADB9426B079 /* Sources */,
+				963CF4549CAA2AD445196F7761B59821 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C7BDE432484F407708EF0083E10169CB /* PBXTargetDependency */,
+				EB2EEF8EC80ECAD21CAF0FDF92D7FAF8 /* PBXTargetDependency */,
+			);
+			name = "Pods-Desafio-PicPay-Android-iOSUITests";
+			productName = "Pods-Desafio-PicPay-Android-iOSUITests";
+			productReference = 067898D4000317A22EB55E9B5DDE1FAC /* libPods-Desafio-PicPay-Android-iOSUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		ABE725F60CAB24F321E94E09C18BAEE3 /* Pods-Desafio-PicPay-Android-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74B8333D2117E17DF8BE7A8478F4981A /* Build configuration list for PBXNativeTarget "Pods-Desafio-PicPay-Android-iOS" */;
+			buildPhases = (
+				FAA4EBF17F78304D675E387B5296166B /* Headers */,
+				AC1A22DBDF59BCA1706967BABFC3BCBF /* Sources */,
+				757B49DF9D838F9E1823E63C708FB219 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4C8EEAFE5F9A94BF40970DA393C5F25 /* PBXTargetDependency */,
+				2D5DD24DBF33ADD63E2D391EE4220974 /* PBXTargetDependency */,
+			);
+			name = "Pods-Desafio-PicPay-Android-iOS";
+			productName = "Pods-Desafio-PicPay-Android-iOS";
+			productReference = B2561F347BF67023C919E80904F29634 /* libPods-Desafio-PicPay-Android-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C6F767B7A94ED36065FB54B140F743BA /* Pods-Desafio-PicPay-Android-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28B873E6C99D9A9A881B4140CA9EE62E /* Build configuration list for PBXNativeTarget "Pods-Desafio-PicPay-Android-iOSTests" */;
+			buildPhases = (
+				D914C00866ED16D8EDF2604F413B5119 /* Headers */,
+				D7676F48E541549123717D7F97389627 /* Sources */,
+				399896BDC84C2C2AEBB784FBF3409270 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6345244EC111711FD395FA54E6579D9 /* PBXTargetDependency */,
 			);
 			name = "Pods-Desafio-PicPay-Android-iOSTests";
 			productName = "Pods-Desafio-PicPay-Android-iOSTests";
-			productReference = 19950C3B3AB44B48FE4D805333D685E0 /* Pods_Desafio_PicPay_Android_iOSTests.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 93C3FA956B3E2DE7DC5FD0952A8774DD /* libPods-Desafio-PicPay-Android-iOSTests.a */;
+			productType = "com.apple.product-type.library.static";
 		};
-		3383968E74B5371B20BB519B170DC7FD /* Alamofire */ = {
+		DBC6E10BFC33DF4DE0D76FD0EE06C3C6 /* AlamofireImage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E87124444A44B7DB55208E7FEC21D331 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildConfigurationList = FEE3AEEE04F9FED42FC48CAB65E0EC24 /* Build configuration list for PBXNativeTarget "AlamofireImage" */;
 			buildPhases = (
-				23D70D9651451F43E7E8CC1A87B4B7E9 /* Headers */,
-				A1C8B029F600160149A2404C342F6E50 /* Sources */,
-				F1626ADC3A7EC435D2722B3173355D36 /* Frameworks */,
-				28FF73341543B6F0A7DF3C20CFFEA0AA /* Resources */,
+				5198D2BADBDD930E65B67B4BF2C4A860 /* Headers */,
+				EA386F685ED5BBE02FE773DACA6EF107 /* Sources */,
+				08FD11A910FC26B243E78FD0B437DA32 /* Frameworks */,
+				2EBF65F5BDE65FFEC9812A0EC79CFD54 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B8C245E39B72224F7951BAC70DDD07E /* PBXTargetDependency */,
+			);
+			name = AlamofireImage;
+			productName = AlamofireImage;
+			productReference = FED6F17BA3DF32325501AD1715E14CBE /* libAlamofireImage.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F4D8460531B09D9A74533900AD241700 /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83E9477F5C93C367B958FCF3053EE2D5 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				6EE897F63E9832B7859DF700D1DACABB /* Headers */,
+				61E4DB2024607AD7CA4A4FAE1FF78DBE /* Sources */,
+				92B95E87A2681FB8D38FE6CAE1DA0009 /* Frameworks */,
+				28C943094FC8F19FBDEDA75692A73C5D /* Copy generated compatibility header */,
 			);
 			buildRules = (
 			);
@@ -468,66 +475,8 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 423CC8981B8080176A4A92D3C2D7C53D /* Alamofire.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		410146DB42F82B4CD5483C7B5D450222 /* Pods-Desafio-PicPay-Android-iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4AE17B56DAF9DA209FE160274878D3F3 /* Build configuration list for PBXNativeTarget "Pods-Desafio-PicPay-Android-iOS" */;
-			buildPhases = (
-				E35C33F0C39CCB170DB2DD28ED15C530 /* Headers */,
-				6461A35F64BA1F47F90AF3B5DA414D6F /* Sources */,
-				263581E63B55B3294248FB1EA932C033 /* Frameworks */,
-				5D911C693962CFACE62A99FBCC995DE7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3EA502CFD6F9BCFD89B3E932D4F61A4B /* PBXTargetDependency */,
-				A06D800A3E37FB04A9B3B12FFFC4692B /* PBXTargetDependency */,
-			);
-			name = "Pods-Desafio-PicPay-Android-iOS";
-			productName = "Pods-Desafio-PicPay-Android-iOS";
-			productReference = 74A3F0BD43EE2147A4E72F67ABD38F33 /* Pods_Desafio_PicPay_Android_iOS.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AB5D85E5F242E96C94BC388AF881394E /* Pods-Desafio-PicPay-Android-iOSUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F79B4095027093495880E6B62EF3966E /* Build configuration list for PBXNativeTarget "Pods-Desafio-PicPay-Android-iOSUITests" */;
-			buildPhases = (
-				92B8AE0823CEE19B970F12CA34BE2DBB /* Headers */,
-				EF2F6619147D0CAB0F7C727E0D0B1E42 /* Sources */,
-				534F087C977E210A3AAA38F8A04FAB17 /* Frameworks */,
-				A4D2B8E9D2E8B63D82358241E6548B1C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D4F915E243A3D77F3D7B28E6B93F009E /* PBXTargetDependency */,
-			);
-			name = "Pods-Desafio-PicPay-Android-iOSUITests";
-			productName = "Pods-Desafio-PicPay-Android-iOSUITests";
-			productReference = 83B963E32B413C6D715CE96024B0295D /* Pods_Desafio_PicPay_Android_iOSUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AF0370AAF034BBD44060B90AAA8FD1CE /* AlamofireImage */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F58DCC83C0D45673B602C886B82962EB /* Build configuration list for PBXNativeTarget "AlamofireImage" */;
-			buildPhases = (
-				756693EBF5AB5FCDAB4F2E042A18CCD0 /* Headers */,
-				1B10E8D1F6EEF1B1A6245858A1DC3952 /* Sources */,
-				13075BB1851FA3DC9FB90C94F4EA0CBB /* Frameworks */,
-				51F112654DA8B7CD23EDDD5D123BB057 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				96A9E85FADECA868D593834FF8D1E719 /* PBXTargetDependency */,
-			);
-			name = AlamofireImage;
-			productName = AlamofireImage;
-			productReference = 7F8A4BCE96A157D312AC7D64A13C5A02 /* AlamofireImage.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 644B29D259CADD840F066359BD111C5E /* libAlamofire.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -546,161 +495,473 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 178ED6B335FEA579F0AFCE0FAB6CCCB7 /* Products */;
+			productRefGroup = EACF41D2D08CD54C3E00F0896B4C82A9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3383968E74B5371B20BB519B170DC7FD /* Alamofire */,
-				AF0370AAF034BBD44060B90AAA8FD1CE /* AlamofireImage */,
-				410146DB42F82B4CD5483C7B5D450222 /* Pods-Desafio-PicPay-Android-iOS */,
-				23214C03132571402C4477F37838E999 /* Pods-Desafio-PicPay-Android-iOSTests */,
-				AB5D85E5F242E96C94BC388AF881394E /* Pods-Desafio-PicPay-Android-iOSUITests */,
+				F4D8460531B09D9A74533900AD241700 /* Alamofire */,
+				DBC6E10BFC33DF4DE0D76FD0EE06C3C6 /* AlamofireImage */,
+				ABE725F60CAB24F321E94E09C18BAEE3 /* Pods-Desafio-PicPay-Android-iOS */,
+				C6F767B7A94ED36065FB54B140F743BA /* Pods-Desafio-PicPay-Android-iOSTests */,
+				6E6FE1C39388E528A6B640B838A0CF45 /* Pods-Desafio-PicPay-Android-iOSUITests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		28FF73341543B6F0A7DF3C20CFFEA0AA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		28C943094FC8F19FBDEDA75692A73C5D /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/Alamofire/Alamofire.modulemap",
+				"${PODS_ROOT}/Headers/Public/Alamofire/Alamofire-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Alamofire/Alamofire.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Alamofire/Alamofire-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
 		};
-		29E5A452E75F46ECA7DF2678420A6D4D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+		2EBF65F5BDE65FFEC9812A0EC79CFD54 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		51F112654DA8B7CD23EDDD5D123BB057 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/AlamofireImage/AlamofireImage.modulemap",
+				"${PODS_ROOT}/Headers/Public/AlamofireImage/AlamofireImage-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/AlamofireImage/AlamofireImage.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/AlamofireImage/AlamofireImage-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
 		};
-		5D911C693962CFACE62A99FBCC995DE7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4D2B8E9D2E8B63D82358241E6548B1C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1B10E8D1F6EEF1B1A6245858A1DC3952 /* Sources */ = {
+		3CFE93D1DC7E56BEBFF45ADB9426B079 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C522E5CCC21ED4B4E4DAFE0EF5976534 /* AFIError.swift in Sources */,
-				C39E172BE35D0A5BD8492203E2E74B34 /* AlamofireImage-dummy.m in Sources */,
-				F043D9AC4BA20943367923DEEACAB6C2 /* Image.swift in Sources */,
-				38DDED2026D7CCE463BD6AA84D5B57F3 /* ImageCache.swift in Sources */,
-				7516F5DFED72A74CC3FA7D3822B14087 /* ImageDownloader.swift in Sources */,
-				B32CB47DE31DC018BB85E55F57F8D29D /* ImageFilter.swift in Sources */,
-				E5E518708B710642CFCDC382913582FF /* Request+AlamofireImage.swift in Sources */,
-				F853F6FCDDFB099744F56099ACA123DC /* UIButton+AlamofireImage.swift in Sources */,
-				3AC31661CECD14792855AFC94025667B /* UIImage+AlamofireImage.swift in Sources */,
-				FFF18720349BC8631EF1A8881BB5CA40 /* UIImageView+AlamofireImage.swift in Sources */,
+				23AD94A037D5B6F2BD18C9C44E602320 /* Pods-Desafio-PicPay-Android-iOSUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6461A35F64BA1F47F90AF3B5DA414D6F /* Sources */ = {
+		61E4DB2024607AD7CA4A4FAE1FF78DBE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E503A260A5BA111149E952289AB42A1C /* Pods-Desafio-PicPay-Android-iOS-dummy.m in Sources */,
+				F100F738A340780B4C86C6D10AF7F0EE /* AFError.swift in Sources */,
+				AC64B0F7E0C0A01AF03984E6ED9CE529 /* Alamofire-dummy.m in Sources */,
+				A2C5600C37504535771CFDC78C7E8522 /* Alamofire.swift in Sources */,
+				A8D4EB2BC77E03F7CD9667FD097590DF /* DispatchQueue+Alamofire.swift in Sources */,
+				01D7C4F64D7CFAD0D3449FD0E9148CA2 /* MultipartFormData.swift in Sources */,
+				AD3078722FBB3C9437FEE8766EB7931D /* NetworkReachabilityManager.swift in Sources */,
+				D7DBF20C1AD8F9D2B1DC175498F48B70 /* Notifications.swift in Sources */,
+				089E0855D492AA75EDE128ECAB2D8DE8 /* ParameterEncoding.swift in Sources */,
+				5B7D03764E70EDF352E925E944621267 /* Request.swift in Sources */,
+				F198A805C56CE26BF4540420171FA682 /* Response.swift in Sources */,
+				A938CE13F0474CDBEA4B257892C71D01 /* ResponseSerialization.swift in Sources */,
+				5BB972084B353D9B128F0F611599E5BB /* Result.swift in Sources */,
+				B1828624B7D1908635EE541D7C8531DC /* ServerTrustPolicy.swift in Sources */,
+				3CF594EACD8E9BFC65FC9E8BE9263419 /* SessionDelegate.swift in Sources */,
+				4C98CA0597F576A1B63ED6699DF9F9A1 /* SessionManager.swift in Sources */,
+				28A69A8EB6BF8C4D2CFDF332CC028C28 /* TaskDelegate.swift in Sources */,
+				D3D0BAC2F595E90AAD24FD34AEAC6E16 /* Timeline.swift in Sources */,
+				86A769DC9F05E9EEE3AC7C68186E4D46 /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1C8B029F600160149A2404C342F6E50 /* Sources */ = {
+		AC1A22DBDF59BCA1706967BABFC3BCBF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E3538A6992A38276764936A9733493D /* AFError.swift in Sources */,
-				772911DA6E33D1CBBC30131B7C8BDBB3 /* Alamofire-dummy.m in Sources */,
-				0A39AF55285A3A4F7CBABB6D822FA4A3 /* Alamofire.swift in Sources */,
-				3E0749AF6C51BCF0E4A41CF1D6A76FED /* DispatchQueue+Alamofire.swift in Sources */,
-				AEA829AB1A8AF2AD077A808AED6B178A /* MultipartFormData.swift in Sources */,
-				73AB05789A4982944AF68DBD013E3EB7 /* NetworkReachabilityManager.swift in Sources */,
-				1D29D2ACADF961F69D32B06FA6A09E28 /* Notifications.swift in Sources */,
-				700D3D95AF9520CB227846DFD943A2DA /* ParameterEncoding.swift in Sources */,
-				355C18EEC82624A06A6CC93965258E33 /* Request.swift in Sources */,
-				059D92B7BBFBEC53E9A3B6E11C5C3B3A /* Response.swift in Sources */,
-				6EFD003458AE7F689DEA720A2030C261 /* ResponseSerialization.swift in Sources */,
-				EB0DD8CEA1A69867A30267439C970440 /* Result.swift in Sources */,
-				8D2A6A90A6DDAF75EA52D471258545CC /* ServerTrustPolicy.swift in Sources */,
-				A1EC41966B261DCE460BCDE5124A1DBE /* SessionDelegate.swift in Sources */,
-				D3FA0AA634AAEA99AB3FABC36BB4958C /* SessionManager.swift in Sources */,
-				77E8F0EB9FFBE2E3EB0C77095C644606 /* TaskDelegate.swift in Sources */,
-				60B6C2A003864AAD3A426448152F67BE /* Timeline.swift in Sources */,
-				AA56769D8733D3F3E7976742D5ABA998 /* Validation.swift in Sources */,
+				3241B1831A03C647A724F2235F3748FA /* Pods-Desafio-PicPay-Android-iOS-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5C8402AD0B708D7F016A674E054D017 /* Sources */ = {
+		D7676F48E541549123717D7F97389627 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F23C9962D1258941F258786218EF6828 /* Pods-Desafio-PicPay-Android-iOSTests-dummy.m in Sources */,
+				EE76476D17A252B8CF5CC36247B76B65 /* Pods-Desafio-PicPay-Android-iOSTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF2F6619147D0CAB0F7C727E0D0B1E42 /* Sources */ = {
+		EA386F685ED5BBE02FE773DACA6EF107 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6A9D52C542D403FDC11A3EFA45F8C85 /* Pods-Desafio-PicPay-Android-iOSUITests-dummy.m in Sources */,
+				E847B0E8FCDC02AB44434D1C3F60D821 /* AFIError.swift in Sources */,
+				3E2ABC1F9F4045E704AC7317954DEDA4 /* AlamofireImage-dummy.m in Sources */,
+				0A0288B6FEC4BF171ECCC0F17B1F2D0D /* Image.swift in Sources */,
+				21535E376CAD961344298CD427676664 /* ImageCache.swift in Sources */,
+				6AC71AA4A92DD490BE5867045C86013F /* ImageDownloader.swift in Sources */,
+				B71EC48A38F42ED064257641191106E6 /* ImageFilter.swift in Sources */,
+				494B7815F79A77E3C50E5111A6F6F51B /* Request+AlamofireImage.swift in Sources */,
+				DB9DE6E30C9E8A70F85BC991A49A40E4 /* UIButton+AlamofireImage.swift in Sources */,
+				545B4AAC41E4E9B75C6B32A815D72D11 /* UIImage+AlamofireImage.swift in Sources */,
+				CA41F044CC8E0521DC395FC8750F461A /* UIImageView+AlamofireImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3EA502CFD6F9BCFD89B3E932D4F61A4B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = 3383968E74B5371B20BB519B170DC7FD /* Alamofire */;
-			targetProxy = FFE51CE02B94DD6DDBF407A0621222CE /* PBXContainerItemProxy */;
-		};
-		96A9E85FADECA868D593834FF8D1E719 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = 3383968E74B5371B20BB519B170DC7FD /* Alamofire */;
-			targetProxy = 7B639CC513C6A85DC4703B47F7AE9340 /* PBXContainerItemProxy */;
-		};
-		A06D800A3E37FB04A9B3B12FFFC4692B /* PBXTargetDependency */ = {
+		2D5DD24DBF33ADD63E2D391EE4220974 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AlamofireImage;
-			target = AF0370AAF034BBD44060B90AAA8FD1CE /* AlamofireImage */;
-			targetProxy = 9D49C22B432DBEEE5FB07DF35E75FD69 /* PBXContainerItemProxy */;
+			target = DBC6E10BFC33DF4DE0D76FD0EE06C3C6 /* AlamofireImage */;
+			targetProxy = 1A9E004E88C0FD518CF22F9830B00626 /* PBXContainerItemProxy */;
 		};
-		C7BDE432484F407708EF0083E10169CB /* PBXTargetDependency */ = {
+		9B8C245E39B72224F7951BAC70DDD07E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = F4D8460531B09D9A74533900AD241700 /* Alamofire */;
+			targetProxy = 4C2E1A251F701734A21B1C5757B2D384 /* PBXContainerItemProxy */;
+		};
+		B4C8EEAFE5F9A94BF40970DA393C5F25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = F4D8460531B09D9A74533900AD241700 /* Alamofire */;
+			targetProxy = 6BC0C4009DB988A52DAE376B50436720 /* PBXContainerItemProxy */;
+		};
+		C6345244EC111711FD395FA54E6579D9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Desafio-PicPay-Android-iOS";
-			target = 410146DB42F82B4CD5483C7B5D450222 /* Pods-Desafio-PicPay-Android-iOS */;
-			targetProxy = 3C3CD2B2B8D25369CA92CDFFFCF99CCD /* PBXContainerItemProxy */;
+			target = ABE725F60CAB24F321E94E09C18BAEE3 /* Pods-Desafio-PicPay-Android-iOS */;
+			targetProxy = A3879C9256E16E0F58AC848EFEB7BBE1 /* PBXContainerItemProxy */;
 		};
-		D4F915E243A3D77F3D7B28E6B93F009E /* PBXTargetDependency */ = {
+		EB2EEF8EC80ECAD21CAF0FDF92D7FAF8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Desafio-PicPay-Android-iOS";
-			target = 410146DB42F82B4CD5483C7B5D450222 /* Pods-Desafio-PicPay-Android-iOS */;
-			targetProxy = 849A31ABDD8E704E79E46D32499F345F /* PBXContainerItemProxy */;
+			target = ABE725F60CAB24F321E94E09C18BAEE3 /* Pods-Desafio-PicPay-Android-iOS */;
+			targetProxy = 3F79A541F0F3FBC953635FBB93330DA1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */ = {
+		1391C92A7C3136C3FA705234A5E980FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D20DD7052E4BED4C13FB01A10730E5F8 /* Pods-Desafio-PicPay-Android-iOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18DB324B9EAF8BBDC543E8D850081A54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97818E96545D76A80015F1E8AF31CABD /* AlamofireImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/AlamofireImage/AlamofireImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/AlamofireImage/AlamofireImage.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = AlamofireImage;
+				PRODUCT_NAME = AlamofireImage;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23C4AC2EFFB46C4595A2F3FD4F7B8B0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97818E96545D76A80015F1E8AF31CABD /* AlamofireImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/AlamofireImage/AlamofireImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/AlamofireImage/AlamofireImage.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = AlamofireImage;
+				PRODUCT_NAME = AlamofireImage;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		257497152829C177993B5EC99C1D227A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		29BC7A55C5A0F594317E81C9BCED35A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 411C1294D9EECC2713D367F4A042187B /* Pods-Desafio-PicPay-Android-iOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2EDCE2C029367ACCCA185C797161DFC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A5DA9F10479F588186B9A07C810B71B /* Pods-Desafio-PicPay-Android-iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Desafio-PicPay-Android-iOS/Pods-Desafio-PicPay-Android-iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32B11E5D4DEECDA44BD953DD62F0D2EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B75751CF749796D3BDA92A8DAB405F14 /* Pods-Desafio-PicPay-Android-iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Desafio-PicPay-Android-iOS/Pods-Desafio-PicPay-Android-iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35AE2BFA805D1040E549D5DE60B69F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 484F69019558319F7D0B40169895A112 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/Alamofire/Alamofire.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64C9FAB6FFFDFF12BCE42FCE41C30D16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9858BB836467636B0D1D1A6F768BE94C /* Pods-Desafio-PicPay-Android-iOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0D0893666156DCD1B932C92AFD7CE32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 484F69019558319F7D0B40169895A112 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/Alamofire/Alamofire.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2CF607406BA33C592A83B110367D269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0839B5514AFDCA698A544737EB1CB65 /* Pods-Desafio-PicPay-Android-iOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -751,7 +1012,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -764,492 +1025,59 @@
 			};
 			name = Debug;
 		};
-		3BB68C0B24D003089D809CCC69A89F84 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1404E71D7F98E4515BD43455B2A81078 /* Pods-Desafio-PicPay-Android-iOSTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Desafio-PicPay-Android-iOSTests/Pods-Desafio-PicPay-Android-iOSTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Desafio-PicPay-Android-iOSTests/Pods-Desafio-PicPay-Android-iOSTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		533220A7363132F85843031FA4F2AAAB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 038A5378F65C43C9CFC5F5E9BBAC031F /* Alamofire.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				PRODUCT_MODULE_NAME = Alamofire;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6BA7DF0BA93988672A268953826E1BBB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EB331099BFBFDF4F39152D295B1790C /* AlamofireImage.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AlamofireImage/AlamofireImage-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AlamofireImage/AlamofireImage-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/AlamofireImage/AlamofireImage.modulemap";
-				PRODUCT_MODULE_NAME = AlamofireImage;
-				PRODUCT_NAME = AlamofireImage;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		82F15669605C74B068A85723D569C923 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EB331099BFBFDF4F39152D295B1790C /* AlamofireImage.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AlamofireImage/AlamofireImage-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AlamofireImage/AlamofireImage-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/AlamofireImage/AlamofireImage.modulemap";
-				PRODUCT_MODULE_NAME = AlamofireImage;
-				PRODUCT_NAME = AlamofireImage;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8C2FBFECEADBDDCBAD7F17D70F7F6181 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7FB12E0D0FE3644F6EACE149EA1C029D /* Pods-Desafio-PicPay-Android-iOSUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Desafio-PicPay-Android-iOSUITests/Pods-Desafio-PicPay-Android-iOSUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Desafio-PicPay-Android-iOSUITests/Pods-Desafio-PicPay-Android-iOSUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9838C58BD1AA67DBD29475983CB12D4A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 038A5378F65C43C9CFC5F5E9BBAC031F /* Alamofire.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				PRODUCT_MODULE_NAME = Alamofire;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A1F3E0A5E21ECC98B9FBA6197F295AD3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 857544076002D0FF159675EC608DB1C2 /* Pods-Desafio-PicPay-Android-iOSUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Desafio-PicPay-Android-iOSUITests/Pods-Desafio-PicPay-Android-iOSUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Desafio-PicPay-Android-iOSUITests/Pods-Desafio-PicPay-Android-iOSUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B236D3D047B560C962EB4F3F568AC774 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F12BE0435603A668AFE29E8ADF820481 /* Pods-Desafio-PicPay-Android-iOS.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Desafio-PicPay-Android-iOS/Pods-Desafio-PicPay-Android-iOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Desafio-PicPay-Android-iOS/Pods-Desafio-PicPay-Android-iOS.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C29D3EE63CF7AD8B6BD15D697BFF5EF5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0980A761A667B348B2A3FDE643CC61E /* Pods-Desafio-PicPay-Android-iOS.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Desafio-PicPay-Android-iOS/Pods-Desafio-PicPay-Android-iOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Desafio-PicPay-Android-iOS/Pods-Desafio-PicPay-Android-iOS.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D5A9F639AB7A53CC934B7DD4C010E0AF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4B65F32C2EB4EB5CA3903D28D3E7835 /* Pods-Desafio-PicPay-Android-iOSTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Desafio-PicPay-Android-iOSTests/Pods-Desafio-PicPay-Android-iOSTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Desafio-PicPay-Android-iOSTests/Pods-Desafio-PicPay-Android-iOSTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2827AECAC239890D7330EC269F1403D6 /* Build configuration list for PBXNativeTarget "Pods-Desafio-PicPay-Android-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29BC7A55C5A0F594317E81C9BCED35A4 /* Debug */,
+				64C9FAB6FFFDFF12BCE42FCE41C30D16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28B873E6C99D9A9A881B4140CA9EE62E /* Build configuration list for PBXNativeTarget "Pods-Desafio-PicPay-Android-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2CF607406BA33C592A83B110367D269 /* Debug */,
+				1391C92A7C3136C3FA705234A5E980FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */,
-				3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */,
+				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
+				257497152829C177993B5EC99C1D227A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4AE17B56DAF9DA209FE160274878D3F3 /* Build configuration list for PBXNativeTarget "Pods-Desafio-PicPay-Android-iOS" */ = {
+		74B8333D2117E17DF8BE7A8478F4981A /* Build configuration list for PBXNativeTarget "Pods-Desafio-PicPay-Android-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B236D3D047B560C962EB4F3F568AC774 /* Debug */,
-				C29D3EE63CF7AD8B6BD15D697BFF5EF5 /* Release */,
+				32B11E5D4DEECDA44BD953DD62F0D2EA /* Debug */,
+				2EDCE2C029367ACCCA185C797161DFC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E87124444A44B7DB55208E7FEC21D331 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+		83E9477F5C93C367B958FCF3053EE2D5 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				533220A7363132F85843031FA4F2AAAB /* Debug */,
-				9838C58BD1AA67DBD29475983CB12D4A /* Release */,
+				35AE2BFA805D1040E549D5DE60B69F7A /* Debug */,
+				B0D0893666156DCD1B932C92AFD7CE32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ECC8EEC036B941AA24CBDC7AC4A895EF /* Build configuration list for PBXNativeTarget "Pods-Desafio-PicPay-Android-iOSTests" */ = {
+		FEE3AEEE04F9FED42FC48CAB65E0EC24 /* Build configuration list for PBXNativeTarget "AlamofireImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3BB68C0B24D003089D809CCC69A89F84 /* Debug */,
-				D5A9F639AB7A53CC934B7DD4C010E0AF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F58DCC83C0D45673B602C886B82962EB /* Build configuration list for PBXNativeTarget "AlamofireImage" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6BA7DF0BA93988672A268953826E1BBB /* Debug */,
-				82F15669605C74B068A85723D569C923 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F79B4095027093495880E6B62EF3966E /* Build configuration list for PBXNativeTarget "Pods-Desafio-PicPay-Android-iOSUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8C2FBFECEADBDDCBAD7F17D70F7F6181 /* Debug */,
-				A1F3E0A5E21ECC98B9FBA6197F295AD3 /* Release */,
+				18DB324B9EAF8BBDC543E8D850081A54 /* Debug */,
+				23C4AC2EFFB46C4595A2F3FD4F7B8B0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

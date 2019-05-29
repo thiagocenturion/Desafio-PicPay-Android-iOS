@@ -13,7 +13,6 @@ enum APIError: String, Error {
     case noNetwork = "noNetwork"
     case serverOverload = "serverOverload"
     case internalError = "internalError"
-    case permissionDenied = "permissionDenied"
 }
 
 protocol NetworkRequestProtocol: class {
@@ -33,7 +32,7 @@ extension NetworkRequestProtocol {
                     return
                 }
                 
-                // Realiza a decodificação com base na estrutura recebida
+                // Realiza a decodificacao com base na estrutura recebida
                 do {
                     responseModel = try JSONDecoder().decode(T?.self, from: data)
                 } catch let error {
