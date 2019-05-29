@@ -1,0 +1,6 @@
+module Pods_Desafio_PicPay_Android_iOS {
+  umbrella header "Pods-Desafio-PicPay-Android-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
