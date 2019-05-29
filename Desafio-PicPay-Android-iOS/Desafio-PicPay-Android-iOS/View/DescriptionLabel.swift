@@ -37,7 +37,7 @@ class DescriptionLabel: UILabel {
     
     func setup() {
         font = UIFont.boldSystemFont(ofSize: 14)
-        textColor = Color.subPrimary
+        textColor = Color.primaryVariant
         numberOfLines = 0
         lineBreakMode = .byWordWrapping
         textAlignment = .center

@@ -21,20 +21,23 @@ class CardPrimingViewController: UIViewController {
     @IBOutlet weak var btnCardRegister: UIButton!
     var delegate: CardPrimingViewControllerProtocol?
     
-    // MARK: - Methods
+    // MARK: - View Lifecyle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupLayout()
     }
     
-    func setupLayout() {
-        view.backgroundColor = Color.primaryBackground
-    }
+    // MARK: - Actions
     
     @IBAction func onCardRegister(_ sender: Any) {
         delegate?.cardPrimingViewControllerOnCardRegister()
+    }
+    
+    // MARK: - Methods
+    
+    func setupLayout() {
+        view.backgroundColor = Color.primaryBackground
     }
 
 }
