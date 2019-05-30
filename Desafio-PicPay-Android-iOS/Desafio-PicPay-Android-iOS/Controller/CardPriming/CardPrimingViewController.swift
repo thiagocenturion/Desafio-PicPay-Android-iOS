@@ -12,7 +12,7 @@ protocol CardPrimingViewControllerProtocol {
     func cardPrimingViewControllerOnCardRegister()
 }
 
-class CardPrimingViewController: UIViewController {
+class CardPrimingViewController: UIViewController, ViewControllerCoordinatorProtocol {
     
     // MARK: - Properties
     
@@ -20,6 +20,7 @@ class CardPrimingViewController: UIViewController {
     @IBOutlet weak var lblDescription: UILabel!
     @IBOutlet weak var btnCardRegister: UIButton!
     var delegate: CardPrimingViewControllerProtocol?
+    var coordinator: CoordinatorProtocol?
     
     // MARK: - View Lifecyle
 

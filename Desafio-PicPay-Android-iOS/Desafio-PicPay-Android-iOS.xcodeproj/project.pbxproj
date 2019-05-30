@@ -31,6 +31,8 @@
 		23DEC4BA229EC6E90047C799 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DEC4B9229EC6E90047C799 /* PrimaryButton.swift */; };
 		23DF5EC322944F310070345C /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DF5EC122944F310070345C /* ContactListViewController.swift */; };
 		23DF5EC422944F310070345C /* ContactListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23DF5EC222944F310070345C /* ContactListViewController.xib */; };
+		23EB2AE0229FFA190085E865 /* DefaultNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB2ADF229FFA190085E865 /* DefaultNavigationController.swift */; };
+		23EB2AE2229FFDA90085E865 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB2AE1229FFDA90085E865 /* Navigator.swift */; };
 		23F9E332229ED980000D050C /* DefaultTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F9E331229ED980000D050C /* DefaultTextField.swift */; };
 		23FAD3A4228F37410094CD15 /* ContactListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FAD3A3228F37410094CD15 /* ContactListViewModel.swift */; };
 		23FAD3A7228F375A0094CD15 /* ContactListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FAD3A5228F375A0094CD15 /* ContactListCell.swift */; };
@@ -38,7 +40,7 @@
 		23FAD3AA228F37770094CD15 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FAD3A9228F37770094CD15 /* Contact.swift */; };
 		23FAD3AD228F40670094CD15 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23FAD3AC228F40670094CD15 /* Localizable.strings */; };
 		23FAD3AF228F40C60094CD15 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FAD3AE228F40C60094CD15 /* Extension.swift */; };
-		23FAD3B1228F420E0094CD15 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FAD3B0228F420E0094CD15 /* CoordinatorProtocol.swift */; };
+		23FAD3B1228F420E0094CD15 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FAD3B0228F420E0094CD15 /* Coordinator.swift */; };
 		23FAD3B3228F42550094CD15 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FAD3B2228F42550094CD15 /* ApplicationCoordinator.swift */; };
 		23FAD3B5228F43B40094CD15 /* ContactListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FAD3B4228F43B40094CD15 /* ContactListCoordinator.swift */; };
 		23FAD3B9228F5AB90094CD15 /* DarkSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FAD3B8228F5AB90094CD15 /* DarkSearchBar.swift */; };
@@ -98,14 +100,16 @@
 		23DEC4B9229EC6E90047C799 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		23DF5EC122944F310070345C /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		23DF5EC222944F310070345C /* ContactListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactListViewController.xib; sourceTree = "<group>"; };
+		23EB2ADF229FFA190085E865 /* DefaultNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNavigationController.swift; sourceTree = "<group>"; };
+		23EB2AE1229FFDA90085E865 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		23F9E331229ED980000D050C /* DefaultTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTextField.swift; sourceTree = "<group>"; };
 		23FAD3A3228F37410094CD15 /* ContactListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModel.swift; sourceTree = "<group>"; };
 		23FAD3A5228F375A0094CD15 /* ContactListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListCell.swift; sourceTree = "<group>"; };
 		23FAD3A6228F375A0094CD15 /* ContactListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactListCell.xib; sourceTree = "<group>"; };
 		23FAD3A9228F37770094CD15 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
-		23FAD3AC228F40670094CD15 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		23FAD3AC228F40670094CD15 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Util/Localizable.strings; sourceTree = "<group>"; };
 		23FAD3AE228F40C60094CD15 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		23FAD3B0228F420E0094CD15 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		23FAD3B0228F420E0094CD15 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		23FAD3B2228F42550094CD15 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		23FAD3B4228F43B40094CD15 /* ContactListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListCoordinator.swift; sourceTree = "<group>"; };
 		23FAD3B8228F5AB90094CD15 /* DarkSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSearchBar.swift; sourceTree = "<group>"; };
@@ -213,6 +217,7 @@
 				23AF459F228C8D5E00E1FAA8 /* Assets.xcassets */,
 				23AF45A1228C8D5E00E1FAA8 /* LaunchScreen.storyboard */,
 				23AF45A4228C8D5E00E1FAA8 /* Info.plist */,
+				23FAD3AC228F40670094CD15 /* Localizable.strings */,
 				23FAD396228F26EE0094CD15 /* Coordinator */,
 				23FAD392228F23E00094CD15 /* Model */,
 				23FAD393228F23E80094CD15 /* ViewModel */,
@@ -280,6 +285,7 @@
 				23DEC4B7229EC0170047C799 /* DescriptionLabel.swift */,
 				23DEC4B9229EC6E90047C799 /* PrimaryButton.swift */,
 				23F9E331229ED980000D050C /* DefaultTextField.swift */,
+				23EB2ADF229FFA190085E865 /* DefaultNavigationController.swift */,
 				23FAD3B7228F59F70094CD15 /* ContactList */,
 			);
 			path = View;
@@ -298,7 +304,8 @@
 		23FAD396228F26EE0094CD15 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				23FAD3B0228F420E0094CD15 /* CoordinatorProtocol.swift */,
+				23EB2AE1229FFDA90085E865 /* Navigator.swift */,
+				23FAD3B0228F420E0094CD15 /* Coordinator.swift */,
 				23FAD3B2228F42550094CD15 /* ApplicationCoordinator.swift */,
 				23FAD3B4228F43B40094CD15 /* ContactListCoordinator.swift */,
 			);
@@ -308,7 +315,6 @@
 		23FAD3AB228F37E80094CD15 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				23FAD3AC228F40670094CD15 /* Localizable.strings */,
 				23FAD3AE228F40C60094CD15 /* Extension.swift */,
 				23FAD3BA228F5D3A0094CD15 /* Color.swift */,
 			);
@@ -593,8 +599,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23FAD3B1228F420E0094CD15 /* CoordinatorProtocol.swift in Sources */,
+				23FAD3B1228F420E0094CD15 /* Coordinator.swift in Sources */,
 				2352766A2294A0C900073925 /* ContactViewModel.swift in Sources */,
+				23EB2AE2229FFDA90085E865 /* Navigator.swift in Sources */,
 				230C75B2229EF43E0081FF72 /* Card.swift in Sources */,
 				235276702294C9D600073925 /* UserResources.swift in Sources */,
 				235276792294E33200073925 /* Dynamic.swift in Sources */,
@@ -602,6 +609,7 @@
 				23DEC4B3229E4B4F0047C799 /* CardPrimingViewController.swift in Sources */,
 				235276732294CA8F00073925 /* NetworkRequestProtocol.swift in Sources */,
 				23FAD3AA228F37770094CD15 /* Contact.swift in Sources */,
+				23EB2AE0229FFA190085E865 /* DefaultNavigationController.swift in Sources */,
 				23FAD3A4228F37410094CD15 /* ContactListViewModel.swift in Sources */,
 				23FAD3B5228F43B40094CD15 /* ContactListCoordinator.swift in Sources */,
 				23DF5EC322944F310070345C /* ContactListViewController.swift in Sources */,

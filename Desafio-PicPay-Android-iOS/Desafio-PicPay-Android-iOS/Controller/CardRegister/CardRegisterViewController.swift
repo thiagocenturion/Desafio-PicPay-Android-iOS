@@ -12,7 +12,7 @@ protocol CardRegisterViewControllerProtocol {
     func cardRegisterViewController(didRegister card: Card)
 }
 
-class CardRegisterViewController: UIViewController {
+class CardRegisterViewController: UIViewController, ViewControllerCoordinatorProtocol {
     
     // MARK: - Properties
     
@@ -23,6 +23,7 @@ class CardRegisterViewController: UIViewController {
     @IBOutlet weak var txtCVV: DefaultTextField!
     @IBOutlet weak var btnRegister: PrimaryButton!
     var delegate: CardRegisterViewControllerProtocol?
+    var coordinator: CoordinatorProtocol?
     
     // MARK: - View Lifecyle
     
