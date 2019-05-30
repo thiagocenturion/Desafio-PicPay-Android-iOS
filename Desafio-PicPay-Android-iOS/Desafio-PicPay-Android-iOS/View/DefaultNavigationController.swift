@@ -26,10 +26,10 @@ class DefaultNavigationController: UINavigationController {
     }
     
     func setup() {
-        navigationBar.prefersLargeTitles = true
         navigationBar.barStyle = .black
         navigationBar.isTranslucent = false
         navigationBar.barTintColor = Color.primaryBackground
+        navigationBar.tintColor = Color.secondary
         navigationBar.shadowImage = UIImage() // Remove linha 1px abaixo da navigation
     }
 

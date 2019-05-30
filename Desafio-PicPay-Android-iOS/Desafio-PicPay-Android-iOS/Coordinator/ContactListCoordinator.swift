@@ -19,7 +19,7 @@ class ContactListCoordinator: NSObject, CoordinatorProtocol {
     func start() {
         // Instancia da Controller principal
         let contactListViewController = ContactListViewController()
-        contactListViewController.title = "ContactListTitle".localizable
+        contactListViewController.title = " "
         contactListViewController.delegate = self
         contactListViewController.coordinator = self
         
@@ -30,6 +30,8 @@ class ContactListCoordinator: NSObject, CoordinatorProtocol {
 
 extension ContactListCoordinator: ContactListViewControllerProtocol {
     func contactListViewController(didSelect contactViewModel: ContactViewModel) {
-        // TODO: Instanciar o coordinator novo e inicia-lo
+        let childCoordinator = CardRegisterCoordinator(navigator: navigator)
+        childCoordinators.append(childCoordinator)
+        childCoordinator.start()
     }
 }

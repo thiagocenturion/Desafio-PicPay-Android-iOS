@@ -23,7 +23,7 @@ class CardRegisterViewController: UIViewController, ViewControllerCoordinatorPro
     @IBOutlet weak var txtCVV: DefaultTextField!
     @IBOutlet weak var btnRegister: PrimaryButton!
     var delegate: CardRegisterViewControllerProtocol?
-    var coordinator: CoordinatorProtocol?
+    weak var coordinator: CoordinatorProtocol?
     
     // MARK: - View Lifecyle
     

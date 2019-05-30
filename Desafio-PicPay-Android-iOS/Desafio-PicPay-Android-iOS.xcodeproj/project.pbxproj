@@ -33,6 +33,8 @@
 		23DF5EC422944F310070345C /* ContactListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23DF5EC222944F310070345C /* ContactListViewController.xib */; };
 		23EB2AE0229FFA190085E865 /* DefaultNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB2ADF229FFA190085E865 /* DefaultNavigationController.swift */; };
 		23EB2AE2229FFDA90085E865 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB2AE1229FFDA90085E865 /* Navigator.swift */; };
+		23EB2AE622A007470085E865 /* CardRegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB2AE522A007470085E865 /* CardRegisterCoordinator.swift */; };
+		23EB2AE822A0093C0085E865 /* CardRegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB2AE722A0093C0085E865 /* CardRegisterViewModel.swift */; };
 		23F9E332229ED980000D050C /* DefaultTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F9E331229ED980000D050C /* DefaultTextField.swift */; };
 		23FAD3A4228F37410094CD15 /* ContactListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FAD3A3228F37410094CD15 /* ContactListViewModel.swift */; };
 		23FAD3A7228F375A0094CD15 /* ContactListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FAD3A5228F375A0094CD15 /* ContactListCell.swift */; };
@@ -100,8 +102,10 @@
 		23DEC4B9229EC6E90047C799 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		23DF5EC122944F310070345C /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		23DF5EC222944F310070345C /* ContactListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactListViewController.xib; sourceTree = "<group>"; };
-		23EB2ADF229FFA190085E865 /* DefaultNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNavigationController.swift; sourceTree = "<group>"; };
+		23EB2ADF229FFA190085E865 /* DefaultNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DefaultNavigationController.swift; path = ../View/DefaultNavigationController.swift; sourceTree = "<group>"; };
 		23EB2AE1229FFDA90085E865 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		23EB2AE522A007470085E865 /* CardRegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRegisterCoordinator.swift; sourceTree = "<group>"; };
+		23EB2AE722A0093C0085E865 /* CardRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRegisterViewModel.swift; sourceTree = "<group>"; };
 		23F9E331229ED980000D050C /* DefaultTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTextField.swift; sourceTree = "<group>"; };
 		23FAD3A3228F37410094CD15 /* ContactListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModel.swift; sourceTree = "<group>"; };
 		23FAD3A5228F375A0094CD15 /* ContactListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListCell.swift; sourceTree = "<group>"; };
@@ -270,9 +274,10 @@
 		23FAD393228F23E80094CD15 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				235276782294E33200073925 /* Dynamic.swift */,
 				23FAD3A3228F37410094CD15 /* ContactListViewModel.swift */,
 				235276692294A0C900073925 /* ContactViewModel.swift */,
-				235276782294E33200073925 /* Dynamic.swift */,
+				23EB2AE722A0093C0085E865 /* CardRegisterViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -285,7 +290,6 @@
 				23DEC4B7229EC0170047C799 /* DescriptionLabel.swift */,
 				23DEC4B9229EC6E90047C799 /* PrimaryButton.swift */,
 				23F9E331229ED980000D050C /* DefaultTextField.swift */,
-				23EB2ADF229FFA190085E865 /* DefaultNavigationController.swift */,
 				23FAD3B7228F59F70094CD15 /* ContactList */,
 			);
 			path = View;
@@ -294,6 +298,7 @@
 		23FAD395228F25D90094CD15 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				23EB2ADF229FFA190085E865 /* DefaultNavigationController.swift */,
 				23FAD3B6228F59DF0094CD15 /* ContactList */,
 				230C75AE229EE9630081FF72 /* CardPriming */,
 				23DEC4B0229E49F40047C799 /* CardRegister */,
@@ -308,6 +313,7 @@
 				23FAD3B0228F420E0094CD15 /* Coordinator.swift */,
 				23FAD3B2228F42550094CD15 /* ApplicationCoordinator.swift */,
 				23FAD3B4228F43B40094CD15 /* ContactListCoordinator.swift */,
+				23EB2AE522A007470085E865 /* CardRegisterCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -602,10 +608,12 @@
 				23FAD3B1228F420E0094CD15 /* Coordinator.swift in Sources */,
 				2352766A2294A0C900073925 /* ContactViewModel.swift in Sources */,
 				23EB2AE2229FFDA90085E865 /* Navigator.swift in Sources */,
+				23EB2AE822A0093C0085E865 /* CardRegisterViewModel.swift in Sources */,
 				230C75B2229EF43E0081FF72 /* Card.swift in Sources */,
 				235276702294C9D600073925 /* UserResources.swift in Sources */,
 				235276792294E33200073925 /* Dynamic.swift in Sources */,
 				23FAD3B9228F5AB90094CD15 /* DarkSearchBar.swift in Sources */,
+				23EB2AE622A007470085E865 /* CardRegisterCoordinator.swift in Sources */,
 				23DEC4B3229E4B4F0047C799 /* CardPrimingViewController.swift in Sources */,
 				235276732294CA8F00073925 /* NetworkRequestProtocol.swift in Sources */,
 				23FAD3AA228F37770094CD15 /* Contact.swift in Sources */,

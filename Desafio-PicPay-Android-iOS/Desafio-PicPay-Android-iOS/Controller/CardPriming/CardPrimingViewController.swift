@@ -9,7 +9,7 @@
 import UIKit
 
 protocol CardPrimingViewControllerProtocol {
-    func cardPrimingViewControllerOnCardRegister()
+    func cardPrimingViewControllerOnRegister()
 }
 
 class CardPrimingViewController: UIViewController, ViewControllerCoordinatorProtocol {
@@ -20,7 +20,7 @@ class CardPrimingViewController: UIViewController, ViewControllerCoordinatorProt
     @IBOutlet weak var lblDescription: UILabel!
     @IBOutlet weak var btnCardRegister: UIButton!
     var delegate: CardPrimingViewControllerProtocol?
-    var coordinator: CoordinatorProtocol?
+    weak var coordinator: CoordinatorProtocol?
     
     // MARK: - View Lifecyle
 
@@ -32,13 +32,14 @@ class CardPrimingViewController: UIViewController, ViewControllerCoordinatorProt
     // MARK: - Actions
     
     @IBAction func onCardRegister(_ sender: Any) {
-        delegate?.cardPrimingViewControllerOnCardRegister()
+        delegate?.cardPrimingViewControllerOnRegister()
     }
     
     // MARK: - Methods
     
     func setupLayout() {
         view.backgroundColor = Color.primaryBackground
+        lblTitle.textAlignment = .center
     }
 
 }

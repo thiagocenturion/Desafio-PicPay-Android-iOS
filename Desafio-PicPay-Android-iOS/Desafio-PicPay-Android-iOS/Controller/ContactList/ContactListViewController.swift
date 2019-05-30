@@ -17,7 +17,7 @@ class ContactListViewController: UIViewController, ViewControllerCoordinatorProt
     // MARK: - Properties
 
     @IBOutlet weak var tableView: UITableView!
-    var coordinator: CoordinatorProtocol?
+    weak var coordinator: CoordinatorProtocol?
     override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
     private let reuseIdentifier = ContactListCell.nameOfClass
     private let searchFieldHeight: CGFloat = 40.0
