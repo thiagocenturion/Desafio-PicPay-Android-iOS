@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,8 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let window = UIWindow(frame: UIScreen.main.bounds)
-        let applicationCoordinator = ApplicationCoordinator(window: window)
         
+        // Isso habilita um gerenciador quem move o scroll ou screen para que o teclado nao esconda o text field / text view
+        IQKeyboardManager.shared.enable = true
+        
+        let applicationCoordinator = ApplicationCoordinator(window: window)
         self.window = window
         self.applicationCoordinator = applicationCoordinator
         

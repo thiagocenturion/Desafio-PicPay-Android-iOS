@@ -10,6 +10,7 @@ target 'Desafio-PicPay-Android-iOS' do
   pod 'MaterialComponents/TextFields'
   pod 'Alamofire'
   pod 'AlamofireImage'
+  pod 'IQKeyboardManagerSwift'
 
   target 'Desafio-PicPay-Android-iOSTests' do
     inherit! :search_paths
