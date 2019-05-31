@@ -17,6 +17,7 @@
 		235276732294CA8F00073925 /* NetworkRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235276722294CA8F00073925 /* NetworkRequestProtocol.swift */; };
 		235276752294CBD400073925 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235276742294CBD400073925 /* ApiRequest.swift */; };
 		235276792294E33200073925 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235276782294E33200073925 /* Dynamic.swift */; };
+		2356F5AF22A18193001D3673 /* KeyboardMovingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2356F5AE22A18193001D3673 /* KeyboardMovingButton.swift */; };
 		23A0CFB0229B3927006CC0AB /* ContactListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A0CFAF229B3927006CC0AB /* ContactListViewModelTest.swift */; };
 		23A0CFB2229B9A7B006CC0AB /* UserApiRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A0CFB1229B9A7B006CC0AB /* UserApiRequestTest.swift */; };
 		23AF4599228C8D5C00E1FAA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF4598228C8D5C00E1FAA8 /* AppDelegate.swift */; };
@@ -82,6 +83,7 @@
 		235276722294CA8F00073925 /* NetworkRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestProtocol.swift; sourceTree = "<group>"; };
 		235276742294CBD400073925 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		235276782294E33200073925 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		2356F5AE22A18193001D3673 /* KeyboardMovingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardMovingButton.swift; sourceTree = "<group>"; };
 		23A0CFAF229B3927006CC0AB /* ContactListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModelTest.swift; sourceTree = "<group>"; };
 		23A0CFB1229B9A7B006CC0AB /* UserApiRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiRequestTest.swift; sourceTree = "<group>"; };
 		23AF4595228C8D5C00E1FAA8 /* Desafio-PicPay-Android-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio-PicPay-Android-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -288,6 +290,7 @@
 				23FAD3B8228F5AB90094CD15 /* DarkSearchBar.swift */,
 				23DEC4B5229EAC7B0047C799 /* TitleLabel.swift */,
 				23DEC4B7229EC0170047C799 /* DescriptionLabel.swift */,
+				2356F5AE22A18193001D3673 /* KeyboardMovingButton.swift */,
 				23DEC4B9229EC6E90047C799 /* PrimaryButton.swift */,
 				23F9E331229ED980000D050C /* DefaultTextField.swift */,
 				23FAD3B7228F59F70094CD15 /* ContactList */,
@@ -609,6 +612,7 @@
 			files = (
 				23FAD3B1228F420E0094CD15 /* Coordinator.swift in Sources */,
 				2352766A2294A0C900073925 /* ContactViewModel.swift in Sources */,
+				2356F5AF22A18193001D3673 /* KeyboardMovingButton.swift in Sources */,
 				23EB2AE2229FFDA90085E865 /* Navigator.swift in Sources */,
 				23EB2AE822A0093C0085E865 /* CardRegisterViewModel.swift in Sources */,
 				230C75B2229EF43E0081FF72 /* Card.swift in Sources */,

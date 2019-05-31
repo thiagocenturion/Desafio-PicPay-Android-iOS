@@ -9,19 +9,7 @@
 import UIKit
 
 @IBDesignable
-class PrimaryButton: UIButton {
-    
-    // MARK: - Constructors
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setup()
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setup()
-    }
+class PrimaryButton: KeyboardMovingButton {
     
     override var isEnabled: Bool {
         didSet {
@@ -40,7 +28,8 @@ class PrimaryButton: UIButton {
     
     // MARK: - Methods
     
-    func setup() {
+    override func setup() {
+        super.setup()
         titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
         titleLabel?.textAlignment = .center
         updateColors()

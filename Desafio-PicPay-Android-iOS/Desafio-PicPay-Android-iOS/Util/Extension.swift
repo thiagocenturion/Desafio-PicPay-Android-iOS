@@ -148,4 +148,8 @@ extension UIView {
             }
         }
     }
+    
+    func constraint(_ firstAttribute: NSLayoutConstraint.Attribute) -> NSLayoutConstraint? {
+        return superview?.constraints.filter({ $0.firstAttribute == firstAttribute }).first
+    }
 }

@@ -60,6 +60,9 @@
                         <constraint firstAttribute="height" constant="48" id="3Tf-63-nhe"/>
                     </constraints>
                     <state key="normal" title="Cadastrar cartão"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isMoveWithKeyboard" value="NO"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="onCardRegister:" destination="-1" eventType="touchUpInside" id="g2v-Qa-iUq"/>
                     </connections>
