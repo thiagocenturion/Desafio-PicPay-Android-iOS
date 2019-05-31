@@ -12,7 +12,7 @@ import MaterialComponents.MaterialTextFields
 @IBDesignable
 class DefaultTextField: MDCTextField {
 
-    @IBInspectable dynamic open var characterCountMax: UInt = 0
+    @IBInspectable dynamic open var limitLength: UInt = 0
     @IBInspectable dynamic open var maskPattern: String = ""
     var textFieldControllerFloating = MDCTextInputControllerUnderline()
     var replacmentCharacter: Character = "#"
@@ -27,6 +27,7 @@ class DefaultTextField: MDCTextField {
     // MARK: - Methods
     
     func setup() {
+        addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
         delegate = self
         
         textFieldControllerFloating = MDCTextInputControllerUnderline(textInput: self)
@@ -39,33 +40,36 @@ class DefaultTextField: MDCTextField {
         textFieldControllerFloating.floatingPlaceholderNormalColor = placeholderColor
         textFieldControllerFloating.floatingPlaceholderActiveColor = tintColor
         textFieldControllerFloating.activeColor = tintColor
-        textFieldControllerFloating.characterCountMax = characterCountMax
         
         // Remove o botão de limpeza de texto e de máximo de caracteres
         clearButtonMode = .never
         trailingUnderlineLabel.isHidden = true
+    }
+    
+    @objc func textFieldDidChange(textField: UITextField) {
+        applyFilter(textField: textField)
+    }
+    
+    func applyFilter(textField: UITextField) {
+        // Só realiza o filtro se tivermos alguma mascara definida, senao ele ira travar o texto
+        guard !maskPattern.isEmpty else { return }
+        
+        // Realiza a formatacao com base na mascara definida
+        textField.text = textField.text?.formatted(mask: maskPattern, replacmentCharacter: replacmentCharacter)
     }
 
 }
 
 extension DefaultTextField: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        // Converte para o Range que é utilizado no método de substituicao de String
         guard let rangeExpression = Range(range, in: textField.text ?? "") else { return true }
+        guard var newString = textField.text?.replacingCharacters(in: rangeExpression, with: string) else { return true }
+        guard limitLength > 0 else { return true }
         
-        // Obtem a nova string
-        guard let newString = textField.text?.replacingCharacters(in: rangeExpression, with: string) else { return true }
+        // Remove qualquer tipo de máscara para evitar que a contagem dos caracteres seja errada.
+        newString = newString.removeFormatted(mask: maskPattern, replacmentCharacter: replacmentCharacter)
         
-        // Caso não tenhamos nenhuma mascara definida, entao pode prosseguir normalmente
-        if maskPattern.isEmpty {
-            // Somente se estiver dentro do limite de caracteres disponivel
-            return newString.count <= Int(characterCountMax)
-        } else {
-            // Se o resultado for maior que o limite de caracteres disponivel, retorna a string anterior. Senao, realiza a formatacao com base na mascara definida
-            textField.text = newString.count > Int(characterCountMax) ? textField.text : newString.formatted(mask: maskPattern, replacmentCharacter: replacmentCharacter)
-            
-            // Sempre retorna falso pois estamos adicionando o texto manualmente
-            return false
-        }
+        // Somente se estiver dentro do limite de caracteres disponivel
+        return newString.count <= Int(limitLength)
     }
 }
