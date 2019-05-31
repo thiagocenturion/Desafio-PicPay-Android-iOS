@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardRegisterViewController" customModule="Desafio_PicPay_Android_iOS" customModuleProvider="target">
             <connections>
                 <outlet property="btnRegister" destination="iJi-hk-QrU" id="2yV-lu-ZfO"/>
+                <outlet property="btnRegisterBottomConstraint" destination="zz1-Sd-D30" id="Rin-6Q-XAV"/>
                 <outlet property="lblTitle" destination="G3x-YR-WAy" id="98k-09-LFe"/>
                 <outlet property="txtCVV" destination="MjF-cQ-Cbr" id="q6R-dZ-DEx"/>
                 <outlet property="txtCardNumber" destination="nPX-oJ-0J7" id="ANH-Vf-TDf"/>
@@ -32,30 +33,30 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ymj-QD-Ize">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="bbv-Wy-2nl">
-                                    <rect key="frame" x="20" y="16" width="374" height="300.5"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastrar Cartão" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3x-YR-WAy" customClass="TitleLabel" customModule="Desafio_PicPay_Android_iOS" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="16" width="374" height="33.5"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="bbv-Wy-2nl">
+                                    <rect key="frame" x="20" y="91.5" width="374" height="183"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastrar Cartão" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3x-YR-WAy" customClass="TitleLabel" customModule="Desafio_PicPay_Android_iOS" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="33.5"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Número do Cartão" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nPX-oJ-0J7" customClass="DefaultTextField" customModule="Desafio_PicPay_Android_iOS" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="73.5" width="374" height="49"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="49"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" textContentType="cc-number"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="characterCountMax">
-                                                    <integer key="value" value="19"/>
+                                                    <integer key="value" value="16"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="maskPattern" value="#### #### #### ####"/>
                                             </userDefinedRuntimeAttributes>
                                         </textField>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome do Titular" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zLp-Fj-CCo" customClass="DefaultTextField" customModule="Desafio_PicPay_Android_iOS" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="162.5" width="374" height="49"/>
+                                            <rect key="frame" x="0.0" y="67" width="374" height="49"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -64,10 +65,13 @@
                                                 <userDefinedRuntimeAttribute type="number" keyPath="characterCountMax">
                                                     <integer key="value" value="255"/>
                                                 </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="limitLength">
+                                                    <integer key="value" value="100"/>
+                                                </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </textField>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="jiK-M8-HfY">
-                                            <rect key="frame" x="0.0" y="251.5" width="374" height="49"/>
+                                            <rect key="frame" x="0.0" y="134" width="374" height="49"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vencimento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cyh-dl-2iE" customClass="DefaultTextField" customModule="Desafio_PicPay_Android_iOS" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="176" height="49"/>
@@ -77,7 +81,7 @@
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="characterCountMax">
-                                                            <integer key="value" value="5"/>
+                                                            <integer key="value" value="4"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="string" keyPath="maskPattern" value="##/##"/>
                                                     </userDefinedRuntimeAttributes>
@@ -92,13 +96,16 @@
                                                         <userDefinedRuntimeAttribute type="number" keyPath="characterCountMax">
                                                             <integer key="value" value="3"/>
                                                         </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="limitLength">
+                                                            <integer key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                             </subviews>
                                         </stackView>
                                     </subviews>
                                 </stackView>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJi-hk-QrU" customClass="PrimaryButton" customModule="Desafio_PicPay_Android_iOS" customModuleProvider="target">
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJi-hk-QrU" customClass="PrimaryButton" customModule="Desafio_PicPay_Android_iOS" customModuleProvider="target">
                                     <rect key="frame" x="12" y="758" width="390" height="48"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="48" id="Luw-Bw-6Jw"/>
@@ -111,12 +118,16 @@
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="bbv-Wy-2nl" firstAttribute="top" secondItem="Ymj-QD-Ize" secondAttribute="top" constant="16" id="00z-BC-PU1"/>
                                 <constraint firstAttribute="trailing" secondItem="iJi-hk-QrU" secondAttribute="trailing" constant="12" id="403-kI-ahA"/>
                                 <constraint firstItem="bbv-Wy-2nl" firstAttribute="leading" secondItem="Ymj-QD-Ize" secondAttribute="leading" constant="20" id="53K-Bw-Pm5"/>
+                                <constraint firstItem="G3x-YR-WAy" firstAttribute="top" secondItem="Ymj-QD-Ize" secondAttribute="top" constant="16" id="FpJ-0L-oXU"/>
+                                <constraint firstItem="G3x-YR-WAy" firstAttribute="leading" secondItem="Ymj-QD-Ize" secondAttribute="leading" constant="20" id="I2H-tf-Luz"/>
                                 <constraint firstItem="iJi-hk-QrU" firstAttribute="leading" secondItem="Ymj-QD-Ize" secondAttribute="leading" constant="12" id="LNM-CH-NPo"/>
+                                <constraint firstItem="bbv-Wy-2nl" firstAttribute="top" secondItem="G3x-YR-WAy" secondAttribute="bottom" constant="42" id="bpA-Xz-nm0"/>
+                                <constraint firstItem="iJi-hk-QrU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bbv-Wy-2nl" secondAttribute="bottom" constant="20" id="ebU-bx-C0E"/>
                                 <constraint firstAttribute="trailing" secondItem="bbv-Wy-2nl" secondAttribute="trailing" constant="20" id="krY-wQ-8Xt"/>
-                                <constraint firstAttribute="bottom" secondItem="iJi-hk-QrU" secondAttribute="bottom" constant="12" id="zz1-Sd-D30"/>
+                                <constraint firstAttribute="trailing" secondItem="G3x-YR-WAy" secondAttribute="trailing" constant="20" id="r8w-64-8Cm"/>
+                                <constraint firstAttribute="bottom" secondItem="iJi-hk-QrU" secondAttribute="bottom" priority="750" constant="12" id="zz1-Sd-D30"/>
                             </constraints>
                         </view>
                     </subviews>
