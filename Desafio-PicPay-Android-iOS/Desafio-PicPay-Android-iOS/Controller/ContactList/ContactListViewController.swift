@@ -22,9 +22,7 @@ class ContactListViewController: UIViewController, ViewControllerCoordinatorProt
     private let reuseIdentifier = ContactListCell.nameOfClass
     private let searchFieldHeight: CGFloat = 40.0
     private var searchBar: DarkSearchBar?
-    lazy var viewModel: ContactListViewModel = {
-        return ContactListViewModel()
-    }()
+    lazy var viewModel: ContactListViewModel = ContactListViewModel()
     var delegate: ContactListViewControllerProtocol?
     
     // MARK: - Methods

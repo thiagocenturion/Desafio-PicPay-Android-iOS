@@ -11,11 +11,18 @@ import MaterialComponents.MaterialTextFields
 
 @IBDesignable
 class DefaultTextField: MDCTextField {
-
+    typealias Listener = (String) -> ()
     @IBInspectable dynamic open var limitLength: UInt = 0
-    @IBInspectable dynamic open var maskPattern: String = ""
+    var maskPattern: String = "" {
+        didSet {
+            if maskPattern.count > 0 {
+                limitLength = UInt(maskPattern.count)
+            }
+        }
+    }
     var textFieldControllerFloating = MDCTextInputControllerUnderline()
     var replacmentCharacter: Character = "#"
+    var listener: Listener?
     
     // MARK: - View Lifecycle
     
@@ -25,6 +32,10 @@ class DefaultTextField: MDCTextField {
     }
     
     // MARK: - Methods
+    
+    func bind(_ listener: Listener?) {
+        self.listener = listener
+    }
     
     func setup() {
         addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
@@ -48,6 +59,7 @@ class DefaultTextField: MDCTextField {
     
     @objc func textFieldDidChange(textField: UITextField) {
         applyFilter(textField: textField)
+        listener?(textField.text ?? "")
     }
     
     func applyFilter(textField: UITextField) {
