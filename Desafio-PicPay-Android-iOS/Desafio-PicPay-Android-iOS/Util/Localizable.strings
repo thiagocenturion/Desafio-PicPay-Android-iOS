@@ -14,7 +14,7 @@
 "ContactListTitle" = "Contatos";
 "ContactListSeachPlaceholder" = "A quem você deseja pagar?";
 "emptyDataSource" = "Não há nenhum usuário para que\n possamos realizar algum pagamento.";
-"creditCardCountError" = "O Cartão de Crédito precisa ter 16 dígitos.";
+"creditCardCountError" = "Número do cartão é inválido.";
 "nameCountValidator" = "O nome deve conter no máximo 50 caractéres.";
 "nameFullnameValidator" = "Escreva o nome completo do titular que possui o cartão de crédito.";
 "expiryDateInvalidValidator" = "Data de vencimento inválida.";

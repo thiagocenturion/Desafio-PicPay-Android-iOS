@@ -14,11 +14,13 @@ class TextFieldViewModel: NSObject {
     var errorMessage: Dynamic<String?> = Dynamic("")
     private(set) var mask: String?
     private(set) var replacement: String?
+    private(set) var minimumCount: Int?
     
-    init(mask: String? = nil, replacement: String? = nil) {
+    init(mask: String? = nil, replacement: String? = nil, minimumCount: Int? = nil) {
         super.init()
         self.mask = mask
         self.replacement = replacement
+        self.minimumCount = minimumCount
     }
     
     func validate(_ validationType: ValidatorType) -> Bool {

@@ -46,9 +46,8 @@ enum Validator {
 
 struct CreditCardValidator: ValidatorProtocol {
     func validated(_ value: String) throws -> String {
-        
-        // TODO: 1 - Testar com menos de 16 digitos
-        guard value.removeFormatted(mask: "#### #### #### ####", replacmentCharacter: "#").count == 16 else {
+        let removedMaskValue = value.removeFormatted(mask: "#### #### #### #### ###", replacmentCharacter: "#")
+        guard removedMaskValue.count >= 13 && removedMaskValue.count <= 19 else {
             throw ValidatorError("creditCardCountError".localizable)
         }
         
@@ -57,8 +56,6 @@ struct CreditCardValidator: ValidatorProtocol {
 }
 
 struct NameValidator: ValidatorProtocol {
-    // TODO: 1 - Testar com nome maior que 50 digitos
-    // TODO: 2 - Testar com nome sem sobrenome
     func validated(_ value: String) throws -> String {
         guard value.count <= 50 else {
             throw ValidatorError("nameCountValidator".localizable)
@@ -83,10 +80,6 @@ struct ExpiryDateValidator: ValidatorProtocol {
         self.formatter = formatter
     }
     
-    // TODO: 1 - testar com data maior que 12 meses: 13/27
-    // TODO: 2 - testar com data retroativa: 05/18
-    // TODO: 3 - testar com data igual: 06/19
-    // TODO: 4 - testar com data acima: 09/27
     func validated(_ value: String) throws -> String {
         guard value.count == 5 else {
             throw ValidatorError("expiryDateInvalidValidator".localizable)
@@ -110,7 +103,6 @@ struct ExpiryDateValidator: ValidatorProtocol {
 }
 
 struct CvvValidator: ValidatorProtocol {
-    // TODO: 1 - Testar com código de CVV incompleto: 12
     func validated(_ value: String) throws -> String {
         guard value.count == 3 else {
             throw ValidatorError("cvvValidator".localizable)

@@ -11,6 +11,8 @@
 		230C75AD229EE95A0081FF72 /* CardRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 230C75AB229EE95A0081FF72 /* CardRegisterViewController.xib */; };
 		230C75B0229EF2BE0081FF72 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230C75AF229EF2BE0081FF72 /* Payment.swift */; };
 		230C75B2229EF43E0081FF72 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230C75B1229EF43E0081FF72 /* Card.swift */; };
+		2325545C22A99CAE00A5D57F /* CardRegisterViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325545B22A99CAE00A5D57F /* CardRegisterViewModelTest.swift */; };
+		2325545E22AAE17E00A5D57F /* ValidatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325545D22AAE17E00A5D57F /* ValidatorTest.swift */; };
 		2352766A2294A0C900073925 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235276692294A0C900073925 /* ContactViewModel.swift */; };
 		2352766D2294C73100073925 /* ApiResourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2352766C2294C73100073925 /* ApiResourceProtocol.swift */; };
 		235276702294C9D600073925 /* UserResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2352766F2294C9D600073925 /* UserResources.swift */; };
@@ -79,6 +81,8 @@
 		230C75AB229EE95A0081FF72 /* CardRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardRegisterViewController.xib; sourceTree = "<group>"; };
 		230C75AF229EF2BE0081FF72 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		230C75B1229EF43E0081FF72 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		2325545B22A99CAE00A5D57F /* CardRegisterViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRegisterViewModelTest.swift; sourceTree = "<group>"; };
+		2325545D22AAE17E00A5D57F /* ValidatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorTest.swift; sourceTree = "<group>"; };
 		235276692294A0C900073925 /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
 		2352766C2294C73100073925 /* ApiResourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResourceProtocol.swift; sourceTree = "<group>"; };
 		2352766F2294C9D600073925 /* UserResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResources.swift; sourceTree = "<group>"; };
@@ -245,7 +249,9 @@
 			children = (
 				23AF45AF228C8D5E00E1FAA8 /* Info.plist */,
 				23A0CFAF229B3927006CC0AB /* ContactListViewModelTest.swift */,
+				2325545B22A99CAE00A5D57F /* CardRegisterViewModelTest.swift */,
 				23A0CFB1229B9A7B006CC0AB /* UserApiRequestTest.swift */,
+				2325545D22AAE17E00A5D57F /* ValidatorTest.swift */,
 			);
 			path = "Desafio-PicPay-Android-iOSTests";
 			sourceTree = "<group>";
@@ -663,7 +669,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2325545E22AAE17E00A5D57F /* ValidatorTest.swift in Sources */,
 				23A0CFB0229B3927006CC0AB /* ContactListViewModelTest.swift in Sources */,
+				2325545C22A99CAE00A5D57F /* CardRegisterViewModelTest.swift in Sources */,
 				23A0CFB2229B9A7B006CC0AB /* UserApiRequestTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

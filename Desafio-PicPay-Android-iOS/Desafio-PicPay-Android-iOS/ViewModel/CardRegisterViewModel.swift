@@ -12,7 +12,7 @@ class CardRegisterViewModel: NSObject {
     
     // MARK: - Properties
     
-    private(set) var cardNumberViewModel = TextFieldViewModel(mask: "#### #### #### ####", replacement: "#")
+    private(set) var cardNumberViewModel = TextFieldViewModel(mask: "#### #### #### #### ###", replacement: "#", minimumCount: 13)
     private(set) var holdersNameViewModel = TextFieldViewModel()
     private(set) var expiryDateViewModel = TextFieldViewModel(mask: "##/##", replacement: "#")
     private(set) var cvvViewModel = TextFieldViewModel()
@@ -44,29 +44,38 @@ class CardRegisterViewModel: NSObject {
     // MARK: - Methods
     
     func setupBind() {
+        // Define os binds quando os text fields recebem um texto novo de entrada
         cardNumberViewModel.text.bind { [weak self] text in
-            self?.cardNumberViewModel.isCounted.value = self?.calculateMinimumCountValid(text: text, mask: self?.cardNumberViewModel.mask) ?? false
+            self?.cardNumberViewModel.isCounted.value = self?.calculateMinimumCountValid(text: text, with: self?.cardNumberViewModel) ?? false
         }
         holdersNameViewModel.text.bind { [weak self] text in
-            self?.holdersNameViewModel.isCounted.value = self?.calculateMinimumCountValid(text: text, mask: self?.holdersNameViewModel.mask) ?? false
+            self?.holdersNameViewModel.isCounted.value = self?.calculateMinimumCountValid(text: text, with: self?.holdersNameViewModel) ?? false
         }
         expiryDateViewModel.text.bind { [weak self] text in
-            self?.expiryDateViewModel.isCounted.value = self?.calculateMinimumCountValid(text: text, mask: self?.expiryDateViewModel.mask) ?? false
+            self?.expiryDateViewModel.isCounted.value = self?.calculateMinimumCountValid(text: text, with: self?.expiryDateViewModel) ?? false
         }
         cvvViewModel.text.bind { [weak self] text in
-            self?.cvvViewModel.isCounted.value = self?.calculateMinimumCountValid(text: text, mask: self?.cvvViewModel.mask) ?? false
+            self?.cvvViewModel.isCounted.value = self?.calculateMinimumCountValid(text: text, with: self?.cvvViewModel) ?? false
         }
         
+        // Binds de quando as propriedades de validação de contagem minima e maxima sao redefinidas. Nos atualizamos as mensagens de erro de cada um dos text fields, de volta para a controller
         cardNumberViewModel.isCounted.bind { [weak self] _ in self?.updateCountedAndErrorMessage(self?.cardNumberViewModel) }
         holdersNameViewModel.isCounted.bind { [weak self] _ in self?.updateCountedAndErrorMessage(self?.holdersNameViewModel) }
         expiryDateViewModel.isCounted.bind { [weak self] _ in self?.updateCountedAndErrorMessage(self?.expiryDateViewModel) }
         cvvViewModel.isCounted.bind { [weak self] _ in self?.updateCountedAndErrorMessage(self?.cvvViewModel) }
     }
     
-    func calculateMinimumCountValid(text: String, mask: String?) -> Bool {
-        // Caso tenha mascara, o texto de entrada tem que ter exatamente o mesmo tamanho da mascara para ser valido
-        if let mask = mask {
-            return text.count == mask.count
+    func calculateMinimumCountValid(text: String, with txtViewModel: TextFieldViewModel?) -> Bool {
+        if let mask = txtViewModel?.mask {
+            // Caso tenha mascara, verifica se temos contador minimo. Se sim, remove a mascara e verifica se o texto possui a contagem minima depois disso.
+            if let minimumCount = txtViewModel?.minimumCount, let replacement = txtViewModel?.replacement {
+                return text.removeFormatted(mask: mask, replacmentCharacter: Character(replacement)).count >= minimumCount
+            } else {
+                // Se não tem contador minimo, o texto tem que ser exatamente igual ao tamanho maximo de sua máscara
+                return text.count == mask.count
+            }
+        } else if let minimumCount = txtViewModel?.minimumCount {
+            return text.count >= minimumCount
         } else {
             // Quando nao possui mascara, apenas deve existir texto escrito
             return text.count > 0
