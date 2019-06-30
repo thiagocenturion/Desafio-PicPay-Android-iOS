@@ -11,9 +11,11 @@ import UIKit
 class CardRegisterCoordinator: NSObject, CoordinatorProtocol {
     var childCoordinators = [CoordinatorProtocol]()
     var navigator: Navigator
+    var contactViewModel: ContactViewModel
     
-    init(navigator: Navigator) {
+    init(navigator: Navigator, contact: ContactViewModel) {
         self.navigator = navigator
+        self.contactViewModel = contact
     }
     
     func start() {

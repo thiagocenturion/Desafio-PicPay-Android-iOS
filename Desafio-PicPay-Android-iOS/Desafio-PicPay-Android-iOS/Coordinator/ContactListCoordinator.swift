@@ -30,7 +30,7 @@ class ContactListCoordinator: NSObject, CoordinatorProtocol {
 
 extension ContactListCoordinator: ContactListViewControllerProtocol {
     func contactListViewController(didSelect contactViewModel: ContactViewModel) {
-        let childCoordinator = CardRegisterCoordinator(navigator: navigator)
+        let childCoordinator = CardRegisterCoordinator(navigator: navigator, contact: contactViewModel)
         childCoordinators.append(childCoordinator)
         childCoordinator.start()
     }

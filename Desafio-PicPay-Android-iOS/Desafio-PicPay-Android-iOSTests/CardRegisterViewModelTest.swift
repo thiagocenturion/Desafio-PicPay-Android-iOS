@@ -98,5 +98,39 @@ class CardRegisterViewModelTest: XCTestCase {
         XCTAssertTrue(sut.cvvViewModel.isCounted.value)
         XCTAssertTrue(sut.cvvViewModel.validate(.cvv))
     }
+    
+    func testCardRetriveSuccess() {
+        let card = Card(cardNumber: "1234567812345678", holdersName: "Nome Completo", expiryDate: "01/18", CVV: 123)
+        let key = "CreditCardTest"
+        
+        if KeychainService.save(card, for: key) {
+            // O cartao de credito recuperado do keychain deve ser o mesmo utilizado para armazenar
+            let retrivedCard = KeychainService.retriveCard(for: key)
+            XCTAssertEqual(retrivedCard?.cardNumber?.description, card.cardNumber?.description)
+            XCTAssertEqual(retrivedCard?.holdersName?.description, card.holdersName?.description)
+            XCTAssertEqual(retrivedCard?.expiryDate?.description, card.expiryDate?.description)
+            XCTAssertEqual(retrivedCard?.CVV, card.CVV)
+        } else {
+            XCTFail("Problema em salvar o cartao de credito")
+        }
+    }
+    
+    func testCardRetriveFailure() {
+        let card = Card(cardNumber: "1234567812345678", holdersName: "Nome Completo", expiryDate: "01/18", CVV: 123)
+        let key = "CreditCardTest"
+        
+        if KeychainService.save(card, for: key) {
+            // Caso obteve o cartao de credito, significa que salvou com sucesso
+            if let _ = KeychainService.retriveCard(for: key) {
+                // Remove o cartao da memoria
+                let isRemoved = KeychainService.removeCard(for: key)
+                XCTAssertTrue(isRemoved)
+            } else {
+                XCTFail("Problema em obter o cartao de credito")
+            }
+        } else {
+            XCTFail("Problema em salvar o cartao de credito")
+        }
+    }
 
 }

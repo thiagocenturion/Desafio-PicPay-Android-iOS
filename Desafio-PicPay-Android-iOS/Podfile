@@ -11,6 +11,7 @@ target 'Desafio-PicPay-Android-iOS' do
   pod 'Alamofire'
   pod 'AlamofireImage'
   pod 'IQKeyboardManagerSwift'
+  pod 'SwiftKeychainWrapper'
 
   target 'Desafio-PicPay-Android-iOSTests' do
     inherit! :search_paths

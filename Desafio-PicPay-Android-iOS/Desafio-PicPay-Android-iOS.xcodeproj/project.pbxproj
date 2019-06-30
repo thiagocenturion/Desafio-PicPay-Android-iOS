@@ -22,6 +22,7 @@
 		2356F5AF22A18193001D3673 /* KeyboardMovingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2356F5AE22A18193001D3673 /* KeyboardMovingButton.swift */; };
 		23A0CFB0229B3927006CC0AB /* ContactListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A0CFAF229B3927006CC0AB /* ContactListViewModelTest.swift */; };
 		23A0CFB2229B9A7B006CC0AB /* UserApiRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A0CFB1229B9A7B006CC0AB /* UserApiRequestTest.swift */; };
+		23A81CBD22C5E1E000785B87 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A81CBC22C5E1DF00785B87 /* KeychainService.swift */; };
 		23AF4599228C8D5C00E1FAA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF4598228C8D5C00E1FAA8 /* AppDelegate.swift */; };
 		23AF459E228C8D5C00E1FAA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23AF459C228C8D5C00E1FAA8 /* Main.storyboard */; };
 		23AF45A0228C8D5E00E1FAA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23AF459F228C8D5E00E1FAA8 /* Assets.xcassets */; };
@@ -92,6 +93,7 @@
 		2356F5AE22A18193001D3673 /* KeyboardMovingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardMovingButton.swift; sourceTree = "<group>"; };
 		23A0CFAF229B3927006CC0AB /* ContactListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModelTest.swift; sourceTree = "<group>"; };
 		23A0CFB1229B9A7B006CC0AB /* UserApiRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiRequestTest.swift; sourceTree = "<group>"; };
+		23A81CBC22C5E1DF00785B87 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		23AF4595228C8D5C00E1FAA8 /* Desafio-PicPay-Android-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio-PicPay-Android-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23AF4598228C8D5C00E1FAA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23AF459D228C8D5C00E1FAA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		2352766B2294C33200073925 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				23B9098E22C6B1250089729D /* Keychain */,
 				2352766E2294C9A100073925 /* Resource */,
 				235276712294CA6800073925 /* Request */,
 			);
@@ -263,6 +266,14 @@
 				23AF45BA228C8D5E00E1FAA8 /* Info.plist */,
 			);
 			path = "Desafio-PicPay-Android-iOSUITests";
+			sourceTree = "<group>";
+		};
+		23B9098E22C6B1250089729D /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				23A81CBC22C5E1DF00785B87 /* KeychainService.swift */,
+			);
+			path = Keychain;
 			sourceTree = "<group>";
 		};
 		23D332A822A4C39800A53C1D /* Validation */ = {
@@ -563,6 +574,7 @@
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
 				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -573,6 +585,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -656,6 +669,7 @@
 				23FAD3A7228F375A0094CD15 /* ContactListCell.swift in Sources */,
 				23F9E332229ED980000D050C /* DefaultTextField.swift in Sources */,
 				23DEC4B6229EAC7B0047C799 /* TitleLabel.swift in Sources */,
+				23A81CBD22C5E1E000785B87 /* KeychainService.swift in Sources */,
 				23FAD3B3228F42550094CD15 /* ApplicationCoordinator.swift in Sources */,
 				23DEC4B8229EC0170047C799 /* DescriptionLabel.swift in Sources */,
 				23DEC4BA229EC6E90047C799 /* PrimaryButton.swift in Sources */,
