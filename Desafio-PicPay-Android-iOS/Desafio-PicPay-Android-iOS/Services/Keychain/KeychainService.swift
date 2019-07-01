@@ -9,28 +9,42 @@
 import Foundation
 import SwiftKeychainWrapper
 
-class KeychainService {
-    static func save(_ card: Card, for key: String) -> Bool {
-        // Converte o cartao de credito para Data
-        let cardData = NSKeyedArchiver.archivedData(withRootObject: card)
+protocol KeychainServiceProtocol {
+    var key: String { get }
+    init(key: String)
+    func save<T>(_ object: T) -> Bool
+    func retriveObject<T>() -> T?
+    func remove() -> Bool
+}
+
+class KeychainService: KeychainServiceProtocol {
+    var key: String
+    
+    required init(key: String) {
+        self.key = key
+    }
+    
+    func save<T>(_ object: T) -> Bool {
+        // Converte o objeto para Data
+        let objectData = NSKeyedArchiver.archivedData(withRootObject: object)
         
         // Executa o insert no keychain
-        let saveSucessful = KeychainWrapper.standard.set(cardData, forKey: key)
+        let saveSucessful = KeychainWrapper.standard.set(objectData, forKey: key)
         
         return saveSucessful
     }
     
-    static func retriveCard(for key: String) -> Card? {
+    func retriveObject<T>() -> T? {
         // Executa o get do keychain
-        guard let retrivedCardData = KeychainWrapper.standard.data(forKey: key) else { return nil }
+        guard let retrivedData = KeychainWrapper.standard.data(forKey: key) else { return nil }
         
         // Converte para objeto
-        let retrivedCard = NSKeyedUnarchiver.unarchiveObject(with: retrivedCardData) as? Card
+        let retrivedObject = NSKeyedUnarchiver.unarchiveObject(with: retrivedData) as? T
         
-        return retrivedCard
+        return retrivedObject
     }
     
-    static func removeCard(for key: String) -> Bool {
+    func remove() -> Bool {
         return KeychainWrapper.standard.removeObject(forKey: key)
     }
 }

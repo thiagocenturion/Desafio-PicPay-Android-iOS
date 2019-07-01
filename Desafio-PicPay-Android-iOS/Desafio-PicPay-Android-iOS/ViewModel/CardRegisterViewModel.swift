@@ -17,10 +17,9 @@ class CardRegisterViewModel: NSObject {
     private(set) var expiryDateViewModel = TextFieldViewModel(mask: "##/##", replacement: "#")
     private(set) var cvvViewModel = TextFieldViewModel()
     private(set) var card: Card = Card(cardNumber: nil, holdersName: nil, expiryDate: nil, CVV:  nil)
-    var isLoading = Dynamic(false)
     var isCounted = Dynamic(false)
     var alertMessage = Dynamic("")
-    var isValid: Bool {
+    private var isValid: Bool {
         get {
             return cardNumberViewModel.validate(.creditCard)
                     && holdersNameViewModel.validate(.name)
@@ -28,16 +27,13 @@ class CardRegisterViewModel: NSObject {
                     && cvvViewModel.validate(.cvv)
         }
     }
+    private var keychainService: KeychainServiceProtocol?
     
     // MARK: Constructors
     
-//    init(sqlRepository: SqlRepository? = SqlRepositoryCard()) {
-//        self.sqlRepository = sqlRepository
-//        super.init()
-//    }
-    
-    override init() {
+    init(keychainService: KeychainServiceProtocol? = KeychainService(key: Card.nameOfClass)) {
         super.init()
+        self.keychainService = keychainService
         setupBind()
     }
     
@@ -46,16 +42,56 @@ class CardRegisterViewModel: NSObject {
     func setupBind() {
         // Define os binds quando os text fields recebem um texto novo de entrada
         cardNumberViewModel.text.bind { [weak self] text in
-            self?.cardNumberViewModel.isCounted.value = self?.calculateMinimumCountValid(text: text, with: self?.cardNumberViewModel) ?? false
+            let txtViewModel = self?.cardNumberViewModel
+            
+            // Determina se o texto esta dentro da contagem necessaria para que o campo esteja validado para prosseguir
+            self?.cardNumberViewModel.isCounted.value = self?.calculateMinimumCountValid(text: text, with: txtViewModel) ?? false
+            
+            // Atribui a model o texto digitado na tela. Se existir, remove a mascara.
+            var formattedText = text
+            if let mask = txtViewModel?.mask, let replacement = txtViewModel?.replacement {
+                formattedText = text.removeFormatted(mask: mask, replacmentCharacter: Character(replacement))
+            }
+            self?.card.cardNumber = formattedText
         }
         holdersNameViewModel.text.bind { [weak self] text in
-            self?.holdersNameViewModel.isCounted.value = self?.calculateMinimumCountValid(text: text, with: self?.holdersNameViewModel) ?? false
+            let txtViewModel = self?.holdersNameViewModel
+            
+            // Determina se o texto esta dentro da contagem necessaria para que o campo esteja validado para prosseguir
+            self?.holdersNameViewModel.isCounted.value = self?.calculateMinimumCountValid(text: text, with: txtViewModel) ?? false
+            
+            // Atribui a model o texto digitado na tela. Se existir, remove a mascara.
+            var formattedText = text
+            if let mask = txtViewModel?.mask, let replacement = txtViewModel?.replacement {
+                formattedText = text.removeFormatted(mask: mask, replacmentCharacter: Character(replacement))
+            }
+            self?.card.holdersName = formattedText
         }
         expiryDateViewModel.text.bind { [weak self] text in
-            self?.expiryDateViewModel.isCounted.value = self?.calculateMinimumCountValid(text: text, with: self?.expiryDateViewModel) ?? false
+            let txtViewModel = self?.expiryDateViewModel
+            
+            // Determina se o texto esta dentro da contagem necessaria para que o campo esteja validado para prosseguir
+            self?.expiryDateViewModel.isCounted.value = self?.calculateMinimumCountValid(text: text, with: txtViewModel) ?? false
+            
+            // Atribui a model o texto digitado na tela. Se existir, remove a mascara.
+            var formattedText = text
+            if let mask = txtViewModel?.mask, let replacement = txtViewModel?.replacement {
+                formattedText = text.removeFormatted(mask: mask, replacmentCharacter: Character(replacement))
+            }
+            self?.card.expiryDate = formattedText
         }
         cvvViewModel.text.bind { [weak self] text in
-            self?.cvvViewModel.isCounted.value = self?.calculateMinimumCountValid(text: text, with: self?.cvvViewModel) ?? false
+            let txtViewModel = self?.cvvViewModel
+            
+            // Determina se o texto esta dentro da contagem necessaria para que o campo esteja validado para prosseguir
+            self?.cvvViewModel.isCounted.value = self?.calculateMinimumCountValid(text: text, with: txtViewModel) ?? false
+            
+            // Atribui a model o texto digitado na tela. Se existir, remove a mascara.
+            var formattedText = text
+            if let mask = txtViewModel?.mask, let replacement = txtViewModel?.replacement {
+                formattedText = text.removeFormatted(mask: mask, replacmentCharacter: Character(replacement))
+            }
+            self?.card.CVV = Int(formattedText)
         }
         
         // Binds de quando as propriedades de validação de contagem minima e maxima sao redefinidas. Nos atualizamos as mensagens de erro de cada um dos text fields, de volta para a controller
@@ -93,17 +129,21 @@ class CardRegisterViewModel: NSObject {
         viewModel?.errorMessage.value = nil
     }
     
-    func saveCard() {
-//        isLoading.value = true
-//        networkRequest?.request(with: { [weak self] (contacts: [Contact]?, error: APIError?) in
-//            self?.isLoading.value = false
-//            if let error = error {
-//                self?.alertMessage.value = error.rawValue.localizable
-//            } else if let contacts = contacts {
-//                self?.arrAllContactViewModels = self?.createCellViewModels(contacts: contacts) ?? [ContactViewModel]()
-//            } else {
-//                self?.alertMessage.value = APIError.internalError.rawValue.localizable
-//            }
-//        })
+    /*
+     Executa o insert do card no keychain e,
+     caso tenha dado certo, envia para o coordinator que finalizamos este modulo
+     */
+    func saveCard() -> Bool {
+        var saveSuccess = false
+        
+        if isValid {
+            // Executa o salvamento
+            saveSuccess = keychainService?.save(card) == true
+            
+            // Caso tenha dado erro, atribui uma mensagem de alerta para exibir na tela
+            alertMessage.value = saveSuccess ? "" : "internalError".localizable
+        }
+        
+        return saveSuccess
     }
 }

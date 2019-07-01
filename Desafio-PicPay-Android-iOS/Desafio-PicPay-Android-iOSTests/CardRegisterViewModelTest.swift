@@ -10,13 +10,16 @@ import XCTest
 @testable import Desafio_PicPay_Android_iOS
 
 class CardRegisterViewModelTest: XCTestCase {
+    var mockKeychainService: MockKeychainService! = nil
     var sut: CardRegisterViewModel! = nil
 
     override func setUp() {
-        sut = CardRegisterViewModel()
+        mockKeychainService = MockKeychainService(key: "CardRegisterViewModelTest")
+        sut = CardRegisterViewModel(keychainService: mockKeychainService)
     }
 
     override func tearDown() {
+        mockKeychainService = nil
         sut = nil
         super.tearDown()
     }
@@ -28,7 +31,7 @@ class CardRegisterViewModelTest: XCTestCase {
         }
     }
     
-    func testCardNumberCounted() {
+    func testCardNumberValidated() {
         let incompletedText = "1111 1111 1111" // 12 caracteres
         let correctText = "1111 1111 1111 1234" // 13 caracteres
         
@@ -99,37 +102,41 @@ class CardRegisterViewModelTest: XCTestCase {
         XCTAssertTrue(sut.cvvViewModel.validate(.cvv))
     }
     
-    func testCardRetriveSuccess() {
-        let card = Card(cardNumber: "1234567812345678", holdersName: "Nome Completo", expiryDate: "01/18", CVV: 123)
-        let key = "CreditCardTest"
+    // Esta funcao vai servir para testar se a view model respondeu certo para o sucesso de salvamento do cartao de credito no keychain
+    func testKeychainSaveSuccess() {
+        let stubCard = Stub().card()
+        mockKeychainService.isSavedCard = true
         
-        if KeychainService.save(card, for: key) {
-            // O cartao de credito recuperado do keychain deve ser o mesmo utilizado para armazenar
-            let retrivedCard = KeychainService.retriveCard(for: key)
-            XCTAssertEqual(retrivedCard?.cardNumber?.description, card.cardNumber?.description)
-            XCTAssertEqual(retrivedCard?.holdersName?.description, card.holdersName?.description)
-            XCTAssertEqual(retrivedCard?.expiryDate?.description, card.expiryDate?.description)
-            XCTAssertEqual(retrivedCard?.CVV, card.CVV)
-        } else {
-            XCTFail("Problema em salvar o cartao de credito")
-        }
+        sut.cardNumberViewModel.text.value = stubCard.cardNumber!
+        sut.holdersNameViewModel.text.value = stubCard.holdersName!
+        sut.expiryDateViewModel.text.value = stubCard.expiryDate!
+        sut.cvvViewModel.text.value = String(stubCard.CVV!)
+
+        let saveSuccess = sut.saveCard()
+        
+        XCTAssertTrue(saveSuccess)
+        XCTAssertTrue(sut.alertMessage.value.isEmpty)
     }
     
-    func testCardRetriveFailure() {
-        let card = Card(cardNumber: "1234567812345678", holdersName: "Nome Completo", expiryDate: "01/18", CVV: 123)
-        let key = "CreditCardTest"
+    func testKeychainSaveFailure() {
+        let stubCard = Stub().card()
+        mockKeychainService.isSavedCard = false
         
-        if KeychainService.save(card, for: key) {
-            // Caso obteve o cartao de credito, significa que salvou com sucesso
-            if let _ = KeychainService.retriveCard(for: key) {
-                // Remove o cartao da memoria
-                let isRemoved = KeychainService.removeCard(for: key)
-                XCTAssertTrue(isRemoved)
-            } else {
-                XCTFail("Problema em obter o cartao de credito")
-            }
-        } else {
-            XCTFail("Problema em salvar o cartao de credito")
+        sut.cardNumberViewModel.text.value = stubCard.cardNumber!
+        sut.holdersNameViewModel.text.value = stubCard.holdersName!
+        sut.expiryDateViewModel.text.value = stubCard.expiryDate!
+        sut.cvvViewModel.text.value = String(stubCard.CVV!)
+        
+        let saveSuccess = sut.saveCard()
+        
+        XCTAssertFalse(saveSuccess)
+        XCTAssertEqual(sut.alertMessage.value, "internalError".localizable)
+    }
+    
+    // MARK: - Stub
+    class Stub {
+        func card() -> Card {
+            return Card(cardNumber: "1234567812345678", holdersName: "Nome Sobrenome UltimoNome", expiryDate: "06/22", CVV: 111)
         }
     }
 

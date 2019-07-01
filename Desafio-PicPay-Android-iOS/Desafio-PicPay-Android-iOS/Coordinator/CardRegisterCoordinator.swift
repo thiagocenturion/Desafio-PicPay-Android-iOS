@@ -43,7 +43,7 @@ extension CardRegisterCoordinator: CardPrimingViewControllerProtocol {
 }
 
 extension CardRegisterCoordinator: CardRegisterViewControllerProtocol {
-    func cardRegisterViewController(didRegister card: Card) {
+    func cardRegisterViewController(didRegister cardViewModel: CardRegisterViewModel) {
         // TODO: Enviar um target para o coordinator anterior para dizer que finalizamos nossa tarefa aqui.
     }
 }

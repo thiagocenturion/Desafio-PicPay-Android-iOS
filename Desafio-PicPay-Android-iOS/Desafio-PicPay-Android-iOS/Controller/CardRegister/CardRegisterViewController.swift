@@ -9,7 +9,7 @@
 import UIKit
 
 protocol CardRegisterViewControllerProtocol {
-    func cardRegisterViewController(didRegister card: Card)
+    func cardRegisterViewController(didRegister cardViewModel: CardRegisterViewModel)
 }
 
 class CardRegisterViewController: UIViewController, ViewControllerCoordinatorProtocol {
@@ -37,8 +37,10 @@ class CardRegisterViewController: UIViewController, ViewControllerCoordinatorPro
     // MARK: - Actions
     
     @IBAction func onSave(_ sender: Any) {
-        if viewModel.isValid {
-            print("Salvar")
+        // Solicita a view model para que salve o cartao de credito
+        if viewModel.saveCard() {
+            // Caso tenha salvado com sucesso, devolve ao coordinator dizendo que registramos o cartao e enviamos a view model para analise
+            delegate?.cardRegisterViewController(didRegister: viewModel)
         }
     }
     
@@ -58,15 +60,6 @@ class CardRegisterViewController: UIViewController, ViewControllerCoordinatorPro
         txtHoldersName.maskPattern = viewModel.holdersNameViewModel.mask ?? ""
         txtExpiryDate.maskPattern = viewModel.expiryDateViewModel.mask ?? ""
         txtCVV.maskPattern = viewModel.cvvViewModel.mask ?? ""
-        
-        // Data bind viewModel
-        viewModel.isLoading.bind { [weak self] isLoading in
-            if isLoading {
-                self?.view.showActivity()
-            } else {
-                self?.view.removeActivity()
-            }
-        }
         
         // Caso retorne algum erro da view model, exibe um alerta com a mensagem correta ao usuario
         viewModel.alertMessage.bind { [weak self] in self?.showAlert($0) }

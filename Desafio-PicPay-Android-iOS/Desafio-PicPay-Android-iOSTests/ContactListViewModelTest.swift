@@ -157,38 +157,39 @@ class ContactListViewModelTest: XCTestCase {
         XCTAssertNil(contactViewModelImageNotExists.imgUrl)
     }
     
-}
+    // MARK: - Stub
+    class Stub {
+        func stubContacts() -> [Contact] {
+            return [
+                Contact(id: 1001, name: "Eduardo Santos", img: "https://randomuser.me/api/portraits/men/9.jpg", username: "@eduardo.santos"),
+                Contact(id: 1002, name: "Marina Coelho", img: "https://randomuser.me/api/portraits/women/37.jpg", username: "@marina.coelho"),
+                Contact(id: 1003, name: "Márcia da Silva", img: "https://randomuser.me/api/portraits/women/57.jpg", username: "@marcia.silva"),
+                Contact(id: 1019, name: "Maria Torres", img: "https://randomuser.me/api/portraits/women/34.jpg", username: "@maria.torres"),
+                Contact(id: 1031, name: "Maria Medeiros", img: "https://randomuser.me/api/portraits/women/77.jpg", username: "@maria.medeiros"),
+                Contact(id: 1032, name: "Paulo Noronha", img: "https://randomuser.me/api/portraits/men/68.jpg", username: "@paulo.noronha"),
+                Contact(id: 1033, name: "Mário Campos", img: "https://randomuser.me/api/portraits/men/35.jpg", username: "@mario.campos")
+            ]
+        }
+        
+    }
+    
+    class MockApiRequest: NetworkRequestProtocol {
+        var isRequestCalled = false
+        var completionClosure: (([Contact]?, APIError?) -> Void)!
+        
+        func request<T>(with completion: @escaping (T?, APIError?) -> Void) where T : Decodable {
+            isRequestCalled = true
+            completionClosure = completion as? (([Contact]?, APIError?) -> Void)
+        }
+        
+        func requestSuccess(_ contacts: [Contact] = Stub().stubContacts()) {
+            completionClosure(contacts, nil)
+        }
+        
+        func requestFail(error: APIError?) {
+            completionClosure(nil, error)
+        }
+        
+    }
 
-class MockApiRequest: NetworkRequestProtocol {
-    var isRequestCalled = false
-    var completionClosure: (([Contact]?, APIError?) -> Void)!
-    
-    func request<T>(with completion: @escaping (T?, APIError?) -> Void) where T : Decodable {
-        isRequestCalled = true
-        completionClosure = completion as? (([Contact]?, APIError?) -> Void)
-    }
-    
-    func requestSuccess(_ contacts: [Contact] = Stub().stubContacts()) {
-        completionClosure(contacts, nil)
-    }
-    
-    func requestFail(error: APIError?) {
-        completionClosure(nil, error)
-    }
-    
-}
-
-class Stub {
-    func stubContacts() -> [Contact] {
-        return [
-            Contact(id: 1001, name: "Eduardo Santos", img: "https://randomuser.me/api/portraits/men/9.jpg", username: "@eduardo.santos"),
-            Contact(id: 1002, name: "Marina Coelho", img: "https://randomuser.me/api/portraits/women/37.jpg", username: "@marina.coelho"),
-            Contact(id: 1003, name: "Márcia da Silva", img: "https://randomuser.me/api/portraits/women/57.jpg", username: "@marcia.silva"),
-            Contact(id: 1019, name: "Maria Torres", img: "https://randomuser.me/api/portraits/women/34.jpg", username: "@maria.torres"),
-            Contact(id: 1031, name: "Maria Medeiros", img: "https://randomuser.me/api/portraits/women/77.jpg", username: "@maria.medeiros"),
-            Contact(id: 1032, name: "Paulo Noronha", img: "https://randomuser.me/api/portraits/men/68.jpg", username: "@paulo.noronha"),
-            Contact(id: 1033, name: "Mário Campos", img: "https://randomuser.me/api/portraits/men/35.jpg", username: "@mario.campos")
-        ]
-    }
-    
 }
