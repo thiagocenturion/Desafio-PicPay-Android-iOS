@@ -16,7 +16,7 @@ class CardRegisterViewModel: NSObject {
     private(set) var holdersNameViewModel = TextFieldViewModel()
     private(set) var expiryDateViewModel = TextFieldViewModel(mask: "##/##", replacement: "#")
     private(set) var cvvViewModel = TextFieldViewModel()
-    private(set) var card: Card = Card(cardNumber: nil, holdersName: nil, expiryDate: nil, CVV:  nil)
+    private(set) var card: Card
     var isCounted = Dynamic(false)
     var alertMessage = Dynamic("")
     private var isValid: Bool {
@@ -31,8 +31,9 @@ class CardRegisterViewModel: NSObject {
     
     // MARK: Constructors
     
-    init(keychainService: KeychainServiceProtocol? = KeychainService(key: Card.nameOfClass)) {
+    init(model: Card = Card(cardNumber: nil, holdersName: nil, expiryDate: nil, CVV:  nil), keychainService: KeychainServiceProtocol? = KeychainService(key: Card.nameOfClass)) {
         super.init()
+        self.card = model
         self.keychainService = keychainService
         setupBind()
     }
@@ -99,6 +100,12 @@ class CardRegisterViewModel: NSObject {
         holdersNameViewModel.isCounted.bind { [weak self] _ in self?.updateCountedAndErrorMessage(self?.holdersNameViewModel) }
         expiryDateViewModel.isCounted.bind { [weak self] _ in self?.updateCountedAndErrorMessage(self?.expiryDateViewModel) }
         cvvViewModel.isCounted.bind { [weak self] _ in self?.updateCountedAndErrorMessage(self?.cvvViewModel) }
+        
+        // Model -> ViewModel
+        cardNumberViewModel.text.value = card.cardNumber ?? ""
+        holdersNameViewModel.text.value = card.holdersName ?? ""
+        expiryDateViewModel.text.value = card.expiryDate ?? ""
+        if let cvv = card.CVV { cvvViewModel.text.value = String(cvv) }
     }
     
     func calculateMinimumCountValid(text: String, with txtViewModel: TextFieldViewModel?) -> Bool {

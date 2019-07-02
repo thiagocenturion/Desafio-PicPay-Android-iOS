@@ -30,8 +30,15 @@ class ContactListCoordinator: NSObject, CoordinatorProtocol {
 
 extension ContactListCoordinator: ContactListViewControllerProtocol {
     func contactListViewController(didSelect contactViewModel: ContactViewModel) {
-        let childCoordinator = CardRegisterCoordinator(navigator: navigator, contact: contactViewModel)
-        childCoordinators.append(childCoordinator)
-        childCoordinator.start()
+        // Verifica se já existe algum cartão de crédito armazenado
+        let keychain = KeychainService(key: Card.nameOfClass)
+        if let retrivedCard = keychain.retriveObject() as Card? {
+            // TODO: Iremos trazer ao contexto direto a tela de pagamento
+        } else {
+            // Significa que o usuario precisa cadastrar um cartao.
+            let childCoordinator = CardRegisterCoordinator(navigator: navigator, contact: contactViewModel)
+            childCoordinators.append(childCoordinator)
+            childCoordinator.start(keychain: keychain)
+        }
     }
 }

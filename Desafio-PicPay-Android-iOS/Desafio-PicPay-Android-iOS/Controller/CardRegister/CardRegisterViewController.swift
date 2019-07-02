@@ -24,7 +24,14 @@ class CardRegisterViewController: UIViewController, ViewControllerCoordinatorPro
     @IBOutlet weak var btnSave: PrimaryButton!
     var delegate: CardRegisterViewControllerProtocol?
     weak var coordinator: CoordinatorProtocol?
-    lazy var viewModel: CardRegisterViewModel = CardRegisterViewModel()
+    lazy var viewModel: CardRegisterViewModel
+    
+    // MARK: - Constructors
+    
+    init(viewModel: CardRegisterViewModel = CardRegisterViewModel()) {
+        super.init()
+        self.viewModel = viewModel
+    }
     
     // MARK: - View Lifecyle
     
@@ -86,6 +93,12 @@ class CardRegisterViewController: UIViewController, ViewControllerCoordinatorPro
         txtHoldersName.bind { [unowned self] in self.viewModel.holdersNameViewModel.text.value = $0.trimmingCharacters(in: .whitespaces) }
         txtExpiryDate.bind { [unowned self] in self.viewModel.expiryDateViewModel.text.value = $0.trimmingCharacters(in: .whitespaces) }
         txtCVV.bind { [unowned self] in self.viewModel.cvvViewModel.text.value = $0.trimmingCharacters(in: .whitespaces) }
+        
+        // viewModel -> UI
+        txtCardNumber.text = viewModel.cardNumberViewModel.text.value
+        txtHoldersName.text = viewModel.holdersNameViewModel.text.value
+        txtExpiryDate.text = viewModel.expiryDateViewModel.text.value
+        txtCVV.text = viewModel.cvvViewModel.text.value
     }
     
 }

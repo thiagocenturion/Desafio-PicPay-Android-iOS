@@ -12,14 +12,18 @@ class CardRegisterCoordinator: NSObject, CoordinatorProtocol {
     var childCoordinators = [CoordinatorProtocol]()
     var navigator: Navigator
     var contactViewModel: ContactViewModel
+    var keychain: KeychainService
     
     init(navigator: Navigator, contact: ContactViewModel) {
+        super.init()
         self.navigator = navigator
         self.contactViewModel = contact
     }
     
-    func start() {
-        // Instancia da Controller principal
+    func start(keychain: KeychainService = KeychainService(key: Card.nameOfClass)) {
+        self.keychain = keychain
+
+        // Enviamos para a tela de priming de cartão de cadastro, que o levara para o formulario de cadastro.
         let cardPrimingViewController = CardPrimingViewController()
         cardPrimingViewController.title = " "
         cardPrimingViewController.delegate = self
@@ -33,7 +37,9 @@ class CardRegisterCoordinator: NSObject, CoordinatorProtocol {
 extension CardRegisterCoordinator: CardPrimingViewControllerProtocol {
     func cardPrimingViewControllerOnRegister() {
         // Instancia da controller que possui o formulário
-        let cardRegisterViewController = CardRegisterViewController()
+        let model = Card(cardNumber: nil, holdersName: nil, expiryDate: nil, CVV: nil)
+        let viewModel = CardRegisterViewModel(model: model, keychainService: keychain)
+        let cardRegisterViewController = CardRegisterViewController(viewModel: viewModel)
         cardRegisterViewController.title = " "
         cardRegisterViewController.delegate = self
         cardRegisterViewController.coordinator = self
