@@ -8,27 +8,30 @@
 
 import UIKit
 
-class ContactListCoordinator: CoordinatorProtocol {
-    private let presenter: UINavigationController
-    private var contactListViewController: ContactListViewController?
+class ContactListCoordinator: NSObject, CoordinatorProtocol {
+    var childCoordinators = [CoordinatorProtocol]()
+    var navigator: Navigator
     
-    init(presenter: UINavigationController) {
-        self.presenter = presenter
+    init(navigator: Navigator) {
+        self.navigator = navigator
     }
     
     func start() {
-        // Instancia a viewController principal do coordinator e realiza o push no navigation controller para apresentar na tela
-        let contactListViewController = ContactListViewController(nibName: nil, bundle: nil)
-        contactListViewController.title = "ContactListTitle".localizable
+        // Instancia da Controller principal
+        let contactListViewController = ContactListViewController()
+        contactListViewController.title = " "
         contactListViewController.delegate = self
-        presenter.pushViewController(contactListViewController, animated: true)
+        contactListViewController.coordinator = self
         
-        self.contactListViewController = contactListViewController
+        // Insere a controller na pilha da navigation
+        navigator.push(viewController: contactListViewController, animated: true)
     }
 }
 
 extension ContactListCoordinator: ContactListViewControllerProtocol {
     func contactListViewController(didSelect contactViewModel: ContactViewModel) {
-        // TODO: Instanciar o coordinator novo e inicia-lo
+        let childCoordinator = TransactionCoordinator(navigator: navigator, contact: contactViewModel)
+        childCoordinators.append(childCoordinator)
+        childCoordinator.start()
     }
 }

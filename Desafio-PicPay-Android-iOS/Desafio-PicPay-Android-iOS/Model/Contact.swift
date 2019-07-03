@@ -8,6 +8,9 @@
 
 import Foundation
 
+/**
+ Representacao de um contato, cujo ID pode ser utilizado para receber pagamentos.
+ */
 struct Contact: Decodable {
     let id: Int?
     let name: String?

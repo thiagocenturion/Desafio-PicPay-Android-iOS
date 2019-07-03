@@ -8,31 +8,24 @@
 
 import UIKit
 
-class ApplicationCoordinator: CoordinatorProtocol {
+class ApplicationCoordinator: NSObject, CoordinatorProtocol {
+    var childCoordinators = [CoordinatorProtocol]()
+    var navigator: Navigator
     let window: UIWindow
-    let rootViewController: UINavigationController
-    let contactListCoordinator: ContactListCoordinator
     
-    init(window: UIWindow) {
+    init(window: UIWindow, navigationController: UINavigationController? = DefaultNavigationController()) {
         self.window = window
-        
-        // Cria a navigation controller que sera responsavel pelo fluxo do sistema
-        rootViewController = ({
-            let navController = UINavigationController()
-            navController.navigationBar.prefersLargeTitles = true
-            navController.navigationBar.barStyle = .black
-            navController.navigationBar.isTranslucent = false
-            navController.navigationBar.barTintColor = Color.primaryBackground
-            navController.navigationBar.shadowImage = UIImage() // Remove linha 1px abaixo da navigation
-            return navController
-        })()
-        
-        contactListCoordinator = ContactListCoordinator(presenter: rootViewController)
+        navigator = Navigator(navigationController: navigationController)
     }
     
     func start() {
-        window.rootViewController = rootViewController
-        contactListCoordinator.start()
+        window.rootViewController = navigator.navigationController
+        
+        // Criacao do coordinator filho principal e ja inicia
+        let childCoordinator = ContactListCoordinator(navigator: navigator)
+        childCoordinators.append(childCoordinator)
+        childCoordinator.start()
+        
         window.makeKeyAndVisible()
     }
 }

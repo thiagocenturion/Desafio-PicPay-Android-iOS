@@ -12,6 +12,49 @@ extension String {
     var localizable: String {
         return NSLocalizedString(self, comment: "")
     }
+    
+    /**
+     Realiza uma formatação na string conforme mascara fornecida por 'pattern' e o caractere de substituicao.
+     
+     - parameter pattern:  Usa por exemplo "+## (##) #####-####".
+     - parameter replacmentCharacter: é o caractere que será substituido pelos caracteres do texto original.
+     - Returns: Uma string contendo a formatacao requerida conforme a mascara fornecida.
+     */
+    func formatted(mask: String, replacmentCharacter: Character) -> String {
+        var result = ""
+        
+        // Remove a mascara atual
+        let originalText = self.removeFormatted(mask: mask, replacmentCharacter: replacmentCharacter)
+        
+        // Percorre os caracteres da mascara para
+        var index = originalText.startIndex
+        for character in mask where index < originalText.endIndex {
+            // Caso seja o caractere de substituição, adiciona o caractere do texto original e incrementa o index
+            if character == replacmentCharacter {
+                result.append(originalText[index])
+                index = originalText.index(after: index)
+            } else {
+                // Adiciona o caractere da mascara
+                result.append(character)
+            }
+        }
+        
+        return result
+    }
+    
+    func removeFormatted(mask: String, replacmentCharacter: Character) -> String {
+        var result = self
+        
+        // Extrai da mascara os caracteres de substituicao
+        let maskWithoutReplacment = mask.replacingOccurrences(of: String(replacmentCharacter), with: "")
+        
+        // Percorre cada um dos caracteres da máscara e remove todas as ocorrencias existentes desta string
+        for character in maskWithoutReplacment {
+            result = result.replacingOccurrences(of: String(character), with: "")
+        }
+        
+        return result
+    }
 }
 
 extension NSObject {
@@ -104,5 +147,9 @@ extension UIView {
                 }
             }
         }
+    }
+    
+    func constraint(_ firstAttribute: NSLayoutConstraint.Attribute) -> NSLayoutConstraint? {
+        return superview?.constraints.filter({ $0.firstAttribute == firstAttribute }).first
     }
 }

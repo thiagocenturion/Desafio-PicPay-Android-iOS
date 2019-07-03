@@ -12,18 +12,17 @@ protocol ContactListViewControllerProtocol {
     func contactListViewController(didSelect contactViewModel: ContactViewModel)
 }
 
-class ContactListViewController: UIViewController {
+class ContactListViewController: UIViewController, ViewControllerCoordinatorProtocol {
     
     // MARK: - Properties
 
     @IBOutlet weak var tableView: UITableView!
+    weak var coordinator: CoordinatorProtocol?
     override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
     private let reuseIdentifier = ContactListCell.nameOfClass
     private let searchFieldHeight: CGFloat = 40.0
     private var searchBar: DarkSearchBar?
-    lazy var viewModel: ContactListViewModel = {
-        return ContactListViewModel()
-    }()
+    lazy var viewModel: ContactListViewModel = ContactListViewModel()
     var delegate: ContactListViewControllerProtocol?
     
     // MARK: - Methods

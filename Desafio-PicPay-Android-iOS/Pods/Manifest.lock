@@ -2,20 +2,47 @@ PODS:
   - Alamofire (4.8.2)
   - AlamofireImage (3.5.2):
     - Alamofire (~> 4.8)
+  - IQKeyboardManagerSwift (6.3.0)
+  - MaterialComponents/AnimationTiming (84.0.0)
+  - MaterialComponents/Palettes (84.0.0)
+  - MaterialComponents/private/Application (84.0.0)
+  - MaterialComponents/private/Math (84.0.0)
+  - MaterialComponents/TextFields (84.0.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/Typography (84.0.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+  - MDFInternationalization (2.0.0)
+  - SwiftKeychainWrapper (3.3.0)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage
+  - IQKeyboardManagerSwift
+  - MaterialComponents/TextFields
+  - SwiftKeychainWrapper
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireImage
+    - IQKeyboardManagerSwift
+    - MaterialComponents
+    - MDFInternationalization
+    - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
+  MaterialComponents: ea6e7d777ca716eed90e44700be40a91f4c9c4d5
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  SwiftKeychainWrapper: ef5ad793bc0e08e24a5913f28345b8f7bc8e4123
 
-PODFILE CHECKSUM: 43bc811a9f9d16660f5d4a5cd15ab8040543f49c
+PODFILE CHECKSUM: d9d30e571530d09553df71219b86ba145c8abe92
 
 COCOAPODS: 1.6.2
