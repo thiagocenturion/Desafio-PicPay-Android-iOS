@@ -30,6 +30,7 @@
 		23AF45A3228C8D5E00E1FAA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23AF45A1228C8D5E00E1FAA8 /* LaunchScreen.storyboard */; };
 		23AF45B9228C8D5E00E1FAA8 /* Desafio_PicPay_Android_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF45B8228C8D5E00E1FAA8 /* Desafio_PicPay_Android_iOSUITests.swift */; };
 		23C0B2EF22A8D1AA006C4472 /* TextFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C0B2EE22A8D1AA006C4472 /* TextFieldViewModel.swift */; };
+		23CB818F22CD233600A0FA19 /* TransactionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB818E22CD233600A0FA19 /* TransactionCoordinator.swift */; };
 		23D332AA22A4C3BE00A53C1D /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D332A922A4C3BE00A53C1D /* Validation.swift */; };
 		23DEC4B3229E4B4F0047C799 /* CardPrimingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DEC4B1229E4B4E0047C799 /* CardPrimingViewController.swift */; };
 		23DEC4B4229E4B4F0047C799 /* CardPrimingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23DEC4B2229E4B4E0047C799 /* CardPrimingViewController.xib */; };
@@ -40,7 +41,6 @@
 		23DF5EC422944F310070345C /* ContactListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23DF5EC222944F310070345C /* ContactListViewController.xib */; };
 		23EB2AE0229FFA190085E865 /* DefaultNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB2ADF229FFA190085E865 /* DefaultNavigationController.swift */; };
 		23EB2AE2229FFDA90085E865 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB2AE1229FFDA90085E865 /* Navigator.swift */; };
-		23EB2AE622A007470085E865 /* CardRegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB2AE522A007470085E865 /* CardRegisterCoordinator.swift */; };
 		23EB2AE822A0093C0085E865 /* CardRegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB2AE722A0093C0085E865 /* CardRegisterViewModel.swift */; };
 		23F9E332229ED980000D050C /* DefaultTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F9E331229ED980000D050C /* DefaultTextField.swift */; };
 		23FAD3A4228F37410094CD15 /* ContactListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FAD3A3228F37410094CD15 /* ContactListViewModel.swift */; };
@@ -108,6 +108,7 @@
 		23AF45B8228C8D5E00E1FAA8 /* Desafio_PicPay_Android_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desafio_PicPay_Android_iOSUITests.swift; sourceTree = "<group>"; };
 		23AF45BA228C8D5E00E1FAA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23C0B2EE22A8D1AA006C4472 /* TextFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewModel.swift; sourceTree = "<group>"; };
+		23CB818E22CD233600A0FA19 /* TransactionCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionCoordinator.swift; sourceTree = "<group>"; };
 		23D332A922A4C3BE00A53C1D /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		23DEC4B1229E4B4E0047C799 /* CardPrimingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPrimingViewController.swift; sourceTree = "<group>"; };
 		23DEC4B2229E4B4E0047C799 /* CardPrimingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardPrimingViewController.xib; sourceTree = "<group>"; };
@@ -118,7 +119,6 @@
 		23DF5EC222944F310070345C /* ContactListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactListViewController.xib; sourceTree = "<group>"; };
 		23EB2ADF229FFA190085E865 /* DefaultNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DefaultNavigationController.swift; path = ../View/DefaultNavigationController.swift; sourceTree = "<group>"; };
 		23EB2AE1229FFDA90085E865 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
-		23EB2AE522A007470085E865 /* CardRegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRegisterCoordinator.swift; sourceTree = "<group>"; };
 		23EB2AE722A0093C0085E865 /* CardRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRegisterViewModel.swift; sourceTree = "<group>"; };
 		23F9E331229ED980000D050C /* DefaultTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTextField.swift; sourceTree = "<group>"; };
 		23FAD3A3228F37410094CD15 /* ContactListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModel.swift; sourceTree = "<group>"; };
@@ -350,7 +350,7 @@
 				23FAD3B0228F420E0094CD15 /* Coordinator.swift */,
 				23FAD3B2228F42550094CD15 /* ApplicationCoordinator.swift */,
 				23FAD3B4228F43B40094CD15 /* ContactListCoordinator.swift */,
-				23EB2AE522A007470085E865 /* CardRegisterCoordinator.swift */,
+				23CB818E22CD233600A0FA19 /* TransactionCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -647,6 +647,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23FAD3B1228F420E0094CD15 /* Coordinator.swift in Sources */,
+				23CB818F22CD233600A0FA19 /* TransactionCoordinator.swift in Sources */,
 				2352766A2294A0C900073925 /* ContactViewModel.swift in Sources */,
 				2356F5AF22A18193001D3673 /* KeyboardMovingButton.swift in Sources */,
 				23EB2AE2229FFDA90085E865 /* Navigator.swift in Sources */,
@@ -655,7 +656,6 @@
 				235276702294C9D600073925 /* UserResources.swift in Sources */,
 				235276792294E33200073925 /* Dynamic.swift in Sources */,
 				23FAD3B9228F5AB90094CD15 /* DarkSearchBar.swift in Sources */,
-				23EB2AE622A007470085E865 /* CardRegisterCoordinator.swift in Sources */,
 				23DEC4B3229E4B4F0047C799 /* CardPrimingViewController.swift in Sources */,
 				235276732294CA8F00073925 /* NetworkRequestProtocol.swift in Sources */,
 				23FAD3AA228F37770094CD15 /* Contact.swift in Sources */,
