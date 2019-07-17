@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CardRegisterViewModel: NSObject {
+class CardRegisterViewModel {
     
     // MARK: - Properties
     
@@ -32,7 +32,6 @@ class CardRegisterViewModel: NSObject {
     // MARK: Constructors
     
     init(model: Card = Card(cardNumber: nil, holdersName: nil, expiryDate: nil, CVV:  nil), keychainService: KeychainServiceProtocol? = KeychainService(key: Card.nameOfClass)) {
-        super.init()
         self.card = model
         self.keychainService = keychainService
         setupBind()
@@ -43,53 +42,45 @@ class CardRegisterViewModel: NSObject {
     func setupBind() {
         // Define os binds quando os text fields recebem um texto novo de entrada
         cardNumberViewModel.text.bind { [weak self] text in
-            let txtViewModel = self?.cardNumberViewModel
-            
             // Determina se o texto esta dentro da contagem necessaria para que o campo esteja validado para prosseguir
-            self?.cardNumberViewModel.isCounted.value = self?.calculateMinimumCountValid(text: text, with: txtViewModel) ?? false
+            self?.cardNumberViewModel.calculateMinimumCountValid(text: text)
             
             // Atribui a model o texto digitado na tela. Se existir, remove a mascara.
             var formattedText = text
-            if let mask = txtViewModel?.mask, let replacement = txtViewModel?.replacement {
+            if let mask = self?.cardNumberViewModel.mask, let replacement = self?.cardNumberViewModel.replacement {
                 formattedText = text.removeFormatted(mask: mask, replacmentCharacter: Character(replacement))
             }
             self?.card.cardNumber = formattedText
         }
         holdersNameViewModel.text.bind { [weak self] text in
-            let txtViewModel = self?.holdersNameViewModel
-            
             // Determina se o texto esta dentro da contagem necessaria para que o campo esteja validado para prosseguir
-            self?.holdersNameViewModel.isCounted.value = self?.calculateMinimumCountValid(text: text, with: txtViewModel) ?? false
+            self?.holdersNameViewModel.calculateMinimumCountValid(text: text)
             
             // Atribui a model o texto digitado na tela. Se existir, remove a mascara.
             var formattedText = text
-            if let mask = txtViewModel?.mask, let replacement = txtViewModel?.replacement {
+            if let mask = self?.holdersNameViewModel.mask, let replacement = self?.holdersNameViewModel.replacement {
                 formattedText = text.removeFormatted(mask: mask, replacmentCharacter: Character(replacement))
             }
             self?.card.holdersName = formattedText
         }
         expiryDateViewModel.text.bind { [weak self] text in
-            let txtViewModel = self?.expiryDateViewModel
-            
             // Determina se o texto esta dentro da contagem necessaria para que o campo esteja validado para prosseguir
-            self?.expiryDateViewModel.isCounted.value = self?.calculateMinimumCountValid(text: text, with: txtViewModel) ?? false
+            self?.expiryDateViewModel.calculateMinimumCountValid(text: text)
             
             // Atribui a model o texto digitado na tela. Se existir, remove a mascara.
             var formattedText = text
-            if let mask = txtViewModel?.mask, let replacement = txtViewModel?.replacement {
+            if let mask = self?.expiryDateViewModel.mask, let replacement = self?.expiryDateViewModel.replacement {
                 formattedText = text.removeFormatted(mask: mask, replacmentCharacter: Character(replacement))
             }
             self?.card.expiryDate = formattedText
         }
         cvvViewModel.text.bind { [weak self] text in
-            let txtViewModel = self?.cvvViewModel
-            
             // Determina se o texto esta dentro da contagem necessaria para que o campo esteja validado para prosseguir
-            self?.cvvViewModel.isCounted.value = self?.calculateMinimumCountValid(text: text, with: txtViewModel) ?? false
+            self?.cvvViewModel.calculateMinimumCountValid(text: text)
             
             // Atribui a model o texto digitado na tela. Se existir, remove a mascara.
             var formattedText = text
-            if let mask = txtViewModel?.mask, let replacement = txtViewModel?.replacement {
+            if let mask = self?.cvvViewModel.mask, let replacement = self?.cvvViewModel.replacement {
                 formattedText = text.removeFormatted(mask: mask, replacmentCharacter: Character(replacement))
             }
             self?.card.CVV = Int(formattedText)
@@ -106,23 +97,6 @@ class CardRegisterViewModel: NSObject {
         holdersNameViewModel.text.value = card.holdersName ?? ""
         expiryDateViewModel.text.value = card.expiryDate ?? ""
         if let cvv = card.CVV { cvvViewModel.text.value = String(cvv) }
-    }
-    
-    func calculateMinimumCountValid(text: String, with txtViewModel: TextFieldViewModel?) -> Bool {
-        if let mask = txtViewModel?.mask {
-            // Caso tenha mascara, verifica se temos contador minimo. Se sim, remove a mascara e verifica se o texto possui a contagem minima depois disso.
-            if let minimumCount = txtViewModel?.minimumCount, let replacement = txtViewModel?.replacement {
-                return text.removeFormatted(mask: mask, replacmentCharacter: Character(replacement)).count >= minimumCount
-            } else {
-                // Se não tem contador minimo, o texto tem que ser exatamente igual ao tamanho maximo de sua máscara
-                return text.count == mask.count
-            }
-        } else if let minimumCount = txtViewModel?.minimumCount {
-            return text.count >= minimumCount
-        } else {
-            // Quando nao possui mascara, apenas deve existir texto escrito
-            return text.count > 0
-        }
     }
     
     func updateCountedAndErrorMessage(_ viewModel: TextFieldViewModel?) {
@@ -153,4 +127,19 @@ class CardRegisterViewModel: NSObject {
         
         return saveSuccess
     }
+    
+    /*
+     Retorna um descritivo que contém a bandeira do cartão e os últimos 4 números
+     */
+    func cardDescription() -> String {
+        guard let cardNumber = card.cardNumber else { return "" }
+        let indexLastFourNumbersStart = cardNumber.index(cardNumber.endIndex, offsetBy: -4)
+        let indexLastFourNumbersEnd = cardNumber.index(cardNumber.endIndex, offsetBy: 0)
+        let lastFourNumbers = String(cardNumber[indexLastFourNumbersStart..<indexLastFourNumbersEnd])
+        
+        // TODO: Para viés de testes, como utilizaremos 1111111111111111 como único número de cartão válido, então não estamos aplicando a validação que nos diz qual a bandeira, pois acabaria não encontrando uma bandeira para prosseguir no teste. Portanto, foi definido um valor estático.
+        return "Mastercard \(lastFourNumbers) •"
+    }
+    
+    
 }

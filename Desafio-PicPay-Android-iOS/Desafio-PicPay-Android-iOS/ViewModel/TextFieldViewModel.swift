@@ -38,4 +38,25 @@ class TextFieldViewModel: NSObject {
         // So retornara false quando cair no catch de erro
         return false
     }
+    
+    func calculateMinimumCountValid(text: String) {
+        var isCalculatedCount = false
+        
+        if let mask = mask {
+            // Caso tenha mascara, verifica se temos contador minimo. Se sim, remove a mascara e verifica se o texto possui a contagem minima depois disso.
+            if let minimumCount = minimumCount, let replacement = replacement {
+                isCalculatedCount = text.removeFormatted(mask: mask, replacmentCharacter: Character(replacement)).count >= minimumCount
+            } else {
+                // Se não tem contador minimo, o texto tem que ser exatamente igual ao tamanho maximo de sua máscara
+                isCalculatedCount = text.count == mask.count
+            }
+        } else if let minimumCount = minimumCount {
+            isCalculatedCount = text.count >= minimumCount
+        } else {
+            // Quando nao possui mascara, apenas deve existir texto escrito
+            isCalculatedCount = text.count > 0
+        }
+        
+        isCounted.value = isCalculatedCount
+    }
 }

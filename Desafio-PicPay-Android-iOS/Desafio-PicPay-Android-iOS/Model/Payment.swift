@@ -20,11 +20,11 @@ import Foundation
  }
  */
 struct Payment: Codable {
-    let cardNumber: String
-    let cvv: Int
-    let value: Float
-    let expiryDate: String
-    let destinationUserId: Int
+    var cardNumber: String?
+    var cvv: Int?
+    var value: Float?
+    var expiryDate: String?
+    var destinationUserId: Int?
     
     private enum CodingKeys: String, CodingKey {
         case cardNumber = "card_number"

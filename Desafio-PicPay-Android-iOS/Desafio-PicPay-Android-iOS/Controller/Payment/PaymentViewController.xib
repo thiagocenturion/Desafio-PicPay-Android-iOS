@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentViewController" customModule="Desafio_PicPay_Android_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="btnEditCreditCard" destination="pPb-1d-uuN" id="UQP-br-yOC"/>
+                <outlet property="btnPay" destination="OxG-j6-Z7o" id="gxq-h6-68n"/>
+                <outlet property="imgContact" destination="Fb7-FT-Gcf" id="ttN-3z-M9L"/>
+                <outlet property="lblCreditCard" destination="WPu-s8-NA5" id="Lel-fK-Xxg"/>
+                <outlet property="lblRs" destination="IYt-9J-LJv" id="Oiw-nu-0mv"/>
+                <outlet property="lblUsernameContact" destination="TrN-r0-b2b" id="b6U-B3-2bg"/>
+                <outlet property="txtValue" destination="1qc-sG-gvm" id="hSr-EU-uvC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJi-2x-Xp6">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ux4-jy-0cG">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="s6d-o2-a5O">
+                                    <rect key="frame" x="20" y="44" width="374" height="231"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QJ9-sM-fjD">
+                                            <rect key="frame" x="167" y="0.0" width="40" height="57"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fb7-FT-Gcf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Fb7-FT-Gcf" secondAttribute="height" multiplier="1:1" id="m5Z-6U-cuI"/>
+                                                        <constraint firstAttribute="width" constant="40" id="yfJ-Z6-hth"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VdA-zG-4gf">
+                                                    <rect key="frame" x="16.5" y="40" width="7" height="17"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TrN-r0-b2b" userLabel="lblUsername">
+                                                            <rect key="frame" x="0.0" y="0.0" width="7" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0FK-J6-9dg">
+                                            <rect key="frame" x="113.5" y="97" width="147.5" height="65"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYt-9J-LJv" customClass="SubtitleLabel" customModule="Desafio_PicPay_Android_iOS" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="23" height="65"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" red="0.12151827663183212" green="0.78071379661560059" blue="0.43415457010269165" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0,00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1qc-sG-gvm" customClass="CurrencyTextField" customModule="Desafio_PicPay_Android_iOS" customModuleProvider="target">
+                                                    <rect key="frame" x="31" y="0.0" width="116.5" height="65"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="5Kh-Om-726">
+                                            <rect key="frame" x="85.5" y="202" width="203.5" height="29"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mastercard 1234 •" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPu-s8-NA5" customClass="DescriptionLabel" customModule="Desafio_PicPay_Android_iOS" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="4" width="149.5" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPb-1d-uuN">
+                                                    <rect key="frame" x="153.5" y="0.0" width="50" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                    <state key="normal" title="EDITAR">
+                                                        <color key="titleColor" red="0.1215182766" green="0.78071379659999995" blue="0.43415457010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OxG-j6-Z7o" customClass="PrimaryButton" customModule="Desafio_PicPay_Android_iOS" customModuleProvider="target">
+                                    <rect key="frame" x="12" y="758" width="390" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="WIQ-VG-PPj"/>
+                                    </constraints>
+                                    <state key="normal" title="Pagar"/>
+                                    <connections>
+                                        <action selector="onPay:" destination="-1" eventType="touchUpInside" id="o7y-hb-1UT"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="OxG-j6-Z7o" firstAttribute="top" relation="greaterThanOrEqual" secondItem="s6d-o2-a5O" secondAttribute="bottom" constant="20" id="2eX-0L-R0O"/>
+                                <constraint firstAttribute="bottom" secondItem="OxG-j6-Z7o" secondAttribute="bottom" priority="750" constant="12" id="CWB-hb-wnq"/>
+                                <constraint firstItem="s6d-o2-a5O" firstAttribute="top" secondItem="ux4-jy-0cG" secondAttribute="top" constant="44" id="GcZ-vZ-AB8"/>
+                                <constraint firstItem="OxG-j6-Z7o" firstAttribute="leading" secondItem="ux4-jy-0cG" secondAttribute="leading" constant="12" id="QPU-Qc-4Si"/>
+                                <constraint firstItem="s6d-o2-a5O" firstAttribute="leading" secondItem="ux4-jy-0cG" secondAttribute="leading" constant="20" id="kkb-wN-ltH"/>
+                                <constraint firstAttribute="trailing" secondItem="OxG-j6-Z7o" secondAttribute="trailing" constant="12" id="nqc-ov-rva"/>
+                                <constraint firstAttribute="trailing" secondItem="s6d-o2-a5O" secondAttribute="trailing" constant="20" id="q29-BA-BNp"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ux4-jy-0cG" secondAttribute="bottom" id="1ua-Pp-YPW"/>
+                        <constraint firstItem="ux4-jy-0cG" firstAttribute="height" secondItem="hJi-2x-Xp6" secondAttribute="height" priority="250" id="QJI-aa-1C2"/>
+                        <constraint firstAttribute="trailing" secondItem="ux4-jy-0cG" secondAttribute="trailing" id="Xkm-qV-IIv"/>
+                        <constraint firstItem="ux4-jy-0cG" firstAttribute="leading" secondItem="hJi-2x-Xp6" secondAttribute="leading" id="Y3X-8m-LeW"/>
+                        <constraint firstItem="ux4-jy-0cG" firstAttribute="top" secondItem="hJi-2x-Xp6" secondAttribute="top" id="hVS-Nq-dpn"/>
+                        <constraint firstItem="ux4-jy-0cG" firstAttribute="width" secondItem="hJi-2x-Xp6" secondAttribute="width" id="jc2-Sa-c9v"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hJi-2x-Xp6" secondAttribute="bottom" id="FVV-R8-lBX"/>
+                <constraint firstItem="hJi-2x-Xp6" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="I4T-8w-WNW"/>
+                <constraint firstItem="hJi-2x-Xp6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="Nd5-y6-HUc"/>
+                <constraint firstItem="hJi-2x-Xp6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fMX-OZ-oEX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="108.48214285714285"/>
+        </view>
+    </objects>
+</document>

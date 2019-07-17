@@ -24,13 +24,17 @@ class CardRegisterViewController: UIViewController, ViewControllerCoordinatorPro
     @IBOutlet weak var btnSave: PrimaryButton!
     var delegate: CardRegisterViewControllerProtocol?
     weak var coordinator: CoordinatorProtocol?
-    lazy var viewModel: CardRegisterViewModel
+    var viewModel = CardRegisterViewModel()
     
     // MARK: - Constructors
     
     init(viewModel: CardRegisterViewModel = CardRegisterViewModel()) {
-        super.init()
+        super.init(nibName: nil, bundle: nil)
         self.viewModel = viewModel
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     // MARK: - View Lifecyle
