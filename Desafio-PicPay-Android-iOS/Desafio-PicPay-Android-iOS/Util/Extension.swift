@@ -153,3 +153,23 @@ extension UIView {
         return superview?.constraints.filter({ $0.firstAttribute == firstAttribute }).first
     }
 }
+
+extension NSNumber {
+    /// Converte o valor do NSNumbe para a base monetária ( 100 )
+    var currencyBase: NSNumber {
+        let intermediate = self.doubleValue / 100.0
+        return NSNumber(value: intermediate)
+    }
+    
+    // Diminui o valor da direita. Por exemplo: 12345 -> 1234
+    func removeRight() -> NSNumber {
+        let intermediate = self.doubleValue / 10.0
+        return NSNumber(value: intermediate)
+    }
+    
+    /// Aumenta o valor da direita, de acordo com o número recebido. Por exemplo: 12345 -> 123456, o qual 6 é o número novo.
+    func addRight(_ dNewNumber: Double) -> NSNumber {
+        let intermediate = self.doubleValue * 10 + dNewNumber
+        return NSNumber(value: intermediate)
+    }
+}

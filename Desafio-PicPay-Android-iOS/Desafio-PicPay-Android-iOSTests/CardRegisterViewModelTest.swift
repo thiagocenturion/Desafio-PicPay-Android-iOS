@@ -133,6 +133,17 @@ class CardRegisterViewModelTest: XCTestCase {
         XCTAssertEqual(sut.alertMessage.value, "internalError".localizable)
     }
     
+    func testCardDescription() {
+        let stubCard = Stub().card()
+        
+        sut.cardNumberViewModel.text.value = stubCard.cardNumber!
+        sut.holdersNameViewModel.text.value = stubCard.holdersName!
+        sut.expiryDateViewModel.text.value = stubCard.expiryDate!
+        sut.cvvViewModel.text.value = String(stubCard.CVV!)
+        
+        XCTAssertEqual(sut.cardDescription(), "Mastercard 5678 •")
+    }
+    
     // MARK: - Stub
     class Stub {
         func card() -> Card {

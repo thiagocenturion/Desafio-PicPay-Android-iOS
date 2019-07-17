@@ -35,6 +35,26 @@ class Navigator: NSObject {
     func push(viewController: UIViewController, animated: Bool) {
         navigationController?.pushViewController(viewController, animated: animated)
     }
+    
+    func pop(animated: Bool) {
+        navigationController?.popViewController(animated: animated)
+    }
+    
+    func exists(_ anyClass: AnyClass) -> Bool {
+        var exists = false
+        
+        // Percorre todas as view controllers no contexto atual da navigation para procurar se existe aquela recebida por parametro
+        if let navigationController = navigationController {
+            for childController in navigationController.viewControllers {
+                if childController.isKind(of: anyClass) {
+                    exists = true
+                    break
+                }
+            }
+        }
+        
+        return exists
+    }
 }
 
 extension Navigator: UINavigationControllerDelegate {

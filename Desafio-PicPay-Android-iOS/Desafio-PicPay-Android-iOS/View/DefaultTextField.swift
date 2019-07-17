@@ -9,9 +9,14 @@
 import UIKit
 import MaterialComponents.MaterialTextFields
 
-@IBDesignable
-class DefaultTextField: MDCTextField {
+protocol BindTextFieldProtocol {
     typealias Listener = (String) -> ()
+    var listener: Listener? { get }
+    func bind(_ listener: Listener?)
+}
+
+@IBDesignable
+class DefaultTextField: MDCTextField, BindTextFieldProtocol {
     @IBInspectable dynamic open var limitLength: UInt = 0
     var maskPattern: String = "" {
         didSet {
